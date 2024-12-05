@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/desafios-projetos.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios de Replicação e Sharding</h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML/mongodb-exercises.html">Voltar</a></li>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+        
+            <ul>
+                <li>Crie uma configuração de replicação simples com um único nó primário e um nó secundário no MongoDB.</li>
+                <li>Configure um conjunto de réplicas com três nós (primário e dois secundários) e verifique o status com `rs.status()`.</li>
+                <li>Configure um nó secundário como um nó de leitura para balancear a carga de leitura no cluster.</li>
+                <li>Simule uma falha do nó primário e observe o processo de eleição do novo nó primário.</li>
+                <li>Configure a replicação de dados com um nó arbiter para manter o número ímpar de votos em um conjunto de réplicas.</li>
+                <li>Adicione um novo nó secundário a um conjunto de réplicas existente e verifique sua sincronização com `rs.printReplicationInfo()`.</li>
+                <li>Teste a consistência de leitura e escrita em um conjunto de réplicas configurando diferentes níveis de leitura e escrita.</li>
+                <li>Configure um cluster de sharding simples com um shard e um config server no MongoDB.</li>
+                <li>Habilite o sharding em uma base de dados e selecione a chave de shard apropriada para uma coleção.</li>
+                <li>Adicione um novo shard a um cluster existente e verifique a redistribuição de dados com `sh.status()`.</li>
+                <li>Teste a fragmentação de dados inserindo documentos que sejam particionados em shards diferentes.</li>
+                <li>Configure a replicação em um cluster sharded com shards replicados para alta disponibilidade.</li>
+                <li>Verifique o status do cluster de sharding com o comando `sh.status()` e analise as estatísticas de distribuição de shards.</li>
+                <li>Configure o balancer para gerenciar a distribuição de dados entre shards e analise seu impacto na performance.</li>
+                <li>Examine as opções de política de chunking em sharding e ajuste a configuração para otimizar a distribuição de dados.</li>
+                <li>Configure um shard com particionamento manual e analise a carga e desempenho com o comando `db.collection.getShardDistribution()`.</li>
+                <li>Desative temporariamente o balancer para evitar que ele migre chunks durante operações críticas.</li>
+                <li>Testa a consulta de dados distribuídos em um cluster sharded e analise a performance de uma consulta com `explain()`.</li>
+                <li>Configure um cluster de replicação com shards em regiões geográficas diferentes para alta disponibilidade global.</li>
+                <li>Implemente uma política de backups para dados em um cluster sharded e verifique a consistência dos backups.</li>
+                <li>Monitore o desempenho do cluster sharded usando ferramentas como `mongostat` e `mongotop`.</li>
+                <li>Crie e aplique índices em uma coleção sharded e observe o impacto na performance de leitura e escrita.</li>
+                <li>Realize operações de manutenção em um cluster sharded, como compactação de dados e verificação de integridade.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relacionamento entre Tabelas em MySQL</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Relacionamento-Tabelas-MySQL.css">
+</head>
+<body>
+    <header>
+        <h1>Relacionamento entre Tabelas</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/mysql-exercises.html">Voltar</a></li>
+                <!--<li><a href="mysql-projects.html">Projetos</a></li>-->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h2>O que é Relacionamento entre Tabelas?</h2>
+            <p>Em um banco de dados relacional como o MySQL, as tabelas podem se relacionar entre si para modelar melhor os dados e garantir a integridade referencial. Esses relacionamentos permitem que você combine informações de diferentes tabelas de maneira lógica.</p>
+        </section>
+
+        <!-- Tipos de Relacionamento -->
+        <section class="relationship-types">
+            <h2>Tipos de Relacionamento entre Tabelas</h2>
+            <p>Os principais tipos de relacionamento entre tabelas são:</p>
+            <ul>
+                <li><strong>Relacionamento um-para-um (1:1):</strong> Um registro em uma tabela corresponde a um único registro em outra tabela. Exemplo: cada pessoa pode ter um único documento de identidade.</li>
+                <li><strong>Relacionamento um-para-muitos (1:N):</strong> Um registro em uma tabela pode ter muitos registros correspondentes em outra tabela. Exemplo: um cliente pode fazer muitos pedidos.</li>
+                <li><strong>Relacionamento muitos-para-muitos (N:N):</strong> Muitos registros em uma tabela podem se relacionar com muitos registros em outra tabela. Exemplo: um aluno pode se matricular em várias disciplinas e uma disciplina pode ter vários alunos. Para isso, é necessário criar uma tabela intermediária.</li>
+            </ul>
+        </section>
+
+        <!-- Exemplo de Relacionamento -->
+        <section class="example-relationship">
+            <h2>Exemplo de Relacionamento em MySQL</h2>
+            <p>Veja como criar um relacionamento entre tabelas com chave primária e chave estrangeira:</p>
+            <pre><code>CREATE TABLE clientes (
+    cliente_id INT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE pedidos (
+    pedido_id INT PRIMARY KEY,
+    cliente_id INT,
+    data_pedido DATE,
+    FOREIGN KEY (cliente_id) REFERENCES clientes(cliente_id)
+);</code></pre>
+            <p>Neste exemplo, a tabela <code>pedidos</code> tem uma chave estrangeira <code>cliente_id</code> que faz referência à chave primária da tabela <code>clientes</code>. Isso cria um relacionamento um-para-muitos entre clientes e pedidos.</p>
+        </section>
+
+        <!-- Relacionamento Muitos-para-Muitos -->
+        <section class="many-to-many">
+            <h2>Exemplo de Relacionamento Muitos-para-Muitos</h2>
+            <p>Para criar um relacionamento muitos-para-muitos, você precisa de uma tabela intermediária:</p>
+            <pre><code>CREATE TABLE alunos (
+    aluno_id INT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE disciplinas (
+    disciplina_id INT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE matriculas (
+    aluno_id INT,
+    disciplina_id INT,
+    PRIMARY KEY (aluno_id, disciplina_id),
+    FOREIGN KEY (aluno_id) REFERENCES alunos(aluno_id),
+    FOREIGN KEY (disciplina_id) REFERENCES disciplinas(disciplina_id)
+);</code></pre>
+            <p>Neste exemplo, a tabela <code>matriculas</code> é usada para criar a associação entre os alunos e as disciplinas, permitindo que um aluno se matricule em várias disciplinas e uma disciplina tenha vários alunos.</p>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar o relacionamento entre tabelas em MySQL, tente resolver alguns exercícios práticos:</p>
+            <a href="../HTML/exerc-relacionamento-entre-tabelas.html" class="btn">Ver Exercícios de Relacionamento entre Tabelas</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>

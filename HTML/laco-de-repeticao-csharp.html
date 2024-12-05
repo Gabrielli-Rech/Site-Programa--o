@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laços de Repetição em C#</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/lacos-de-repeticao.css">
+</head>
+
+<body>
+    <header>
+        <h1>Laços de Repetição</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/csharp-exercises.html">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h2>O que são Laços de Repetição?</h2>
+            <p>Laços de repetição são estruturas de controle de fluxo usadas para executar um bloco de código repetidamente enquanto uma condição for verdadeira ou por um número específico de vezes. Eles são essenciais para automatizar tarefas repetitivas em programas.</p>
+        </section>
+
+        <!-- Laço de Repetição for -->
+        <section class="for-loop">
+            <h2>Laço de Repetição <code>for</code></h2>
+            <p>O laço <code>for</code> é usado quando você sabe quantas vezes um bloco de código deve ser executado. Ele é composto por três partes: inicialização, condição e incremento/atualização.</p>
+            <pre><code>for (int i = 0; i < 10; i++)
+{
+    // código a ser executado
+}</code></pre>
+            <p>Exemplo:</p>
+            <pre><code>for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine("Iteração número " + i);
+}</code></pre>
+        </section>
+
+        <!-- Laço de Repetição while -->
+        <section class="while-loop">
+            <h2>Laço de Repetição <code>while</code></h2>
+            <p>O laço <code>while</code> é usado quando você não sabe quantas vezes o bloco de código será executado. Ele continua a executar enquanto a condição for verdadeira.</p>
+            <pre><code>int i = 0;
+while (i < 5)
+{
+    // código a ser executado
+    i++;
+}</code></pre>
+            <p>Exemplo:</p>
+            <pre><code>int i = 0;
+while (i < 3)
+{
+    Console.WriteLine("Iteração número " + i);
+    i++;
+}</code></pre>
+        </section>
+
+        <!-- Laço de Repetição do-while -->
+        <section class="do-while-loop">
+            <h2>Laço de Repetição <code>do-while</code></h2>
+            <p>O laço <code>do-while</code> é similar ao <code>while</code>, mas garante que o bloco de código seja executado pelo menos uma vez antes de verificar a condição.</p>
+            <pre><code>int i = 0;
+do
+{
+    // código a ser executado
+    i++;
+} while (i < 5);</code></pre>
+            <p>Exemplo:</p>
+            <pre><code>int i = 0;
+do
+{
+    Console.WriteLine("Iteração número " + i);
+    i++;
+} while (i < 3);</code></pre>
+        </section>
+
+        <!-- Laço de Repetição foreach -->
+        <section class="foreach-loop">
+            <h2>Laço de Repetição <code>foreach</code></h2>
+            <p>O laço <code>foreach</code> é usado para iterar sobre coleções, como arrays ou listas, sem a necessidade de um índice. Ele é ideal para percorrer elementos de uma coleção.</p>
+            <pre><code>foreach (var item in colecao)
+{
+    // código a ser executado para cada item
+}</code></pre>
+            <p>Exemplo:</p>
+            <pre><code>string[] frutas = { "maçã", "banana", "cereja" };
+foreach (var fruta in frutas)
+{
+    Console.WriteLine("Fruta: " + fruta);
+}</code></pre>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar os conceitos de laços de repetição, tente resolver alguns exercícios:</p>
+            <a href="exerc-lacos-de-repeticao-csharp.html" class="btn">Ver Exercícios de Laços de Repetição</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+
+</html>

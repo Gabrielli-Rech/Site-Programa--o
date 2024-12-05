@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos SQL Básicos para MySQL</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Variaveis-e-tipos-de-dados-ex-js.css">
+</head>
+
+<body>
+    <header>
+        <h1>Comandos SQL Básicos para MySQL</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/mysql-exercises.html">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Introdução -->
+        <section class="intro">
+            <h2>O que é SQL?</h2>
+            <p>SQL (Structured Query Language) é a linguagem padrão para manipulação e consulta de bancos de dados relacionais. Com SQL, você pode criar, ler, atualizar e deletar dados em um banco de dados.</p>
+        </section>
+
+        <!-- Comando SELECT -->
+        <section class="select-command">
+            <h2>Comando <code>SELECT</code></h2>
+            <p>O comando <code>SELECT</code> é usado para consultar dados em uma tabela.</p>
+            <pre><code>SELECT * FROM clientes;</code></pre>
+            <p>Esse comando retorna todas as colunas e linhas da tabela <code>clientes</code>.</p>
+            <p>Para selecionar colunas específicas:</p>
+            <pre><code>SELECT nome, idade FROM clientes;</code></pre>
+        </section>
+
+        <!-- Comando INSERT -->
+        <section class="insert-command">
+            <h2>Comando <code>INSERT</code></h2>
+            <p>O comando <code>INSERT</code> é usado para adicionar novos dados a uma tabela.</p>
+            <pre><code>INSERT INTO clientes (nome, idade, cidade) VALUES ('Maria', 30, 'São Paulo');</code></pre>
+        </section>
+
+        <!-- Comando UPDATE -->
+        <section class="update-command">
+            <h2>Comando <code>UPDATE</code></h2>
+            <p>O comando <code>UPDATE</code> é usado para modificar dados existentes em uma tabela.</p>
+            <pre><code>UPDATE clientes SET idade = 31 WHERE nome = 'Maria';</code></pre>
+            <p>Esse comando atualiza a idade de todos os clientes com o nome 'Maria'.</p>
+        </section>
+
+        <!-- Comando DELETE -->
+        <section class="delete-command">
+            <h2>Comando <code>DELETE</code></h2>
+            <p>O comando <code>DELETE</code> é usado para remover dados de uma tabela.</p>
+            <pre><code>DELETE FROM clientes WHERE nome = 'Maria';</code></pre>
+            <p>Esse comando remove todos os registros da tabela <code>clientes</code> onde o nome é 'Maria'.</p>
+        </section>
+
+        <!-- Comando CREATE TABLE -->
+        <section class="create-table">
+            <h2>Comando <code>CREATE TABLE</code></h2>
+            <p>O comando <code>CREATE TABLE</code> é usado para criar uma nova tabela em um banco de dados.</p>
+            <pre><code>CREATE TABLE clientes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(50),
+    idade INT,
+    cidade VARCHAR(50)
+);</code></pre>
+            <p>Esse comando cria uma tabela chamada <code>clientes</code> com quatro colunas.</p>
+        </section>
+
+        <!-- Comando DROP TABLE -->
+        <section class="drop-table">
+            <h2>Comando <code>DROP TABLE</code></h2>
+            <p>O comando <code>DROP TABLE</code> é usado para excluir uma tabela do banco de dados.</p>
+            <pre><code>DROP TABLE clientes;</code></pre>
+        </section>
+
+        <!-- Comando ALTER TABLE -->
+        <section class="alter-table">
+            <h2>Comando <code>ALTER TABLE</code></h2>
+            <p>O comando <code>ALTER TABLE</code> é usado para modificar a estrutura de uma tabela existente.</p>
+            <pre><code>ALTER TABLE clientes ADD email VARCHAR(100);</code></pre>
+            <p>Esse comando adiciona uma coluna chamada <code>email</code> à tabela <code>clientes</code>.</p>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar os conceitos de comandos SQL em MySQL, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-comandos-sql-basicos.html" class="btn">Ver Exercícios de Comandos SQL</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+
+</html>

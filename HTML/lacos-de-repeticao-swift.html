@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laços de Repetição em Swift</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Lacos-de-Repeticao-Swift.css">
+</head>
+<body>
+    <header>
+        <h1>Laços de Repetição</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/swift-exercises.html">Voltar</a></li>
+                <!--<li><a href="swift-projects.html">Projetos</a></li>-->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h2>O que são Laços de Repetição?</h2>
+            <p>Laços de repetição são estruturas de controle que permitem executar um bloco de código múltiplas vezes enquanto uma condição é verdadeira. Eles são essenciais para automatizar tarefas repetitivas e processar dados em Swift.</p>
+        </section>
+
+        <!-- Laço for-in -->
+        <section class="for-in-loop">
+            <h2>O Laço <code>for-in</code></h2>
+            <p>O laço <code>for-in</code> é usado para iterar sobre coleções como arrays, dicionários e intervalos de números.</p>
+            <pre><code>let frutas = ["maçã", "banana", "laranja"]
+for fruta in frutas {
+    print(fruta)
+}</code></pre>
+            <p>Este exemplo imprime cada fruta na lista no console.</p>
+        </section>
+
+        <!-- Laço for com intervalos -->
+        <section class="for-loop-range">
+            <h2>Laço <code>for</code> com Intervalos</h2>
+            <p>Você pode usar o laço <code>for</code> com intervalos para repetir um bloco de código um número específico de vezes:</p>
+            <pre><code>for i in 1...5 {
+    print(i)
+}</code></pre>
+            <p>Este exemplo imprime os números de 1 a 5 no console.</p>
+        </section>
+
+        <!-- Laço while -->
+        <section class="while-loop">
+            <h2>O Laço <code>while</code></h2>
+            <p>O laço <code>while</code> é utilizado quando não se sabe o número de repetições de antemão. O bloco de código é executado enquanto a condição for verdadeira.</p>
+            <pre><code>var i = 0
+while i < 5 {
+    print(i)
+    i += 1
+}</code></pre>
+            <p>Este exemplo imprime os números de 0 a 4 no console.</p>
+        </section>
+
+        <!-- Laço repeat-while -->
+        <section class="repeat-while-loop">
+            <h2>O Laço <code>repeat-while</code></h2>
+            <p>O laço <code>repeat-while</code> é semelhante ao <code>while</code>, mas garante que o bloco de código seja executado pelo menos uma vez.</p>
+            <pre><code>var i = 0
+repeat {
+    print(i)
+    i += 1
+} while i < 5</code></pre>
+            <p>Este exemplo também imprime os números de 0 a 4 no console.</p>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar os conceitos de laços de repetição em Swift, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-lacos-de-repeticoes-swift.html" class="btn">Ver Exercícios de Laços de Repetição</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>

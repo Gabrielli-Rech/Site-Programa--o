@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicializando Repositórios Git</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Inicializando-Repositorios-Git.css">
+</head>
+<body>
+    <header>
+        <h1>Inicializando Repositórios</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/git-exercises.html">Voltar</a></li>
+                <!--<li><a href="git-projects.html">Projetos</a></li>-->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h2>O que é um Repositório Git?</h2>
+            <p>Um repositório Git é um local onde os arquivos do projeto são armazenados e gerenciados usando o sistema de controle de versão Git. Ele permite que você acompanhe as mudanças, colabore com outros desenvolvedores e gerencie diferentes versões do código de forma eficiente.</p>
+        </section>
+
+        <!-- Inicializando um Repositório -->
+        <section class="initializing-repo">
+            <h2>Como Inicializar um Repositório Git</h2>
+            <p>Para criar um repositório Git em um diretório de projeto existente, você precisa usar o comando <code>git init</code>.</p>
+            <p>Passos para inicializar um repositório:</p>
+            <ol>
+                <li>Navegue até o diretório do projeto usando o terminal ou prompt de comando.</li>
+                <li>Execute o comando <code>git init</code>.</li>
+                <li>Isso criará um subdiretório chamado <code>.git</code>, que contém todos os arquivos necessários para o repositório.</li>
+            </ol>
+
+            <p>Exemplo de inicialização de repositório:</p>
+            <pre><code>cd meu-projeto
+git init</code></pre>
+        </section>
+
+        <!-- Adicionando e Comitando Arquivos -->
+        <section class="adding-committing">
+            <h2>Adicionando e Comitando Arquivos</h2>
+            <p>Depois de inicializar o repositório, você pode adicionar arquivos e fazer o primeiro commit.</p>
+            <p>Para adicionar arquivos, use:</p>
+            <pre><code>git add .</code></pre>
+            <p>Para fazer o commit, use:</p>
+            <pre><code>git commit -m "Meu primeiro commit"</code></pre>
+
+            <p>Explicação:</p>
+            <ul>
+                <li><strong><code>git add .</code></strong>: Adiciona todos os arquivos do diretório atual para serem rastreados pelo Git.</li>
+                <li><strong><code>git commit -m "Mensagem"</code></strong>: Cria um novo commit com os arquivos adicionados e uma mensagem descritiva.</li>
+            </ul>
+        </section>
+
+        <!-- Conectando ao Repositório Remoto -->
+        <section class="connecting-remote">
+            <h2>Conectando ao Repositório Remoto</h2>
+            <p>Para conectar o repositório local a um repositório remoto, use o comando <code>git remote add</code>.</p>
+            <p>Exemplo de comando para conectar a um repositório remoto:</p>
+            <pre><code>git remote add origin https://github.com/usuario/meu-repositorio.git</code></pre>
+
+            <p>Para enviar as alterações para o repositório remoto, use:</p>
+            <pre><code>git push -u origin master</code></pre>
+
+            <p>Explicação:</p>
+            <ul>
+                <li><strong><code>git remote add origin</code></strong>: Define a URL do repositório remoto chamado "origin".</li>
+                <li><strong><code>git push -u origin master</code></strong>: Envia as alterações da branch "master" para o repositório remoto "origin".</li>
+            </ul>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar a inicialização e uso de repositórios Git, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-inicializando-repositorios-git.html" class="btn">Ver Exercícios de Repositórios Git</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>

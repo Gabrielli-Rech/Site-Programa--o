@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/desafios-projetos.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios Avançados PostgreSQL</h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML/postgresql-exercises.html">Voltar</a></li>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Nível Fácil</h2>
+            <ol>
+                <li>Escreva uma consulta que liste todas as tabelas em um banco de dados PostgreSQL.</li>
+                <li>Crie uma função que retorne o número de linhas em uma tabela específica.</li>
+                <li>Use a cláusula <code>DISTINCT</code> para listar valores únicos de uma coluna.</li>
+                <li>Escreva uma consulta que utilize a função <code>COUNT</code> para contar o número de registros em uma tabela.</li>
+                <li>Crie uma consulta que utilize a função <code>SUM</code> para calcular o total de uma coluna numérica.</li>
+                <li>Escreva uma consulta que utilize a cláusula <code>GROUP BY</code> para agrupar resultados de uma tabela.</li>
+                <li>Utilize a função <code>AVG</code> para calcular a média de uma coluna de valores numéricos.</li>
+                <li>Crie uma consulta que use a cláusula <code>WHERE</code> para filtrar resultados de acordo com um critério.</li>
+                <li>Escreva uma consulta com a função <code>MAX</code> para encontrar o maior valor em uma coluna.</li>
+                <li>Use a função <code>MIN</code> para encontrar o menor valor em uma coluna de dados.</li>
+                <li>Crie uma consulta com <code>JOIN</code> para combinar duas tabelas com base em uma chave estrangeira.</li>
+                <li>Utilize a cláusula <code>ORDER BY</code> para ordenar os resultados de uma consulta em ordem crescente.</li>
+                <li>Escreva uma consulta que utilize a função <code>COALESCE</code> para lidar com valores <code>NULL</code>.</li>
+                <li>Crie uma consulta que use a cláusula <code>LIMIT</code> para retornar apenas um número específico de linhas.</li>
+                <li>Escreva uma consulta que utilize <code>INNER JOIN</code> e <code>LEFT JOIN</code> em uma única consulta.</li>
+                <li>Crie uma tabela com um índice em uma coluna específica.</li>
+                <li>Escreva uma consulta que utilize a função <code>TO_CHAR</code> para formatar uma data.</li>
+                <li>Crie uma consulta que utilize a função <code>DATE_PART</code> para extrair partes de uma data.</li>
+                <li>Escreva uma consulta que use a função <code>STRING_AGG</code> para concatenar valores de uma coluna.</li>
+                <li>Utilize a cláusula <code>EXCEPT</code> para encontrar registros que estão em uma tabela, mas não na outra.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Nível Médio</h2>
+            <ol>
+                <li>Crie uma subconsulta para encontrar a média de uma coluna e filtrar registros acima dessa média.</li>
+                <li>Escreva uma consulta que use a função <code>ARRAY</code> para armazenar e acessar elementos de um array.</li>
+                <li>Crie uma função armazenada para calcular o fatorial de um número.</li>
+                <li>Escreva uma consulta que utilize a função <code>ROW_NUMBER()</code> para numerar os registros de uma tabela.</li>
+                <li>Crie uma consulta que utilize a cláusula <code>CASE</code> para retornar diferentes valores de acordo com condições.</li>
+                <li>Escreva uma consulta que utilize a função <code>LAG()</code> para comparar valores em linhas anteriores.</li>
+                <li>Crie uma consulta com a função <code>CROSS JOIN</code> e explique o resultado.</li>
+                <li>Utilize a função <code>JSONB</code> para consultar um campo JSONB em uma tabela.</li>
+                <li>Escreva uma consulta com <code>DISTINCT ON</code> para selecionar registros únicos com base em uma coluna específica.</li>
+                <li>Crie uma consulta que utilize a função <code>HAVING</code> para filtrar grupos de registros.</li>
+                <li>Escreva uma consulta que utilize a função <code>STRING_TO_ARRAY</code> para dividir uma string em um array.</li>
+                <li>Crie uma consulta que utilize a função <code>TO_TIMESTAMP</code> para converter uma string em um timestamp.</li>
+                <li>Utilize a cláusula <code>UNION</code> para combinar o resultado de duas consultas diferentes.</li>
+                <li>Escreva uma consulta para encontrar os registros que aparecem mais de uma vez em uma tabela.</li>
+                <li>Crie uma consulta que utilize a função <code>GENERATE_SERIES</code> para gerar uma série de números.</li>
+                <li>Escreva uma consulta que utilize <code>FILTER</code> para calcular somas condicionais.</li>
+                <li>Crie uma função para atualizar um registro em uma tabela específica.</li>
+                <li>Utilize a cláusula <code>INTERSECT</code> para encontrar registros que estão em ambas as tabelas.</li>
+                <li>Escreva uma consulta que utilize a função <code>COUNT</code> com a cláusula <code>GROUP BY</code>.</li>
+                <li>Crie uma consulta que utilize a função <code>RANGE</code> para trabalhar com intervalos de datas.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Nível Difícil</h2>
+            <ol>
+                <li>Escreva uma consulta que utilize a função <code>PL/pgSQL</code> para criar um bloco anônimo de código.</li>
+                <li>Crie uma tabela que tenha uma chave primária composta por duas colunas.</li>
+                <li>Utilize uma subconsulta correlacionada para encontrar registros com base em outra tabela.</li>
+                <li>Crie uma função que calcule a diferença entre duas datas em dias úteis.</li>
+                <li>Escreva uma consulta que utilize <code>WITH RECURSIVE</code> para criar uma árvore hierárquica de dados.</li>
+                <li>Crie uma consulta que utilize a função <code>pg_stat_activity</code> para monitorar consultas em execução.</li>
+                <li>Escreva uma consulta para buscar dados em uma tabela particionada.</li>
+                <li>Utilize a função <code>pg_trgm</code> para encontrar correspondências de texto aproximadas em uma tabela.</li>
+                <li>Crie um índice <code>GIN</code> em uma coluna que armazena dados JSONB.</li>
+                <li>Escreva uma consulta que utilize <code>EXPLAIN ANALYZE</code> para analisar o plano de execução de uma consulta.</li>
+                <li>Crie um script para realizar backup e restauração de um banco de dados PostgreSQL.</li>
+                <li>Escreva uma consulta que utilize <code>pg_cron</code> para agendar tarefas de manutenção do banco de dados.</li>
+                <li>Crie um procedimento armazenado que faça a importação de dados de um arquivo CSV para uma tabela.</li>
+                <li>Utilize a função <code>pg_stat_statements</code> para encontrar as consultas mais lentas do banco de dados.</li>
+                <li>Escreva uma consulta para realizar a replicação de dados entre duas tabelas diferentes.</li>
+                <li>Crie uma função que faça a compressão de dados em uma tabela para economizar espaço.</li>
+                <li>Utilize <code>PL/pgSQL</code> para criar uma função que faça a verificação de integridade referencial entre tabelas.</li>
+                <li>Escreva uma consulta que utilize a função <code>pg_locks</code> para identificar bloqueios de banco de dados.</li>
+                <li>Crie um script de migração para atualizar a estrutura de uma tabela existente.</li>
+                <li>Use a função <code>pg_restore</code> para restaurar um banco de dados a partir de um arquivo de backup.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Nível Desafio</h2>
+            <ol>
+                <li>Escreva uma consulta que utilize a extensão <code>postgis</code> para encontrar pontos próximos a uma localização.</li>
+                <li>Crie uma tabela temporária com dados de uma consulta e use-a em outra consulta subsequente.</li>
+                <li>Escreva uma função que utiliza o operador <code>@@</code> para buscar por dados de texto com um índice <code>GIN</code>.</li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>
+

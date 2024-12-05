@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/desafios-projetos.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios de Índices e Desempenho</h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML/mongodb-exercises.html">Voltar</a></li>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Exercícios Fáceis</h2>
+            <ul>
+                <li>Crie um índice simples em um campo de uma coleção e verifique se ele foi criado com `db.collection.getIndexes()`.</li>
+                <li>Use o comando `db.collection.createIndex()` para criar um índice composto em dois campos de uma coleção.</li>
+                <li>Verifique a diferença de desempenho em consultas com e sem índice em uma coleção.</li>
+                <li>Use o comando `explain()` para analisar o plano de execução de uma consulta com e sem índice.</li>
+                <li>Crie um índice único para garantir a unicidade em um campo específico de uma coleção.</li>
+                <li>Remova um índice com o comando `db.collection.dropIndex()` e verifique se ele foi removido.</li>
+                <li>Verifique o uso de memória de índices com o comando `db.collection.stats()`.</li>
+                <li>Crie um índice em um campo que seja um array e use a consulta `$elemMatch` para buscar elementos específicos.</li>
+                <li>Teste o impacto de um índice em uma consulta de busca simples e uma consulta de projeção.</li>
+                <li>Verifique quais índices estão em uso em uma coleção com `db.collection.indexStats()`.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Exercícios Médios</h2>
+            <ul>
+                <li>Crie um índice composto em uma coleção e utilize a cláusula `db.collection.find().hint()` para forçar o uso desse índice.</li>
+                <li>Utilize o comando `db.collection.aggregate()` com uma etapa de `$lookup` e crie índices apropriados para otimizar o desempenho.</li>
+                <li>Analise o desempenho de consultas em uma coleção com diferentes tipos de índices: simples, compostos e de texto.</li>
+                <li>Use a estratégia de índices geoespaciais para otimizar consultas em campos de localização (`2dsphere`).</li>
+                <li>Crie um índice de texto e execute uma consulta de texto completo para avaliar seu desempenho.</li>
+                <li>Crie uma coleção de exemplo com dados e implemente um índice de TTL para expirar documentos automaticamente.</li>
+                <li>Utilize `db.collection.createIndex()` para criar um índice de fragmentação em um shard key em um cluster MongoDB.</li>
+                <li>Verifique o impacto da fragmentação em índices com `db.collection.stats()` e otimize-os se necessário.</li>
+                <li>Teste e compare a performance de consultas com índices criados em diferentes ordens de campos.</li>
+                <li>Implemente uma estratégia de índice para uma coleção com grande volume de dados e alta taxa de inserção.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Exercícios Difíceis</h2>
+            <ul>
+                <li>Desenvolva uma estratégia de indexação para uma coleção com múltiplos tipos de consultas e dados complexos.</li>
+                <li>Crie um índice para uma coleção que contenha dados de uma aplicação de análise em tempo real e verifique seu impacto.</li>
+                <li>Implemente e compare os índices de um campo com e sem índice de prefixo.</li>
+                <li>Testa o desempenho de consultas de agregação usando a etapa `$sort` e use índices adequados para otimizar.</li>
+                <li>Use `db.collection.aggregate()` para combinar e agrupar documentos com o suporte de índices e verifique o tempo de execução.</li>
+                <li>Crie e compare índices para dados com distribuição desigual e observe o efeito de `sparse` e `unique`.</li>
+                <li>Verifique o efeito de índices em operações de escrita e desenvolva estratégias para minimizar o impacto.</li>
+                <li>Implemente um sistema de monitoramento para identificar índices que não estão sendo usados com `db.collection.indexStats()`.</li>
+                <li>Desenvolva uma estratégia de cache para melhorar a performance de consultas em uma coleção de leitura intensiva.</li>
+                <li>Use o `db.collection.explain('executionStats')` para analisar o desempenho de consultas complexas e otimize com índices.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Desafios</h2>
+            <ul>
+                <li>Implemente uma estratégia de indexação híbrida para dados em um banco de dados de análise de logs e verifique o tempo de resposta.</li>
+                <li>Teste a combinação de índices de vários campos com diferentes estratégias de leitura e escrita.</li>
+                <li>Crie uma consulta de agregação complexa com etapas de `$match`, `$group` e `$sort` e otimize o desempenho com índices.</li>
+                <li>Implemente um sistema de gerenciamento de índices para automatizar a criação e remoção de índices com base em estatísticas de uso.</li>
+                <li>Desenvolva uma aplicação de teste para medir o impacto de diferentes configurações de índices em tempo real.</li>
+                <li>Crie uma coleção com documentos grandes e analise a performance de índices em consultas de busca por palavras-chave.</li>
+                <li>Desenvolva um processo para auditar índices em uso e criar relatórios sobre eficiência e necessidade de remoção.</li>
+                <li>Implemente uma política de expiração de índices e teste o impacto no desempenho após a remoção.</li>
+                <li>Utilize `db.collection.createIndex()` para criar um índice com `wildcard` em campos dinâmicos de documentos.</li>
+                <li>Testa a performance de consultas com um índice de `hashed` em comparação com um índice `B-tree` em um campo de chave primária.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>
+

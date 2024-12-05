@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas Condicionais em Ruby</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Variaveis-e-tipos-de-dados-ex-js.css">
+</head>
+
+<body>
+    <header>
+        <h1>Estruturas Condicionais em Ruby</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/ruby-exercises.html">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Introdução -->
+        <section class="intro">
+            <h2>O que são Estruturas Condicionais?</h2>
+            <p>Estruturas condicionais são usadas para executar diferentes blocos de código com base em uma condição
+                específica. Em Ruby, isso permite que você controle o fluxo do programa de forma lógica e dinâmica.</p>
+        </section>
+
+        <!-- Estrutura if -->
+        <section class="if-structure">
+            <h2>Estrutura <code>if</code></h2>
+            <p>A estrutura <code>if</code> é usada para executar um bloco de código se uma condição for verdadeira.</p>
+            <pre><code>if condicao
+  puts "A condição é verdadeira"
+end</code></pre>
+            <p>Se a condição for falsa, o bloco de código não será executado.</p>
+        </section>
+
+        <!-- Estrutura if-else -->
+        <section class="if-else-structure">
+            <h2>Estrutura <code>if-else</code></h2>
+            <p>A estrutura <code>if-else</code> permite executar um bloco de código se a condição for verdadeira e outro
+                bloco se for falsa.</p>
+            <pre><code>if condicao
+  puts "A condição é verdadeira"
+else
+  puts "A condição é falsa"
+end</code></pre>
+        </section>
+
+        <!-- Estrutura elsif -->
+        <section class="elsif-structure">
+            <h2>Estrutura <code>elsif</code></h2>
+            <p>A estrutura <code>elsif</code> é usada quando você precisa verificar múltiplas condições. Se a primeira
+                condição for falsa, o Ruby testa a condição <code>elsif</code> e assim por diante.</p>
+            <pre><code>if condicao1
+  puts "Condição 1 é verdadeira"
+elsif condicao2
+  puts "Condição 2 é verdadeira"
+else
+  puts "Nenhuma das condições é verdadeira"
+end</code></pre>
+        </section>
+
+        <!-- Estrutura case -->
+        <section class="case-structure">
+            <h2>Estrutura <code>case</code></h2>
+            <p>A estrutura <code>case</code> é uma alternativa para usar múltiplos <code>if-elsif</code> quando você
+                precisa comparar um valor com várias opções diferentes.</p>
+            <pre><code>case variavel
+when "valor1"
+  puts "A variável é igual a valor1"
+when "valor2"
+  puts "A variável é igual a valor2"
+else
+  puts "A variável não é igual a nenhum dos valores"
+end</code></pre>
+        </section>
+
+        <!-- Operador ternário -->
+        <section class="ternary-operator">
+            <h2>Operador Ternário</h2>
+            <p>O operador ternário é uma forma compacta de escrever uma estrutura <code>if-else</code>. Ele é usado para
+                uma única expressão condicional.</p>
+            <pre><code>resultado = condicao ? "A condição é verdadeira" : "A condição é falsa"
+puts resultado</code></pre>
+            <p>É uma maneira prática de atribuir um valor a uma variável com base em uma condição.</p>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar os conceitos de estruturas condicionais em Ruby, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-estruturas-condicionais-ruby.html" class="btn">Ver Exercícios de Estruturas Condicionais</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+
+</html>

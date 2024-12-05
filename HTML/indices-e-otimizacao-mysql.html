@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/desafios-projetos.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios de Índices e Otimização</h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML/mysql-exercises.html">Voltar</a></li>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Exercícios Fáceis</h2>
+            <ul>
+                <li>Crie um índice simples em um campo de uma tabela e verifique sua criação com `SHOW INDEX FROM table_name`.</li>
+                <li>Adicione um índice composto em duas colunas de uma tabela e veja a diferença de desempenho em uma consulta de busca.</li>
+                <li>Verifique o uso de índices em consultas com `EXPLAIN` e observe o impacto de sua aplicação.</li>
+                <li>Remova um índice com o comando `DROP INDEX` e verifique a consulta após sua remoção.</li>
+                <li>Crie um índice único para garantir que os valores em uma coluna sejam únicos.</li>
+                <li>Verifique o tipo de índice criado automaticamente pelo MySQL em uma chave primária.</li>
+                <li>Crie um índice em uma coluna que tenha valores nulos e observe o impacto na consulta.</li>
+                <li>Analise a performance de uma consulta com e sem índice e explique a diferença de tempo de execução.</li>
+                <li>Teste a criação de um índice com a cláusula `USING BTREE` e verifique o comportamento de busca.</li>
+                <li>Use o comando `SHOW CREATE TABLE` para visualizar os índices de uma tabela existente.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Exercícios Médios</h2>
+            <ul>
+                <li>Crie um índice full-text em uma coluna de texto e execute uma busca com `MATCH ... AGAINST`.</li>
+                <li>Adicione um índice `HASH` em uma coluna de uma tabela e compare seu desempenho em consultas de busca.</li>
+                <li>Analise o plano de execução de uma consulta usando `EXPLAIN ANALYZE` e otimize a consulta.</li>
+                <li>Crie um índice de prefixo em uma coluna de string e observe seu uso em consultas de busca parcial.</li>
+                <li>Implemente um índice de múltiplas colunas e teste sua utilização em uma consulta que utilize todas as colunas no `WHERE`.</li>
+                <li>Explore o uso de índices `SPATIAL` para dados geoespaciais e realize uma consulta geoespacial.</li>
+                <li>Verifique a existência de índices redundantes em uma tabela e remova-os para otimizar o banco de dados.</li>
+                <li>Crie um índice `VISIBLE` e `INVISIBLE` e teste como ele afeta as consultas.</li>
+                <li>Use a ferramenta `pt-index-usage` do Percona Toolkit para encontrar índices não utilizados.</li>
+                <li>Otimize uma consulta complexa com `EXPLAIN` e adicione índices apropriados para melhorar o desempenho.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Exercícios Difíceis</h2>
+            <ul>
+                <li>Implemente uma estratégia de indexação para uma tabela com grande volume de dados e alta taxa de inserção.</li>
+                <li>Crie índices condicionalmente usando `WHERE` em `CREATE INDEX` e teste sua eficácia.</li>
+                <li>Analise a fragmentação de índices em uma tabela com `OPTIMIZE TABLE` e compare o tempo de resposta antes e depois.</li>
+                <li>Teste e compare o uso de índices `B-tree` e `Hash` em uma tabela para diferentes tipos de consultas.</li>
+                <li>Implemente uma estratégia de particionamento de tabela e observe a utilização de índices em uma tabela particionada.</li>
+                <li>Otimize uma consulta que envolve várias tabelas com `JOIN` e use índices de forma eficiente para reduzir a latência.</li>
+                <li>Use `EXPLAIN PARTITIONS` para analisar como uma consulta está distribuída em partições de uma tabela.</li>
+                <li>Analise e otimize consultas que envolvem `GROUP BY` e `ORDER BY` usando índices adequados.</li>
+                <li>Implemente um índice de prioridade para acelerar consultas em uma tabela com dados de alta rotatividade.</li>
+                <li>Crie índices em colunas de uma tabela que são frequentemente usadas em filtros de busca e atualizações simultâneas.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Desafios</h2>
+            <ul>
+                <li>Desenvolva uma estratégia de indexação para uma tabela de e-commerce com milhões de produtos e otimização de busca.</li>
+                <li>Crie uma consulta complexa em um banco de dados com múltiplas tabelas e use índices para minimizar a carga no servidor.</li>
+                <li>Teste a performance de índices usando diferentes tamanhos de dados e volumes de leitura e escrita.</li>
+                <li>Desenvolva um processo para auditar índices existentes e identificar aqueles que podem ser removidos ou ajustados.</li>
+                <li>Implemente uma consulta de análise de dados que use `PARTITION BY` e índices adequados para melhorar o desempenho.</li>
+                <li>Crie um mecanismo para atualizar índices de forma automática com base em métricas de desempenho.</li>
+                <li>Desenvolva um processo para monitorar e alertar sobre índices não utilizados ou que impactam negativamente o desempenho.</li>
+                <li>Teste e otimize consultas complexas que envolvam subconsultas com uso de índices.</li>
+                <li>Implemente um script para comparar a performance de consultas em tabelas com e sem índices.</li>
+                <li>Crie e teste uma estratégia de manutenção de índices em um sistema de produção para garantir alta disponibilidade e desempenho.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>
+

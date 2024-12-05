@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laços de Repetição em Ruby</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Variaveis-e-tipos-de-dados-ex-js.css">
+</head>
+
+<body>
+    <header>
+        <h1>Laços de Repetição</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/ruby-exercises.html">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Introdução -->
+        <section class="intro">
+            <h2>O que são Laços de Repetição?</h2>
+            <p>Laços de repetição são estruturas de controle que permitem a execução de um bloco de código múltiplas
+                vezes, com base em uma condição. Em Ruby, existem diferentes tipos de laços que podem ser usados para
+                criar loops em seu código.</p>
+        </section>
+
+        <!-- Laço while -->
+        <section class="while-loop">
+            <h2>Laço <code>while</code></h2>
+            <p>O laço <code>while</code> executa um bloco de código enquanto a condição especificada for verdadeira.</p>
+            <pre><code>contador = 0
+while contador < 5
+  puts "Contador é #{contador}"
+  contador += 1
+end</code></pre>
+            <p>Se a condição for falsa na primeira verificação, o bloco de código não será executado.</p>
+        </section>
+
+        <!-- Laço until -->
+        <section class="until-loop">
+            <h2>Laço <code>until</code></h2>
+            <p>O laço <code>until</code> é o oposto do <code>while</code> e executa um bloco de código enquanto a
+                condição for falsa.</p>
+            <pre><code>contador = 0
+until contador >= 5
+  puts "Contador é #{contador}"
+  contador += 1
+end</code></pre>
+            <p>O loop termina assim que a condição se tornar verdadeira.</p>
+        </section>
+
+        <!-- Laço for -->
+        <section class="for-loop">
+            <h2>Laço <code>for</code></h2>
+            <p>O laço <code>for</code> é usado para iterar sobre uma faixa de valores. É uma maneira de repetir um bloco
+                de código um número específico de vezes.</p>
+            <pre><code>for i in 0..4
+  puts "Valor de i: #{i}"
+end</code></pre>
+            <p>Esse loop percorre todos os valores de 0 a 4, inclusive.</p>
+        </section>
+
+        <!-- Método each -->
+        <section class="each-method">
+            <h2>Método <code>each</code></h2>
+            <p>O método <code>each</code> é usado para iterar sobre elementos de uma coleção, como arrays e hashes.</p>
+            <pre><code>[1, 2, 3, 4, 5].each do |numero|
+  puts "Número: #{numero}"
+end</code></pre>
+            <p>Esse método é muito útil para percorrer elementos de uma coleção de forma elegante e fácil de ler.</p>
+        </section>
+
+        <!-- Laço de repetição com break e next -->
+        <section class="break-next">
+            <h2>Comandos <code>break</code> e <code>next</code></h2>
+            <p>Os comandos <code>break</code> e <code>next</code> podem ser usados para controlar a execução dos laços.
+            </p>
+            <pre><code>for i in 0..10
+  break if i == 5
+  next if i.even?
+  puts "Valor ímpar: #{i}"
+end</code></pre>
+            <p><code>break</code> interrompe o loop quando a condição é atendida, e <code>next</code> pula a iteração
+                atual quando a condição é atendida.</p>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar os conceitos de laços de repetição em Ruby, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-lacos-de-repeticao-ruby.html" class="btn">Ver Exercícios de Laços de Repetição</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+
+</html>

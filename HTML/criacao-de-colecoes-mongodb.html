@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Coleções no MongoDB</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Variaveis-e-tipos-de-dados-ex-js.css">
+</head>
+
+<body>
+    <header>
+        <h1>Criação de Coleções no MongoDB</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/mongodb-exercises.html">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h2>O que são Coleções no MongoDB?</h2>
+            <p>No MongoDB, uma coleção é um agrupamento de documentos, equivalente a uma tabela em bancos de dados relacionais. Coleções são armazenadas em bases de dados e podem conter documentos com estruturas diferentes.</p>
+        </section>
+
+        <!-- Criação de Coleções -->
+        <section class="create-collection">
+            <h2>Criação de Coleções</h2>
+            <p>Para criar uma coleção no MongoDB, você pode usar o método <code>db.createCollection()</code> ou simplesmente inserir um documento em uma coleção inexistente, que será criada automaticamente.</p>
+            <p><strong>Usando <code>db.createCollection()</code>:</strong></p>
+            <pre><code>db.createCollection("nome_da_colecao");</code></pre>
+            <p>Exemplo de criação de uma coleção chamada "clientes":</p>
+            <pre><code>db.createCollection("clientes");</code></pre>
+            <p><strong>Inserindo um documento em uma coleção inexistente:</strong></p>
+            <pre><code>db.clientes.insertOne({ nome: "Ana", idade: 30, cidade: "São Paulo" });</code></pre>
+            <p>Se a coleção "clientes" não existir, ela será criada automaticamente ao inserir o primeiro documento.</p>
+        </section>
+
+        <!-- Estrutura de Coleções -->
+        <section class="collection-structure">
+            <h2>Estrutura de Coleções</h2>
+            <p>As coleções podem conter documentos com diferentes estruturas. Cada documento é armazenado em formato JSON-like, e pode ter campos e tipos de dados variados.</p>
+            <p>Exemplo de documentos em uma coleção "clientes":</p>
+            <pre><code>db.clientes.insertMany([
+    { nome: "Carlos", idade: 25, cidade: "Rio de Janeiro" },
+    { nome: "Mariana", idade: 28, cidade: "Belo Horizonte" },
+    { nome: "Lucas", idade: 22, cidade: "Porto Alegre" }
+]);</code></pre>
+            <p>Os documentos podem ter diferentes campos e tipos de dados, permitindo flexibilidade na modelagem de dados.</p>
+        </section>
+
+        <!-- Comandos para Verificar Coleções -->
+        <section class="list-collections">
+            <h2>Listando e Verificando Coleções</h2>
+            <p>Para listar todas as coleções em uma base de dados, use o comando <code>show collections</code>:</p>
+            <pre><code>show collections;</code></pre>
+            <p>Para verificar a existência de uma coleção específica, use o método <code>db.getCollectionNames()</code>:</p>
+            <pre><code>db.getCollectionNames();</code></pre>
+        </section>
+
+        <!-- Exclusão de Coleções -->
+        <section class="drop-collection">
+            <h2>Exclusão de Coleções</h2>
+            <p>Para excluir uma coleção existente, use o comando <code>db.collection.drop()</code>.</p>
+            <pre><code>db.clientes.drop();</code></pre>
+            <p>Isso removerá a coleção "clientes" e todos os seus documentos.</p>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar a criação e manipulação de coleções, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-criacao-de-colecoes-mongodb.html" class="btn">Ver Exercícios de MongoDB</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+
+</html>

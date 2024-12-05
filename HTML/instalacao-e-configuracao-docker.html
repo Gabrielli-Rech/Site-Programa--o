@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalação e Configuração do Docker</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Instalacao-Configuracao-Docker.css">
+</head>
+<body>
+    <header>
+        <h1>Instalação e Configuração</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/docker-exercises.html">Voltar</a></li>
+                <!--<li><a href="docker-projects.html">Projetos</a></li>-->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h2>O que é o Docker?</h2>
+            <p>O Docker é uma plataforma que permite desenvolver, enviar e executar aplicações em containers. Containers são leves e isolados, permitindo que você execute aplicações em qualquer ambiente de forma consistente.</p>
+        </section>
+
+        <!-- Instalando o Docker -->
+        <section class="installing-docker">
+            <h2>Instalando o Docker</h2>
+            <p>A instalação do Docker pode variar de acordo com o sistema operacional. Veja como instalar o Docker nos principais sistemas:</p>
+
+            <!-- Instalação no Windows -->
+            <h3>Instalação no Windows</h3>
+            <p>Siga estes passos para instalar o Docker no Windows:</p>
+            <ol>
+                <li>Certifique-se de que o Windows 10 ou versão superior está atualizado.</li>
+                <li>Baixe o Docker Desktop para Windows em <a href="https://www.docker.com/products/docker-desktop/" target="_blank">docker.com</a>.</li>
+                <li>Execute o instalador e siga as instruções na tela.</li>
+                <li>Após a instalação, inicie o Docker Desktop e aguarde a inicialização completa.</li>
+            </ol>
+
+            <!-- Instalação no macOS -->
+            <h3>Instalação no macOS</h3>
+            <p>Para instalar o Docker no macOS, siga os passos abaixo:</p>
+            <ol>
+                <li>Certifique-se de que o macOS 10.14 ou superior está atualizado.</li>
+                <li>Baixe o Docker Desktop para macOS em <a href="https://www.docker.com/products/docker-desktop/" target="_blank">docker.com</a>.</li>
+                <li>Execute o instalador e siga as instruções na tela.</li>
+                <li>Após a instalação, inicie o Docker Desktop e aguarde a inicialização completa.</li>
+            </ol>
+
+            <!-- Instalação no Linux -->
+            <h3>Instalação no Linux</h3>
+            <p>Para instalar o Docker no Linux, siga os passos para sua distribuição:</p>
+            <ul>
+                <li><strong>Ubuntu:</strong> <code>sudo apt-get update</code> e <code>sudo apt-get install docker.io</code></li>
+                <li><strong>CentOS:</strong> <code>sudo yum install docker</code></li>
+            </ul>
+            <p>Inicie o serviço do Docker com: <code>sudo systemctl start docker</code></p>
+        </section>
+
+        <!-- Configurando o Docker -->
+        <section class="configuring-docker">
+            <h2>Configurando o Docker</h2>
+            <p>Após a instalação, é importante configurar o Docker para otimizar seu uso:</p>
+            <ol>
+                <li>Verifique a instalação com o comando <code>docker --version</code> para garantir que o Docker foi instalado corretamente.</li>
+                <li>Execute o comando <code>docker run hello-world</code> para verificar se o Docker está funcionando corretamente.</li>
+                <li>Para facilitar o uso, você pode adicionar seu usuário ao grupo do Docker com:</li>
+            </ol>
+            <pre><code>sudo usermod -aG docker $USER</code></pre>
+            <p>Após executar esse comando, reinicie o sistema ou faça logout e login novamente para que as alterações tenham efeito.</p>
+        </section>
+
+        <!-- Executando Containers -->
+        <section class="running-containers">
+            <h2>Executando Containers Docker</h2>
+            <p>Para executar um container do Docker, use o comando <code>docker run</code>. Por exemplo:</p>
+            <pre><code>docker run -d -p 80:80 nginx</code></pre>
+            <p>Este comando executa um container do Nginx em segundo plano e mapeia a porta 80 do container para a porta 80 do host.</p>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar a instalação e configuração do Docker, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-instalacao-e-configuracao-docker.html" class="btn">Ver Exercícios de Docker</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>

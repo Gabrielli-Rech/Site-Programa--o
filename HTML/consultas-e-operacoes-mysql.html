@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/desafios-projetos.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios Consultas e Operações MySQL</h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML/mysql-exercises.html">Voltar</a></li>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Exercícios de Consultas e Operações em MySQL</h2>
+
+        <h3>Fáceis</h3>
+        <ul>
+            <li>1. Escreva uma consulta SQL para selecionar todos os campos de uma tabela específica.</li>
+            <li>2. Realize uma consulta SQL que retorne apenas as linhas de uma tabela onde um campo específico tenha um valor específico.</li>
+            <li>3. Use a cláusula `WHERE` para filtrar registros de uma tabela com um operador de comparação (`=`, `>`, `<`).</li>
+            <li>4. Escreva uma consulta SQL para selecionar apenas campos específicos de uma tabela.</li>
+            <li>5. Realize uma consulta com a cláusula `ORDER BY` para ordenar os resultados de uma tabela em ordem crescente de um campo específico.</li>
+            <li>6. Use `ORDER BY` com `DESC` para ordenar os resultados em ordem decrescente.</li>
+            <li>7. Escreva uma consulta para contar o número de linhas de uma tabela usando `COUNT()`.</li>
+            <li>8. Realize uma consulta para encontrar o maior valor em uma coluna usando `MAX()`.</li>
+            <li>9. Use a função `SUM()` para calcular a soma de uma coluna numérica.</li>
+            <li>10. Escreva uma consulta que use a função `AVG()` para encontrar a média de uma coluna numérica.</li>
+            <li>11. Utilize `LIMIT` para limitar o número de linhas retornadas em uma consulta.</li>
+            <li>12. Escreva uma consulta que use `DISTINCT` para retornar apenas valores únicos de uma coluna.</li>
+            <li>13. Realize uma consulta que utilize `GROUP BY` para agrupar resultados de uma tabela por um campo específico.</li>
+            <li>14. Use `HAVING` para filtrar grupos em uma consulta `GROUP BY`.</li>
+            <li>15. Escreva uma consulta que utilize `JOIN` para combinar dados de duas tabelas diferentes.</li>
+            <li>16. Crie uma consulta que use `INNER JOIN` para combinar registros de duas tabelas que possuem valores correspondentes.</li>
+            <li>17. Realize uma consulta com `LEFT JOIN` para incluir todos os registros da tabela da esquerda, mesmo que não haja correspondência na tabela da direita.</li>
+            <li>18. Escreva uma consulta usando `RIGHT JOIN` para incluir todos os registros da tabela da direita, mesmo que não haja correspondência na tabela da esquerda.</li>
+            <li>19. Use `BETWEEN` para encontrar registros dentro de um intervalo de valores.</li>
+            <li>20. Escreva uma consulta usando `IN` para filtrar registros com base em uma lista de valores.</li>
+        </ul>
+
+        <h3>Médios</h3>
+        <ul>
+            <li>1. Escreva uma consulta `SELECT` com uma subconsulta para encontrar os registros com o maior valor em uma coluna específica.</li>
+            <li>2. Realize uma consulta `UPDATE` para modificar valores em uma tabela.</li>
+            <li>3. Escreva uma consulta `DELETE` para remover registros de uma tabela com base em uma condição específica.</li>
+            <li>4. Use `CASE` para criar uma coluna calculada em uma consulta SQL.</li>
+            <li>5. Realize uma consulta `SELECT` com uma subconsulta correlacionada.</li>
+            <li>6. Escreva uma consulta para criar uma tabela com chaves primárias e estrangeiras.</li>
+            <li>7. Realize uma consulta com `UNION` para combinar os resultados de duas consultas `SELECT`.</li>
+            <li>8. Escreva uma consulta para encontrar registros que não possuam correspondência em outra tabela usando `LEFT JOIN` e `NULL`.</li>
+            <li>9. Use `EXISTS` para verificar a existência de uma subconsulta.</li>
+            <li>10. Realize uma consulta que utilize `INNER JOIN` e `GROUP BY` para calcular estatísticas agrupadas.</li>
+            <li>11. Escreva uma consulta usando a função `CONCAT()` para combinar colunas de uma tabela.</li>
+            <li>12. Use a função `DATE_FORMAT()` para formatar uma data em uma consulta SQL.</li>
+            <li>13. Realize uma consulta para calcular a diferença entre datas usando a função `DATEDIFF()`.</li>
+            <li>14. Use a função `ROUND()` para arredondar valores numéricos em uma consulta.</li>
+            <li>15. Realize uma consulta para encontrar os registros que possuem valores duplicados em uma coluna específica.</li>
+            <li>16. Escreva uma consulta `SELECT` com `DISTINCT` e `ORDER BY` para retornar valores únicos e ordenados.</li>
+            <li>17. Utilize `GROUP BY` e `ROLLUP` para criar subtotais em uma consulta.</li>
+            <li>18. Escreva uma consulta com `CROSS JOIN` para combinar todos os registros de duas tabelas.</li>
+            <li>19. Realize uma consulta que utilize `IFNULL()` para substituir valores `NULL` por um valor padrão.</li>
+            <li>20. Escreva uma consulta para criar um índice em uma tabela para melhorar a performance.</li>
+        </ul>
+
+        <h3>Difíceis</h3>
+        <ul>
+            <li>1. Realize uma consulta complexa usando `JOIN`, `GROUP BY`, `HAVING`, e `ORDER BY` em uma única consulta.</li>
+            <li>2. Escreva uma consulta para encontrar a segunda maior venda em uma tabela de vendas.</li>
+            <li>3. Use `WITH` (CTE - Common Table Expressions) para criar uma subconsulta reutilizável em uma consulta complexa.</li>
+            <li>4. Realize uma consulta que use `ROW_NUMBER()` para enumerar linhas em uma consulta de resultados.</li>
+            <li>5. Use `WINDOW FUNCTIONS` para calcular somas acumuladas em uma consulta.</li>
+            <li>6. Escreva uma consulta que encontre os registros com base em uma subconsulta de múltiplas tabelas.</li>
+            <li>7. Realize uma consulta que use a função `COALESCE()` para retornar o primeiro valor não `NULL` entre as colunas.</li>
+            <li>8. Escreva uma consulta que combine dados de duas tabelas com um `FULL OUTER JOIN` (usando `UNION` se necessário).</li>
+            <li>9. Crie uma consulta para detectar e remover registros duplicados de uma tabela.</li>
+            <li>10. Realize uma consulta que utilize `PIVOT` para transpor linhas em colunas.</li>
+            <li>11. Use a função `LEAD()` para obter o próximo valor de uma coluna em uma consulta.</li>
+            <li>12. Realize uma consulta que utilize `LAG()` para obter o valor anterior em uma coluna em uma consulta.</li>
+            <li>13. Escreva uma consulta com `CASE` e funções de agregação para calcular valores diferentes em condições distintas.</li>
+            <li>14. Utilize `GROUPING SETS` para calcular subtotais e totais em uma consulta de agregação.</li>
+            <li>15. Realize uma consulta com `CROSS JOIN` e uma condição `WHERE` complexa para simular uma tabela de produtos combinados.</li>
+            <li>16. Escreva uma consulta para atualizar uma tabela usando dados de uma subconsulta com `UPDATE ... JOIN`.</li>
+            <li>17. Realize uma consulta para calcular a diferença percentual entre valores em uma tabela.</li>
+            <li>18. Use `GROUP BY` com `HAVING` e subconsultas aninhadas para encontrar registros complexos.</li>
+            <li>19. Escreva uma consulta para agrupar e contar registros por múltiplas colunas em uma tabela.</li>
+            <li>20. Realize uma consulta que utilize `CASE` em uma subconsulta para retornar diferentes colunas com base em condições.</li>
+        </ul>
+
+        <h3>Desafios</h3>
+        <ul>
+            <li>1. Crie uma consulta complexa que combine múltiplas funções de agregação para gerar relatórios detalhados de vendas.</li>
+            <li>2. Escreva uma consulta que utilize `WITH RECURSIVE` para encontrar todos os níveis de uma hierarquia em uma tabela de funcionários.</li>
+            <li>3. Realize uma consulta usando `PARTITION BY` para calcular estatísticas por grupos em uma consulta de janela.</li>
+            <li>4. Escreva uma consulta com `IF()` e `CASE` para aplicar diferentes cálculos de acordo com condições específicas.</li>
+            <li>5. Crie uma consulta que use `GROUP BY` e `HAVING` para encontrar os registros mais frequentes em uma tabela.</li>
+        </ul>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>
+

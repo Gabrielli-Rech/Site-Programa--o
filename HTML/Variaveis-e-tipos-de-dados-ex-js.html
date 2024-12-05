@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis e Tipos de Dados em JavaScript</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Variaveis-e-tipos-de-dados-ex-js.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Variáveis e Tipos de Dados </h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/javascript-exercises.html">Voltar</a></li>
+                <!--<li><a href="javascript-projects.html">Projetos</a></li>-->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h2>O que são Variáveis e Tipos de Dados?</h2>
+            <p>Em JavaScript, variáveis são usadas para armazenar dados que podem ser manipulados em um programa. Existem diferentes tipos de dados que uma variável pode conter, e é importante entendê-los para programar de forma eficiente.</p>
+        </section>
+
+        <!-- Declaração de Variáveis -->
+        <section class="variables">
+            <h2>Declaração de Variáveis</h2>
+            <p>Em JavaScript, você pode declarar variáveis usando <code>var</code>, <code>let</code> e <code>const</code>.</p>
+            <ul>
+                <li><code>var</code>: Usado para declarar variáveis com escopo de função (escopo global fora de funções).</li>
+                <li><code>let</code>: Introduzido no ES6, tem escopo de bloco e é recomendado para variáveis que podem mudar de valor.</li>
+                <li><code>const</code>: Também introduzido no ES6, é usado para declarar variáveis cujo valor não muda (constantes).</li>
+            </ul>
+            <p>Exemplo de declaração de variáveis:</p>
+            <pre><code>let nome = 'João'; // string
+const idade = 25; // number
+var ativo = true; // boolean</code></pre>
+        </section>
+
+        <!-- Tipos de Dados -->
+        <section class="data-types">
+            <h2>Tipos de Dados em JavaScript</h2>
+            <p>JavaScript possui tipos de dados primitivos e complexos. Veja abaixo os principais tipos de dados:</p>
+            <ul>
+                <li><strong>Primitivos:</strong>
+                    <ul>
+                        <li><code>string</code>: Representa uma sequência de caracteres. Exemplo: <code>'Olá, mundo!'</code></li>
+                        <li><code>number</code>: Representa números inteiros e de ponto flutuante. Exemplo: <code>42</code>, <code>3.14</code></li>
+                        <li><code>boolean</code>: Representa um valor verdadeiro ou falso. Exemplo: <code>true</code>, <code>false</code></li>
+                        <li><code>null</code>: Representa um valor nulo. Exemplo: <code>null</code></li>
+                        <li><code>undefined</code>: Representa uma variável declarada, mas ainda não inicializada. Exemplo: <code>let x;</code></li>
+                        <li><code>symbol</code>: Introduzido no ES6, representa um valor único e imutável. Exemplo: <code>Symbol('descricao')</code></li>
+                    </ul>
+                </li>
+                <li><strong>Objetos:</strong> São tipos de dados complexos e podem conter múltiplos valores. Exemplos incluem objetos literais, arrays e funções.</li>
+            </ul>
+            <p>Exemplo de diferentes tipos de dados:</p>
+            <pre><code>let nome = 'Maria'; // string
+let idade = 30; // number
+let ativo = false; // boolean
+let endereco = null; // null
+let usuario; // undefined</code></pre>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar os conceitos de variáveis e tipos de dados, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-variaveis-tipos-de-dados.html" class="btn">Ver Exercícios de Variáveis e Tipos de Dados</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>

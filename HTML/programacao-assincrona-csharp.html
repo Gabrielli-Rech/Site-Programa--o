@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios sobre Programação Assíncrona em C#</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/exerc-estruturas-condicionais.css">
+</head>
+
+<body>
+    <header>
+        <h1>Exercícios sobre Programação Assíncrona.</h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML/csharp-exercises.html">Voltar</a></li>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <div>
+            <h3>Exercícios sobre Programação Assíncrona</h3>
+            <ul>
+                <li>1. Crie um método assíncrono simples que retorne um valor após um atraso de 2 segundos.</li>
+                <li>2. Implemente uma tarefa assíncrona que faça uma chamada a uma API fictícia.</li>
+                <li>3. Escreva um programa que utilize `async` e `await` para buscar dados de um banco de dados simulado.</li>
+                <li>4. Crie um método que execute duas tarefas assíncronas em paralelo e retorne seus resultados.</li>
+                <li>5. Desenvolva um programa que utilize `Task.WhenAll` para executar várias tarefas simultaneamente.</li>
+                <li>6. Escreva um método assíncrono que simule um processo de download de um arquivo com progresso.</li>
+                <li>7. Crie um exemplo que utilize `async` para manipular uma interface de usuário sem bloqueios.</li>
+                <li>8. Implemente um programa que utilize `Task.WhenAny` para retornar assim que a primeira tarefa for concluída.</li>
+                <li>9. Escreva um método assíncrono que retorne uma lista de números aleatórios após um atraso.</li>
+                <li>10. Crie uma função assíncrona que utilize um `CancellationToken` para permitir o cancelamento de uma tarefa.</li>
+                <li>11. Implemente um programa que faça uma chamada assíncrona a uma API e trate exceções de forma apropriada.</li>
+                <li>12. Desenvolva um método assíncrono que execute um loop com `await Task.Delay()`.</li>
+                <li>13. Escreva um programa que utilize `async` para ler um arquivo de texto de forma assíncrona.</li>
+                <li>14. Crie um exemplo de como usar `ConfigureAwait(false)` em métodos assíncronos.</li>
+                <li>15. Implemente uma tarefa assíncrona que aguarde a conclusão de várias tarefas com `Task.WhenAll`.</li>
+                <li>16. Desenvolva um programa que utilize uma tarefa assíncrona para calcular a soma de uma lista de números.</li>
+                <li>17. Escreva um método assíncrono que retorne um resultado após simular um atraso de execução com `await Task.Delay()`.</li>
+                <li>18. Crie um exemplo de uma função assíncrona que faça uma chamada a um serviço de terceiros.</li>
+                <li>19. Implemente um método assíncrono que retorne uma lista de palavras de um arquivo de texto.</li>
+                <li>20. Desenvolva um programa que execute um processo longo de forma assíncrona, mantendo a interface responsiva.</li>
+                <li>21. Escreva um exemplo de um método assíncrono que utilize `async` e `await` para ler e processar dados de um banco de dados.</li>
+                <li>22. Implemente uma tarefa assíncrona que retorne a data e hora atual após um atraso.</li>
+                <li>23. Crie um método assíncrono que execute um loop de 1 a 10 e imprima os valores com um atraso de 1 segundo entre cada um.</li>
+                <li>24. Desenvolva um programa que utilize `Task.Run()` para executar um método pesado em segundo plano.</li>
+                <li>25. Escreva um exemplo que combine métodos assíncronos e síncronos em um mesmo programa.</li>
+                <li>26. Crie uma tarefa assíncrona que faça uma verificação de disponibilidade de um servidor web.</li>
+                <li>27. Implemente uma função assíncrona que execute uma operação de cálculo com precisão de ponto flutuante.</li>
+                <li>28. Desenvolva um programa que faça uma chamada assíncrona para uma API REST e trate a resposta com JSON.</li>
+                <li>29. Escreva um método assíncrono que utilize `async` para ler várias linhas de um arquivo de forma eficiente.</li>
+                <li>30. Crie um exemplo de uma tarefa assíncrona que receba um parâmetro e retorne um resultado após um tempo.</li>
+                <li>31. Implemente um método assíncrono que use `async` e `await` para executar consultas em paralelo a um banco de dados.</li>
+                <li>32. Desenvolva um programa que utilize `Task.WhenAll()` para aguardar a execução de diversas operações assíncronas.</li>
+                <li>33. Escreva um exemplo de como usar `Task.Delay()` para simular um atraso em um programa assíncrono.</li>
+                <li>34. Crie uma função assíncrona que receba um arquivo e conte o número de palavras nele.</li>
+                <li>35. Implemente um método que utilize `async` para realizar uma pesquisa em uma lista de strings com atraso.</li>
+                <li>36. Desenvolva um programa que use `async` para buscar informações de um servidor externo e imprima os resultados.</li>
+                <li>37. Escreva uma função que use `async` e `await` para processar uma lista de elementos em ordem assíncrona.</li>
+                <li>38. Crie um exemplo de um método assíncrono que manipule uma coleção de objetos em paralelo.</li>
+                <li>39. Implemente uma função assíncrona que retorne um resultado em um tempo determinado por um `CancellationToken`.</li>
+                <li>40. Desenvolva um programa que simule uma aplicação de chat assíncrona com mensagens sendo enviadas e recebidas.</li>
+                <li>41. Escreva um método assíncrono que use `await Task.WhenAny()` para interromper a execução quando uma tarefa específica for concluída.</li>
+                <li>42. Crie um exemplo que utilize `Task.WhenAll()` para baixar múltiplos arquivos em paralelo.</li>
+                <li>43. Implemente uma função assíncrona que faça uma verificação de status de uma página web.</li>
+                <li>44. Desenvolva um programa que utilize `async` e `await` para fazer a leitura de um arquivo CSV em paralelo.</li>
+                <li>45. Escreva um método assíncrono que use `async` para comparar a execução de tarefas paralelas.</li>
+                <li>46. Crie um exemplo que utilize um método assíncrono para controlar uma progress bar durante a execução de uma tarefa.</li>
+                <li>47. Implemente uma função assíncrona que simule o envio de emails em paralelo.</li>
+                <li>48. Desenvolva um programa que utilize `async` para fazer a conversão de dados em paralelo.</li>
+                <li>49. Escreva um método assíncrono que execute uma tarefa com uma pausa controlada usando `Task.Delay()`.</li>
+                <li>50. Crie um exemplo de uma tarefa assíncrona que execute uma operação com um atraso randômico.</li>
+                <li>51. Implemente um programa que use `async` para ler e processar dados de um arquivo CSV de forma assíncrona.</li>
+                <li>52. Desenvolva um método assíncrono que use `async` e `await` para transformar uma lista de números em seus quadrados.</li>
+                <li>53. Escreva uma função que use `async` para calcular a soma de números em uma lista de maneira assíncrona.</li>
+                <li>54. Crie um exemplo de um método assíncrono que utilize `await` para realizar uma operação de manipulação de strings.</li>
+                <li>55. Implemente um programa que use `async` para enviar solicitações HTTP em paralelo.</li>
+                <li>56. Desenvolva uma função assíncrona que use `await` para buscar a previsão do tempo de uma API de meteorologia.</li>
+                <li>57. Escreva um método assíncrono que utilize `Task.Delay()` para simular uma operação de conexão com um banco de dados.</li>
+                <li>58. Crie um exemplo que utilize `async` e `await` para processar listas de forma ordenada e paralela.</li>
+                <li>59. Implemente um programa que use `async` para realizar a leitura e a escrita em arquivos simultaneamente.</li>
+                <li>60. Desenvolva uma função assíncrona que conte o número de elementos únicos em uma lista de strings.</li>
+                <li>61. Escreva um método assíncrono que utilize `await` para realizar uma operação de pesquisa com atraso.</li>
+                <li>62. Crie um exemplo de um programa que use `Task.WhenAny()` para terminar quando a primeira tarefa for concluída.</li>
+                <li>63. Implemente um método que use `async` e `await` para processar dados em um loop assíncrono.</li>
+                <li>64. Desenvolva uma função assíncrona que utilize `Task.Run()` para executar uma tarefa em segundo plano.</li>
+                <li>65. Escreva um programa assíncrono que simule uma tarefa de backup de arquivos com atraso.</li>
+                <li>66. Crie um exemplo de um método assíncrono que use `await` para realizar a leitura de um banco de dados remoto.</li>
+                <li>67. Implemente uma função que utilize `Task.WhenAll()` para fazer múltiplas tarefas de busca em paralelo.</li>
+                <li>68. Desenvolva um método assíncrono que faça o download de uma imagem de um servidor remoto.</li>
+                <li>69. Escreva um programa assíncrono que processe arquivos de texto e remova palavras duplicadas.</li>
+                <li>70. Crie um exemplo que utilize `async` para ler e processar um arquivo JSON de forma assíncrona.</li>
+                <li>71. Implemente uma função assíncrona que retorne o menor e o maior valor de uma lista de números.</li>
+                <li>72. Desenvolva um programa que use `await` para realizar a escrita em um arquivo de log em paralelo.</li>
+                <li>73. Escreva um método que utilize `async` para realizar uma contagem regressiva com atraso.</li>
+                <li>74. Crie um exemplo que utilize `Task.WhenAny()` para realizar a primeira tarefa que terminar entre várias.</li>
+                <li>75. Implemente um método assíncrono que leia e escreva um arquivo de forma assíncrona.</li>
+                <li>76. Desenvolva um programa que simule uma tarefa assíncrona com um tempo de execução aleatório.</li>
+                <li>77. Escreva uma função assíncrona que faça uma busca e impressão de elementos em uma lista de maneira assíncrona.</li>
+                <li>78. Crie um exemplo de um método assíncrono que use `await` para acessar uma API externa e imprimir os resultados.</li>
+                <li>79. Implemente uma função que use `Task.Delay()` para simular uma operação de verificação de status.</li>
+                <li>80. Desenvolva um programa que use `async` para processar um arquivo de texto e contar palavras específicas.</li>
+                <li>81. Escreva um método assíncrono que use `Task.WhenAll()` para realizar operações em uma lista de URLs.</li>
+                <li>82. Crie um exemplo que utilize `async` e `await` para processar um stream de dados de forma assíncrona.</li>
+                <li>83. Implemente uma função que use `async` para processar uma lista de números com um atraso de 500ms entre cada elemento.</li>
+                <li>84. Desenvolva um programa que use `await` para fazer uma operação de formatação de texto em um loop.</li>
+                <li>85. Escreva uma função assíncrona que retorne a soma dos elementos de uma lista com atraso.</li>
+                <li>86. Crie um exemplo de um método assíncrono que utilize `await` para carregar uma imagem de forma assíncrona.</li>
+                <li>87. Implemente uma função que use `async` e `await` para transformar dados em paralelo.</li>
+                <li>88. Desenvolva um programa que use `Task.Delay()` para simular um processo de simulação de eventos assíncronos.</li>
+                <li>89. Escreva um exemplo de como usar `async` para verificar a conectividade da rede.</li>
+                <li>90. Crie uma função assíncrona que use `await` para processar uma lista de palavras e determinar a palavra mais longa.</li>
+                <li>91. Implemente um método que use `async` e `await` para processar arquivos em paralelo com atraso.</li>
+                <li>92. Desenvolva um programa que use `async` para buscar a lista de produtos em uma API e exibi-los.</li>
+                <li>93. Escreva um exemplo de um método assíncrono que utilize `Task.WhenAny()` para realizar uma tarefa com prioridade.</li>
+                <li>94. Crie uma função assíncrona que leia e analise um arquivo XML de forma assíncrona.</li>
+                <li>95. Implemente um método que use `async` para buscar e formatar informações de um arquivo de texto.</li>
+                <li>96. Desenvolva um programa que use `await` para ler e processar logs de um sistema em tempo real.</li>
+                <li>97. Escreva uma função assíncrona que simule uma operação de manipulação de arquivos de forma assíncrona.</li>
+                <li>98. Crie um exemplo de um método assíncrono que use `await` para verificar a disponibilidade de um recurso online.</li>
+                <li>99. Implemente uma função assíncrona que combine dados de várias fontes e retorne um resultado.</li>
+                <li>100. Desenvolva um programa que use `async` para processar e exibir a saída de um comando de terminal de forma assíncrona.</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/desafios-projetos.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios de Consultas Avançadas em MongoDB</h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML/mongodb-exercises.html">Voltar</a></li>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Exercícios de Consultas Avançadas em MongoDB</h2>
+
+        <h3>Fáceis</h3>
+        <ul>
+            <li>1. Liste todos os documentos de uma coleção usando o método `find()`.</li>
+            <li>2. Realize uma consulta que retorne documentos de uma coleção com um campo específico igual a um valor.</li>
+            <li>3. Use o operador `$gt` para encontrar documentos onde um campo numérico é maior que um valor específico.</li>
+            <li>4. Utilize o operador `$lt` para consultar documentos com valores numéricos menores que um valor específico.</li>
+            <li>5. Realize uma consulta que busque documentos com um campo específico nulo.</li>
+            <li>6. Use a projeção para exibir apenas campos selecionados em um documento.</li>
+            <li>7. Use o operador `$or` para buscar documentos que satisfaçam pelo menos uma das condições em um array.</li>
+            <li>8. Realize uma consulta que retorne documentos em ordem crescente de um campo.</li>
+            <li>9. Faça uma consulta com ordenação decrescente de um campo.</li>
+            <li>10. Use o operador `$in` para buscar documentos onde um campo tem um dos vários valores possíveis.</li>
+            <li>11. Realize uma consulta para contar o número de documentos em uma coleção.</li>
+            <li>12. Filtre documentos usando expressões regulares com `$regex` para buscar padrões de texto.</li>
+            <li>13. Realize uma consulta com `skip()` e `limit()` para retornar apenas um número específico de documentos.</li>
+            <li>14. Use o operador `$exists` para encontrar documentos onde um campo específico existe ou não existe.</li>
+            <li>15. Realize uma consulta usando `$and` para combinar múltiplas condições.</li>
+            <li>16. Encontre documentos que contenham um array específico e use o operador `$size` para filtrar pelo número de elementos.</li>
+            <li>17. Faça uma consulta que retorne documentos em uma faixa de datas usando o operador `$gte` e `$lte`.</li>
+            <li>18. Use o operador `$elemMatch` para filtrar documentos em que um array contenha um subdocumento que satisfaça condições específicas.</li>
+            <li>19. Faça uma consulta para atualizar um documento com o método `updateOne()`.</li>
+            <li>20. Realize uma consulta para remover um documento usando o método `deleteOne()`.</li>
+        </ul>
+
+        <h3>Médios</h3>
+        <ul>
+            <li>1. Use a agregação com `$match` e `$group` para contar a quantidade de documentos por um campo específico.</li>
+            <li>2. Realize uma consulta que combine múltiplos operadores lógicos `$and`, `$or`, e `$not`.</li>
+            <li>3. Use a operação de agregação `$project` para renomear e modificar campos.</li>
+            <li>4. Realize uma consulta com `aggregate()` para ordenar e agrupar documentos ao mesmo tempo.</li>
+            <li>5. Crie uma consulta de agregação que combine dados de duas coleções usando `$lookup`.</li>
+            <li>6. Use o operador `$unwind` em uma consulta de agregação para desmembrar arrays em subdocumentos individuais.</li>
+            <li>7. Utilize `$addFields` para adicionar novos campos calculados em um documento.</li>
+            <li>8. Realize uma consulta de agregação para filtrar documentos em uma faixa de tempo usando `$match` e `$gte`.</li>
+            <li>9. Use `$sort` em uma agregação para ordenar documentos de acordo com múltiplos critérios.</li>
+            <li>10. Crie uma consulta para remover todos os documentos de uma coleção que não satisfaçam uma condição com `deleteMany()`.</li>
+            <li>11. Utilize a função `countDocuments()` para contar documentos de uma coleção que atendam a critérios específicos.</li>
+            <li>12. Implemente uma consulta com `$lookup` para fazer join entre duas coleções em MongoDB.</li>
+            <li>13. Use `$match` e `$project` juntos para criar uma consulta complexa de filtragem e seleção de campos.</li>
+            <li>14. Realize uma consulta com uma subconsulta que retorna documentos com um valor mínimo de campo.</li>
+            <li>15. Utilize `$out` em uma agregação para exportar resultados para uma nova coleção.</li>
+            <li>16. Realize uma consulta para buscar documentos onde um campo seja um array de valores distintos.</li>
+            <li>17. Use `$map` e `$reduce` para transformar e combinar dados de arrays dentro de uma consulta de agregação.</li>
+            <li>18. Crie uma consulta com `$merge` para armazenar resultados de uma agregação em uma coleção existente.</li>
+            <li>19. Use a agregação `$graphLookup` para buscar dados de forma recursiva em uma coleção.</li>
+            <li>20. Realize uma consulta com `$arrayElemAt` para acessar um elemento específico de um array.</li>
+        </ul>
+
+        <h3>Difíceis</h3>
+        <ul>
+            <li>1. Implemente uma consulta de agregação para calcular a média de valores em um campo específico de uma coleção.</li>
+            <li>2. Realize uma consulta complexa de agregação usando `$bucket` para agrupar documentos em intervalos de valores.</li>
+            <li>3. Use `$graphLookup` para implementar uma consulta que percorre e retorna uma árvore de documentos.</li>
+            <li>4. Crie uma consulta de agregação com `$sort` e `$limit` para encontrar os documentos mais recentes ou mais antigos em uma coleção.</li>
+            <li>5. Implemente uma consulta com `$map` para aplicar transformações a elementos de um array dentro de uma agregação.</li>
+            <li>6. Use a consulta de agregação para encontrar documentos com a menor e maior quantidade de valores em um campo numérico.</li>
+            <li>7. Crie uma consulta com `$project` e `$arrayElemAt` para acessar e modificar elementos de um array aninhado.</li>
+            <li>8. Realize uma consulta com `$match` e `$group` que calcule a soma dos valores de um campo em grupos.</li>
+            <li>9. Implemente uma consulta de agregação usando `$lookup` e `$unwind` para fazer join entre duas coleções e expandir subdocumentos.</li>
+            <li>10. Use o operador `$text` para realizar uma busca de texto completo em uma coleção e filtrar resultados por relevância.</li>
+        </ul>
+
+        <h3>Desafios</h3>
+        <ul>
+            <li>1. Crie uma consulta de agregação que faça análise de sentimentos em campos de texto usando `$project` e expressões regulares.</li>
+            <li>2. Implemente uma consulta que encontre todos os documentos com subdocumentos que atendem a uma condição específica em arrays aninhados.</li>
+            <li>3. Realize uma consulta para calcular o tempo médio de resposta de uma API com dados armazenados em uma coleção.</li>
+            <li>4. Desenvolva uma consulta complexa que agrupe documentos em intervalos de tempo e calcule estatísticas de cada grupo.</li>
+            <li>5. Crie uma consulta que combine operações de `$lookup`, `$unwind` e `$group` para fazer relatórios detalhados de vendas.</li>
+        </ul>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>
+

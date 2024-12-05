@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Funções Assíncronas em JavaScript</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/exerc-funcoes-assincronas.css">
+</head>
+
+<body>
+    <header>
+        <h1>Exercícios de Funções Assíncronas </h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML/javascript-exercises.html">Voltar</a></li>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>O que são Funções Assíncronas?</h2>
+            <p>Funções assíncronas em JavaScript são usadas para lidar com operações que demoram a serem executadas,
+                como chamadas a APIs ou temporizadores. Elas permitem que o código continue sua execução enquanto
+                aguardam a resposta de uma operação.</p>
+        </section>
+
+        <section class="exercises">
+            <h2>Exercícios de Funções Assíncronas</h2>
+
+            <h3>Fáceis</h3>
+            <ul>
+                <li>Crie uma função assíncrona que retorne uma promessa resolvida com o valor "Hello, World!".</li>
+                <li>Crie uma função assíncrona que simule um atraso de 2 segundos usando `setTimeout` e depois retorne
+                    uma mensagem.</li>
+                <li>Crie uma função assíncrona que use `await` para esperar a resolução de uma promessa.</li>
+                <li>Crie uma função assíncrona que retorne o resultado de uma promessa que simula uma busca de dados.
+                </li>
+                <li>Crie uma função assíncrona que use `fetch` para fazer uma requisição GET a uma API pública e imprima
+                    a resposta no console.</li>
+                <li>Crie uma função assíncrona que use `await` para fazer duas chamadas assíncronas em sequência e
+                    retorne o resultado combinado.</li>
+                <li>Crie uma função assíncrona que simule a espera de um tempo e depois imprima uma mensagem no console.
+                </li>
+                <li>Crie uma função assíncrona que use `await` para chamar uma função que retorna um número aleatório
+                    após 1 segundo.</li>
+                <li>Crie uma função assíncrona que use `try-catch` para lidar com erros em uma promessa.</li>
+                <li>Crie uma função assíncrona que retorne um array com os dados de duas promessas diferentes que são
+                    chamadas em paralelo usando `Promise.all`.</li>
+                <li>Crie uma função assíncrona que use `await` para buscar um recurso e, se falhar, tente buscar um
+                    recurso alternativo.</li>
+                <li>Crie uma função assíncrona que utilize `await` para buscar dados e depois processar os resultados.
+                </li>
+                <li>Crie uma função assíncrona que use `fetch` para fazer uma requisição a um endpoint e retorne o JSON
+                    da resposta.</li>
+                <li>Crie uma função que use `setTimeout` para simular uma tarefa assíncrona e imprima uma mensagem após
+                    3 segundos.</li>
+                <li>Crie uma função assíncrona que use `await` para esperar por uma resposta de uma API simulada e
+                    retorne um valor de sucesso.</li>
+                <li>Crie uma função assíncrona que faça uma requisição a uma API e use `await` para aguardar o resultado
+                    antes de continuar.</li>
+                <li>Crie uma função assíncrona que use `await` em conjunto com um loop `for` para fazer requisições em
+                    série.</li>
+                <li>Crie uma função assíncrona que simule um erro de conexão e utilize um `catch` para tratá-lo.</li>
+                <li>Crie uma função assíncrona que retorne o resultado de uma operação de soma após 1 segundo.</li>
+                <li>Crie uma função que utilize `Promise.race` para retornar o resultado da primeira promessa que for
+                    resolvida.</li>
+                <li>Crie uma função assíncrona que aguarde a execução de uma tarefa e imprima o resultado quando
+                    concluída.</li>
+            </ul>
+
+            <h3>Médios</h3>
+            <ul>
+                <li>Crie uma função assíncrona que receba uma lista de URLs e use `Promise.all` para buscar todas ao
+                    mesmo tempo.</li>
+                <li>Crie uma função assíncrona que faça requisições em série e retorne os resultados em um array.</li>
+                <li>Crie uma função assíncrona que receba uma URL, faça uma requisição `fetch`, e se a resposta for
+                    `404`, retorne uma mensagem personalizada.</li>
+                <li>Crie uma função assíncrona que use `Promise.allSettled` para lidar com várias promessas e retorne os
+                    resultados de todas, mesmo que algumas falhem.</li>
+                <li>Crie uma função assíncrona que receba uma lista de números e use `setTimeout` para imprimir cada
+                    número com um atraso progressivo de 1 segundo.</li>
+                <li>Crie uma função assíncrona que busque dados em uma API e processe a resposta para extrair e formatar
+                    apenas uma parte dos dados.</li>
+                <li>Crie uma função assíncrona que use `Promise.any` para retornar o primeiro resultado de uma lista de
+                    promessas que for resolvida.</li>
+                <li>Crie uma função assíncrona que busque dados em paralelo e trate os erros de cada requisição
+                    separadamente usando `catch`.</li>
+                <li>Crie uma função assíncrona que use `await` para fazer uma requisição e só continue após o retorno de
+                    uma outra função assíncrona.</li>
+                <li>Crie uma função assíncrona que faça uma requisição a uma API e use `await` para processar a resposta
+                    em um formato específico.</li>
+                <li>Crie uma função assíncrona que use um loop `for...of` para iterar sobre uma lista de promessas e
+                    aguardá-las uma a uma.</li>
+                <li>Crie uma função assíncrona que use `setTimeout` e `Promise` para simular um carregamento de dados e
+                    imprima o progresso no console.</li>
+                <li>Crie uma função assíncrona que use `fetch` para fazer uma requisição POST com dados em JSON.</li>
+                <li>Crie uma função assíncrona que busque uma lista de URLs, e use `await` para buscar em série,
+                    retornando um array de resultados.</li>
+                <li>Crie uma função assíncrona que use `await` para ler um arquivo local (simulado) e imprima o
+                    conteúdo.</li>
+                <li>Crie uma função assíncrona que use `async/await` para fazer uma série de operações matemáticas com
+                    uma pausa entre cada uma usando `setTimeout`.</li>
+                <li>Crie uma função assíncrona que utilize `fetch` para obter dados de uma API e retorne apenas uma
+                    propriedade específica de cada item da resposta.</li>
+                <li>Crie uma função assíncrona que use `Promise.all` para fazer múltiplas requisições paralelas e
+                    combine os dados das respostas.</li>
+                <li>Crie uma função assíncrona que trate erros com `try-catch` e exiba uma mensagem personalizada para
+                    diferentes tipos de erros.</li>
+                <li>Crie uma função assíncrona que faça requisições a duas APIs e retorne a junção dos dados das duas,
+                    caso ambas sejam bem-sucedidas.</li>
+            </ul>
+
+            <h3>Difíceis</h3>
+            <ul>
+                <li>Crie uma função assíncrona que faça uma requisição a uma API de forma incremental, onde cada nova
+                    requisição só é feita quando a anterior foi concluída com sucesso.</li>
+                <li>Crie uma função assíncrona que implemente a busca de um arquivo em um sistema de arquivos virtual,
+                    usando promessas encadeadas.</li>
+                <li>Crie uma função assíncrona que utilize `async/await` e simule uma tarefa de processamento em tempo
+                    real (como uma contagem regressiva).</li>
+                <li>Crie uma função assíncrona que use `Promise.all` para buscar dados de várias APIs e retorne o
+                    primeiro erro encontrado, se houver.</li>
+                <li>Crie uma função assíncrona que use `fetch` para fazer uma requisição e, caso o status seja `500`,
+                    tente fazer uma nova tentativa após um tempo de espera.</li>
+                <li>Crie uma função assíncrona que busque os dados de uma API em paralelo e use `Promise.allSettled`
+                    para garantir que todos os resultados sejam processados.</li>
+                <li>Crie uma função assíncrona que use `await` para resolver múltiplas promessas em paralelo e agrupe os
+                    resultados em um objeto.</li>
+                <li>Crie uma função assíncrona que use `async/await` para criar uma fila de tarefas e processá-las em
+                    sequência.</li>
+                <li>Crie uma função assíncrona que use `fetch` para fazer uma requisição de upload de arquivos,
+                    aguardando a resposta do servidor para cada arquivo.</li>
+                <li>Crie uma função assíncrona que implemente a técnica de "retry" para tentar fazer uma requisição HTTP
+                    até um número máximo de tentativas.</li>
+                <li>Crie uma função assíncrona que leia um arquivo de forma assíncrona e, se encontrar uma palavra
+                    específica, continue a ler o arquivo em busca de mais ocorrências.</li>
+                <li>Crie uma função assíncrona que use `await` para chamar uma função de cálculo e retorne o resultado
+                    após 3 segundos de atraso.</li>
+                <li>Crie uma função assíncrona que use `Promise.all` para fazer múltiplas requisições e combine os
+                    resultados filtrando apenas os que possuem um valor específico.</li>
+                <li>Crie uma função assíncrona que utilize `fetch` para consultar uma API e, em caso de erro, implemente
+                    uma lógica para usar um cache local.</li>
+                <li>Crie uma função assíncrona que utilize `setTimeout` e promessas para simular um processo de registro
+                    de usuários com confirmação de e-mail.</li>
+                <li>Crie uma função assíncrona que use `await` para percorrer um array de URLs e imprima os dados de
+                    cada uma de forma sequencial.</li>
+                <li>Crie uma função assíncrona que use `Promise.race` para retornar o tempo de resposta de um conjunto
+                    de APIs.</li>
+                <li>Crie uma função assíncrona que implemente uma lógica para monitorar múltiplas promessas e imprima
+                    uma mensagem quando qualquer uma for concluída.</li>
+                <li>Crie uma função assíncrona que utilize `fetch` para buscar os dados de uma API, com tratamento de
+                    timeout caso a requisição demore demais.</li>
+                <li>Crie uma função assíncrona que utilize `await` para ler e processar dados de um arquivo de texto
+                    linha por linha.</li>
+                <li>Crie uma função assíncrona que use `Promise.allSettled` para gerenciar múltiplas promessas e
+                    retornar uma lista com os resultados de todas, sucesso ou falha.</li>
+                <li>Crie uma função assíncrona que faça uma requisição de download de arquivo e utilize `async/await`
+                    para monitorar o progresso.</li>
+                <li>Crie uma função assíncrona que use `await` para processar um arquivo grande em blocos, simulando o
+                    processamento de um arquivo de vídeo.</li>
+            </ul>
+
+            
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+
+</html>

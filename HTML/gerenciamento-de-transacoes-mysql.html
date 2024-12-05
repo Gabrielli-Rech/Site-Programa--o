@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/desafios-projetos.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios de Gerenciamento de Transaçõoes</h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML/mysql-exercises.html">Voltar</a></li>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Exercícios Fáceis</h2>
+            <ul>
+                <li>Inicie uma transação com o comando `START TRANSACTION`.</li>
+                <li>Realize uma inserção de dados em uma tabela e confirme a transação com `COMMIT`.</li>
+                <li>Faça uma atualização de dados em uma tabela e desfaça a transação com `ROLLBACK`.</li>
+                <li>Verifique o status de uma transação com `SHOW ENGINE INNODB STATUS`.</li>
+                <li>Use o comando `SAVEPOINT` para criar um ponto de salvamento em uma transação.</li>
+                <li>Revert a transação para um ponto de salvamento específico com `ROLLBACK TO SAVEPOINT`.</li>
+                <li>Utilize o comando `SET autocommit = 0` para desabilitar o autocommit em uma sessão.</li>
+                <li>Verifique se o autocommit está ativado ou desativado com `SELECT @@autocommit`.</li>
+                <li>Inicie uma transação, faça uma inserção, e depois use `COMMIT` para salvar as mudanças.</li>
+                <li>Inicie uma transação, faça uma alteração e utilize `ROLLBACK` para reverter a mudança.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Exercícios Médios</h2>
+            <ul>
+                <li>Crie uma transação que insere dados em duas tabelas diferentes e use `COMMIT` para confirmar ambas as operações.</li>
+                <li>Teste a integridade dos dados em uma transação com uma verificação de condição antes do `COMMIT`.</li>
+                <li>Configure um `SAVEPOINT` em uma transação para reverter apenas uma parte da operação.</li>
+                <li>Simule um erro em uma transação e use `ROLLBACK` para desfazer todas as operações.</li>
+                <li>Utilize `SELECT FOR UPDATE` para bloquear registros em uma transação e impedir alterações de outros processos.</li>
+                <li>Crie uma transação aninhada com múltiplos `SAVEPOINT` e `ROLLBACK TO SAVEPOINT`.</li>
+                <li>Utilize a cláusula `LOCK TABLES` para garantir que os dados não sejam alterados por outras transações simultâneas.</li>
+                <li>Implemente uma transação para transferir dinheiro entre duas contas e utilize `ROLLBACK` em caso de erro.</li>
+                <li>Execute uma transação em um banco de dados com nível de isolamento `READ COMMITTED` e verifique seu efeito em consultas.</li>
+                <li>Crie um script que mostre como uma transação pode ser usada para evitar a condição de "dirty read".</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Exercícios Difíceis</h2>
+            <ul>
+                <li>Implemente um sistema de gerenciamento de transações em que o banco de dados use `REPEATABLE READ` como nível de isolamento.</li>
+                <li>Desenvolva um processo para detectar e resolver deadlocks em uma transação.</li>
+                <li>Implemente uma transação com o nível de isolamento `SERIALIZABLE` e observe como ela afeta a concorrência.</li>
+                <li>Utilize transações para gerenciar operações de inserção em massa com controle de erros em tempo real.</li>
+                <li>Simule uma falha de sistema e mostre como a transação pode ser recuperada com `ROLLBACK` e um ponto de recuperação.</li>
+                <li>Crie um script de transação com múltiplas tabelas e garanta a integridade referencial com transações aninhadas.</li>
+                <li>Use o `SET TRANSACTION` para definir propriedades específicas para uma transação, como nível de isolamento e tempo de espera.</li>
+                <li>Implemente uma estratégia de transações usando a cláusula `WAITFOR` para controlar o tempo de espera em transações bloqueadas.</li>
+                <li>Teste a manipulação de transações em um banco de dados distribuído e verifique como as operações são coordenadas.</li>
+                <li>Crie um sistema de transação com um `BEFORE COMMIT` trigger para validar mudanças antes da confirmação final.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Desafios</h2>
+            <ul>
+                <li>Implemente uma transação que utiliza múltiplos pontos de salvamento para dividir operações complexas em etapas menores.</li>
+                <li>Crie um mecanismo de controle de transações para um sistema de inventário que tenha múltiplos fornecedores e controle de estoque.</li>
+                <li>Desenvolva uma transação que faça uso de um `AFTER COMMIT` trigger para enviar notificações após a confirmação de dados.</li>
+                <li>Implemente uma solução para detectar e gerenciar transações paralelas em um sistema de banco de dados com alto volume de operações.</li>
+                <li>Crie um sistema de relatórios que utilize transações para garantir que as consultas sejam consistentes em um banco de dados em constante mudança.</li>
+                <li>Configure um banco de dados para registrar o histórico de transações em uma tabela de auditoria com `COMMIT` e `ROLLBACK`.</li>
+                <li>Desenvolva um script de transação para executar uma análise de impacto em massa antes de atualizar um conjunto de registros.</li>
+                <li>Implemente um mecanismo de controle de transações com uso de `LOCK TABLES` para manter a integridade em cenários de alto acesso simultâneo.</li>
+                <li>Configure transações para automatizar a criação de backups de dados em um sistema de alta disponibilidade.</li>
+                <li>Desenvolva uma lógica de transação com `SAVEPOINT` para realizar um "rollback parcial" em um processo de atualização de registros.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/desafios-projetos.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios de Criação de Bases e Tabelas.</h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML/mysql-exercises.html">Voltar</a></li>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            
+            <ul>
+                <li>1. Criar um banco de dados chamado <strong>exercicios_db</strong>.</li>
+                <li>2. Verificar se o banco de dados foi criado com sucesso usando <strong>SHOW DATABASES;</strong>.</li>
+                <li>3. Selecionar o banco de dados <strong>USE exercicios_db;</strong>.</li>
+                <li>4. Criar uma tabela chamada <strong>usuarios</strong> com colunas: id (chave primária, auto incremento), nome (VARCHAR), email (VARCHAR único) e data_nascimento (DATE).</li>
+                <li>5. Criar uma tabela chamada <strong>produtos</strong> com colunas: id (chave primária, auto incremento), nome (VARCHAR), preco (DECIMAL), quantidade_em_estoque (INT).</li>
+                <li>6. Criar uma tabela chamada <strong>pedidos</strong> com colunas: id (chave primária, auto incremento), usuario_id (chave estrangeira referenciando <strong>usuarios</strong>), data_pedido (DATE) e total (DECIMAL).</li>
+                <li>7. Criar uma tabela chamada <strong>itens_pedido</strong> com colunas: id (chave primária, auto incremento), pedido_id (chave estrangeira referenciando <strong>pedidos</strong>), produto_id (chave estrangeira referenciando <strong>produtos</strong>), quantidade (INT) e preco_unitario (DECIMAL).</li>
+                <li>8. Adicionar uma restrição de chave primária na coluna <strong>id</strong> da tabela <strong>usuarios</strong>.</li>
+                <li>9. Adicionar uma restrição de chave única na coluna <strong>email</strong> da tabela <strong>usuarios</strong>.</li>
+                <li>10. Adicionar uma chave estrangeira na coluna <strong>usuario_id</strong> da tabela <strong>pedidos</strong> que referencie a tabela <strong>usuarios</strong>.</li>
+                <li>11. Adicionar uma chave estrangeira na coluna <strong>produto_id</strong> da tabela <strong>itens_pedido</strong> que referencie a tabela <strong>produtos</strong>.</li>
+                <li>12. Adicionar uma chave estrangeira na coluna <strong>pedido_id</strong> da tabela <strong>itens_pedido</strong> que referencie a tabela <strong>pedidos</strong>.</li>
+                <li>13. Criar uma tabela <strong>categorias</strong> com colunas: id (chave primária, auto incremento), nome (VARCHAR) e descricao (TEXT).</li>
+                <li>14. Adicionar uma coluna <strong>categoria_id</strong> à tabela <strong>produtos</strong> e definir como chave estrangeira que referencie a tabela <strong>categorias</strong>.</li>
+                <li>15. Criar uma tabela <strong>log_acessos</strong> com colunas: id (chave primária, auto incremento), usuario_id (chave estrangeira), data_acesso (TIMESTAMP) e ip_acesso (VARCHAR).</li>
+                <li>16. Criar uma tabela <strong>avaliacoes</strong> com colunas: id (chave primária, auto incremento), produto_id (chave estrangeira), usuario_id (chave estrangeira), nota (INT) e comentario (TEXT).</li>
+                <li>17. Criar um índice na coluna <strong>email</strong> da tabela <strong>usuarios</strong> para melhorar a busca.</li>
+                <li>18. Criar um índice composto nas colunas <strong>nome</strong> e <strong>preco</strong> da tabela <strong>produtos</strong>.</li>
+                <li>19. Criar uma tabela <strong>transacoes</strong> com colunas: id (chave primária, auto incremento), usuario_id (chave estrangeira), data_transacao (TIMESTAMP), valor (DECIMAL) e descricao (TEXT).</li>
+                <li>20. Alterar a tabela <strong>usuarios</strong> para incluir uma coluna <strong>telefone</strong> (VARCHAR).</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/desafios-projetos.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios Avançados MongoDB</h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML/mongodb-exercises.html">Voltar</a></li>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Exercícios Avançados de MongoDB</h2>
+            <ul>
+                <li>1. Realize uma agregação para calcular a média de uma coluna em uma coleção.</li>
+                <li>2. Implemente uma busca com `lookup` para unir duas coleções em uma consulta.</li>
+                <li>3. Crie uma consulta usando o operador `$match` para filtrar documentos por múltiplas condições.</li>
+                <li>4. Use o operador `$group` para agrupar documentos e contar o número de vezes que um valor aparece.</li>
+                <li>5. Realize uma atualização com `updateMany` para modificar múltiplos documentos de uma vez.</li>
+                <li>6. Crie um índice composto em uma coleção para melhorar a performance de consultas complexas.</li>
+                <li>7. Implemente uma consulta que use o operador `$in` para selecionar documentos com valores de um array específico.</li>
+                <li>8. Faça uma consulta que utilize `$lookup` e `$unwind` para desmembrar resultados de uma agregação.</li>
+                <li>9. Utilize o operador `$regex` para buscar documentos que correspondam a um padrão específico de texto.</li>
+                <li>10. Crie uma consulta para usar o operador `$sort` e ordenar documentos por mais de um campo.</li>
+                <li>11. Realize uma consulta para usar o operador `$project` e exibir apenas certos campos de um documento.</li>
+                <li>12. Crie um documento usando o método `insertOne` e um documento com `insertMany`.</li>
+                <li>13. Use a operação `deleteOne` e `deleteMany` para remover documentos específicos de uma coleção.</li>
+                <li>14. Utilize o operador `$addFields` para adicionar um novo campo a todos os documentos em uma coleção.</li>
+                <li>15. Crie uma consulta que use `$lookup` com uma subconsulta para buscar apenas documentos que atendam a critérios específicos.</li>
+                <li>16. Implemente uma atualização usando o operador `$set` e `$unset` para modificar e remover campos de documentos.</li>
+                <li>17. Realize uma consulta que utilize `$facet` para dividir uma agregação em diferentes pipelines simultâneos.</li>
+                <li>18. Crie um trigger no MongoDB para realizar uma ação quando um documento for inserido em uma coleção.</li>
+                <li>19. Use o operador `$merge` para armazenar o resultado de uma agregação em uma nova coleção.</li>
+                <li>20. Crie uma consulta com `$map` para aplicar uma transformação em um array dentro de um documento.</li>
+                <li>21. Realize uma consulta para usar `$lookup` e `$project` em uma única operação para simplificar a exibição de dados.</li>
+                <li>22. Implemente uma consulta que utilize o operador `$sample` para retornar um número aleatório de documentos.</li>
+                <li>23. Use a função `db.collection.countDocuments()` para contar o número de documentos que atendem a uma condição.</li>
+                <li>24. Crie uma consulta usando o operador `$sort` com `$limit` para encontrar os principais resultados.</li>
+                <li>25. Realize uma consulta com `$text` para buscar documentos em uma coleção com um índice de texto.</li>
+                <li>26. Implemente uma consulta que utilize o operador `$graphLookup` para realizar buscas recursivas em um grafo de documentos.</li>
+                <li>27. Crie uma consulta usando `$bucket` para agrupar documentos em faixas de valores.</li>
+                <li>28. Utilize o operador `$lookup` para combinar informações de duas coleções em uma consulta aninhada.</li>
+                <li>29. Realize uma atualização condicional usando `updateOne` e um filtro com `if` em JavaScript.</li>
+                <li>30. Crie uma consulta que utilize o operador `$setWindowFields` para calcular valores de janelas em uma agregação.</li>
+                <li>31. Implemente uma consulta que use `$out` para armazenar o resultado de uma agregação em uma coleção existente.</li>
+                <li>32. Realize uma consulta com o operador `$map` para modificar elementos em um array.</li>
+                <li>33. Use o operador `$mergeObjects` para combinar múltiplos objetos em um único documento.</li>
+                <li>34. Crie uma consulta com `$lookup` e `aggregate` para agregar e mostrar informações de várias coleções.</li>
+                <li>35. Implemente uma consulta com `$count` para contar o número de documentos após uma operação de `match`.</li>
+                <li>36. Realize uma operação para buscar e remover um documento específico usando `findOneAndDelete`.</li>
+                <li>37. Crie uma consulta que utilize o operador `$map` para aplicar uma operação a todos os elementos de um array.</li>
+                <li>38. Implemente uma agregação com `$sort` e `$skip` para implementar paginação de resultados.</li>
+                <li>39. Realize uma consulta para aplicar o operador `$set` e atualizar um campo específico de todos os documentos.</li>
+                <li>40. Crie uma consulta com `$merge` para armazenar o resultado de uma consulta em uma coleção externa.</li>
+                <li>41. Use o operador `$unwind` para desfazer a estrutura de um array em documentos.</li>
+                <li>42. Implemente uma consulta que utilize o operador `$convert` para mudar o tipo de um campo.</li>
+                <li>43. Crie uma operação que utilize `$lookup` e `$unwind` para retornar somente os elementos que correspondem a critérios específicos.</li>
+                <li>44. Realize uma atualização usando `$addToSet` para adicionar um valor a um array somente se não existir.</li>
+                <li>45. Crie uma consulta que utilize `$replaceRoot` para substituir o documento pai por um campo específico.</li>
+                <li>46. Implemente uma operação que use `$group` para encontrar a soma total de um campo em uma coleção.</li>
+                <li>47. Realize uma consulta com `$lookup` que utilize `localField` e `foreignField` para definir como as coleções são unidas.</li>
+                <li>48. Crie uma consulta com o operador `$push` para adicionar elementos a um array em um documento.</li>
+                <li>49. Implemente uma operação que use `$graphLookup` para fazer buscas de padrões em um conjunto de dados em grafo.</li>
+                <li>50. Realize uma consulta que utilize `$lookup` e `$project` para mostrar apenas certos campos após a junção.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>
+

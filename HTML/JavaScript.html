@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/javascript.css">
+</head>
+
+<body>
+    <header>
+        <h1>JavaScript</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="Linguagens.html">Linguagens</a></li>
+                <li><a href="Exercicios.html">Exercícios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Introdução -->
+        <section class="intro">
+            <h2>O que é JavaScript?</h2>
+            <p>JavaScript é uma linguagem de programação que permite adicionar interatividade às páginas web. Com
+                JavaScript, você pode criar aplicativos web dinâmicos, desenvolver servidores usando Node.js e até
+                programar para dispositivos móveis. É a linguagem de programação de facto para desenvolvimento web e é
+                suportada por todos os navegadores modernos.</p>
+        </section>
+
+        <!-- Principais Características -->
+        <section class="features">
+            <h2>Principais Características do JavaScript</h2>
+            <ul>
+                <li><strong>Leve e Rápido:</strong> JavaScript é executado no lado do cliente, tornando a execução
+                    rápida e eficiente.</li>
+                <li><strong>Versatilidade:</strong> Pode ser usado tanto para desenvolvimento front-end quanto back-end
+                    (Node.js).</li>
+                <li><strong>Orientação a Objetos:</strong> Suporta programação orientada a objetos, facilitando a
+                    criação de código modular e reutilizável.</li>
+                <li><strong>Comunidade e Ecossistema:</strong> Possui uma enorme comunidade e um vasto ecossistema de
+                    bibliotecas e frameworks, como React, Angular e Vue.js.</li>
+                <li><strong>Compatibilidade:</strong> Funciona em todos os navegadores modernos sem a necessidade de
+                    plugins adicionais.</li>
+            </ul>
+        </section>
+
+        <!-- Sintaxe Básica -->
+        <section class="syntax">
+            <h2>Sintaxe Básica</h2>
+            <h3>Exemplo de Declaração de Variáveis</h3>
+            <pre><code>// Declaração de variáveis
+let nome = "João"; // Variável de escopo de bloco
+const idade = 30; // Variável constante
+var cidade = "São Paulo"; // Variável de escopo global ou função</code></pre>
+
+            <h3>Exemplo de Estruturas de Controle</h3>
+            <pre><code>// Estrutura de controle condicional
+if (idade >= 18) {
+    console.log("Você é maior de idade.");
+} else {
+    console.log("Você é menor de idade.");
+}
+
+// Estrutura de repetição
+for (let i = 0; i < 5; i++) {
+    console.log("Número: " + i);
+}</code></pre>
+        </section>
+
+        <!-- Funções Avançadas -->
+        <section class="functions">
+            <h2>Funções Avançadas</h2>
+            <h3>Funções de Ordem Superior</h3>
+            <pre><code>// Função de ordem superior que recebe outra função como argumento
+function executarOperacao(a, b, operacao) {
+    return operacao(a, b);
+}
+
+function soma(x, y) {
+    return x + y;
+}
+
+console.log(executarOperacao(5, 10, soma)); // Saída: 15</code></pre>
+
+            <h3>Arrow Functions</h3>
+            <pre><code>// Sintaxe de arrow function
+const multiplicar = (a, b) => a * b;
+console.log(multiplicar(5, 4)); // Saída: 20</code></pre>
+        </section>
+
+        <!-- Manipulação de DOM -->
+        <section class="dom">
+            <h2>Manipulação de DOM</h2>
+            <p>JavaScript é frequentemente usado para manipular o Document Object Model (DOM) e criar interfaces
+                dinâmicas. Aqui está um exemplo de como modificar elementos HTML com JavaScript:</p>
+            <pre><code>// Seleciona um elemento e altera seu conteúdo
+document.getElementById("demo").innerHTML = "Olá, JavaScript!";
+
+// Adiciona um evento de clique
+document.getElementById("btn").addEventListener("click", function() {
+    alert("Botão clicado!");
+});</code></pre>
+        </section>
+
+        <!-- Assincronia -->
+        <section class="asynchronous">
+            <h2>Programação Assíncrona</h2>
+            <p>JavaScript tem suporte integrado para operações assíncronas, o que permite que você faça chamadas de rede
+                e aguarde resultados sem bloquear a execução do código.</p>
+            <h3>Exemplo de Promises</h3>
+            <pre><code>// Exemplo de uma Promise
+const minhaPromise = new Promise((resolve, reject) => {
+    let sucesso = true; // Simulação de uma operação assíncrona
+    if (sucesso) {
+        resolve("Operação bem-sucedida!");
+    } else {
+        reject("Ocorreu um erro.");
+    }
+});
+
+minhaPromise
+    .then(resposta => console.log(resposta))
+    .catch(erro => console.error(erro));</code></pre>
+        </section>
+
+        <!-- Recursos de Aprendizado -->
+        <section class="resources">
+            <h2>Recursos de Aprendizado</h2>
+            <p>Confira alguns recursos recomendados para aprofundar seus conhecimentos em JavaScript:</p>
+            <ul>
+                <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">MDN Web Docs -
+                        JavaScript</a></li>
+                <li><a href="https://www.w3schools.com/js/" target="_blank">W3Schools - JavaScript Tutorial</a></li>
+                <li><a href="https://javascript.info/" target="_blank">JavaScript.info - O Guia Completo</a></li>
+                <li><a href="https://www.freecodecamp.org/learn/" target="_blank">FreeCodeCamp - Curso de JavaScript</a>
+                </li>
+                
+            </ul>
+        </section>
+
+        <!-- Projetos Práticos -->
+        <section class="projects">
+            <h2>Projetos Práticos para JavaScript</h2>
+            <p>Praticar com projetos é uma das melhores formas de aprender. Confira alguns projetos práticos:</p>
+            <ul>
+                <li><a href="https://www.codewars.com/" target="_blank">CodeWars - Desafios de programação</a></li>
+                <li><a href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor - Desafios de front-end</a>
+                </li>
+                <li><a href="https://github.com/topics/javascript" target="_blank">GitHub - Repositórios de projetos em
+                        JavaScript</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Bons Estudos</p>
+    </footer>
+</body>
+
+</html>

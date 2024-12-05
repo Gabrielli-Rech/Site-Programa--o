@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos Básicos SQL no PostgreSQL</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Variaveis-e-tipos-de-dados-ex-js.css">
+</head>
+
+<body>
+    <header>
+        <h1>Comandos Básicos SQL no PostgreSQL</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/postgresql-exercises.html">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Introdução -->
+        <section class="intro">
+            <h2>O que é PostgreSQL?</h2>
+            <p>O PostgreSQL é um sistema de gerenciamento de banco de dados relacional (SGBD) avançado, conhecido por sua robustez, desempenho e conformidade com os padrões SQL.</p>
+            <p>Veja abaixo os principais comandos SQL usados no PostgreSQL para criar, consultar e manipular bancos de dados.</p>
+        </section>
+
+        <!-- Comandos Básicos -->
+        <section class="basic-commands">
+            <h2>Comandos Básicos</h2>
+            <ul>
+                <li><strong>Criar Banco de Dados:</strong>  
+                    <pre><code>CREATE DATABASE nome_do_banco;</code></pre>
+                </li>
+                <li><strong>Conectar ao Banco:</strong>  
+                    <pre><code>\c nome_do_banco</code></pre>
+                </li>
+                <li><strong>Criar Tabela:</strong>  
+                    <pre><code>CREATE TABLE nome_tabela (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100),
+    idade INT
+);</code></pre>
+                </li>
+                <li><strong>Inserir Dados:</strong>  
+                    <pre><code>INSERT INTO nome_tabela (nome, idade)
+VALUES ('Ana', 25);</code></pre>
+                </li>
+                <li><strong>Consultar Dados:</strong>  
+                    <pre><code>SELECT * FROM nome_tabela;</code></pre>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Comandos de Manipulação -->
+        <section class="data-manipulation">
+            <h2>Comandos de Manipulação de Dados</h2>
+            <ul>
+                <li><strong>Atualizar Dados:</strong>  
+                    <pre><code>UPDATE nome_tabela
+SET idade = 26
+WHERE nome = 'Ana';</code></pre>
+                </li>
+                <li><strong>Excluir Dados:</strong>  
+                    <pre><code>DELETE FROM nome_tabela
+WHERE nome = 'Ana';</code></pre>
+                </li>
+                <li><strong>Adicionar Coluna:</strong>  
+                    <pre><code>ALTER TABLE nome_tabela
+ADD COLUMN email VARCHAR(100);</code></pre>
+                </li>
+                <li><strong>Excluir Tabela:</strong>  
+                    <pre><code>DROP TABLE nome_tabela;</code></pre>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Comandos de Consultas Avançadas -->
+        <section class="advanced-queries">
+            <h2>Comandos de Consultas Avançadas</h2>
+            <ul>
+                <li><strong>Filtrar Dados:</strong>  
+                    <pre><code>SELECT * FROM nome_tabela
+WHERE idade > 20;</code></pre>
+                </li>
+                <li><strong>Ordenar Dados:</strong>  
+                    <pre><code>SELECT * FROM nome_tabela
+ORDER BY idade DESC;</code></pre>
+                </li>
+                <li><strong>Contar Registros:</strong>  
+                    <pre><code>SELECT COUNT(*) FROM nome_tabela;</code></pre>
+                </li>
+                <li><strong>Juntar Tabelas:</strong>  
+                    <pre><code>SELECT a.nome, b.nome_projeto
+FROM tabela_a a
+JOIN tabela_b b ON a.id = b.id_usuario;</code></pre>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar os comandos SQL no PostgreSQL, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-comandos-sql-basicos-postgresql.html" class="btn">Ver Exercícios de PostgreSQL</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+
+</html>

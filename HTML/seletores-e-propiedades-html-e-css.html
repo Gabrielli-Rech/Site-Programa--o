@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores e Propriedades em CSS</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Seletores-e-Propriedades-CSS.css">
+</head>
+<body>
+    <header>
+        <h1>Seletores e Propriedades</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/html-css-exercises.html">Voltar</a></li>
+                <!--<li><a href="css-projects.html">Projetos</a></li>-->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h2>O que são Seletores e Propriedades em CSS?</h2>
+            <p>Em CSS, seletores são usados para identificar elementos HTML aos quais as regras de estilo serão aplicadas. As propriedades definem as características de estilo desses elementos, como cor, tamanho, layout e muito mais.</p>
+        </section>
+
+        <!-- Seletores -->
+        <section class="selectors">
+            <h2>Seletores</h2>
+            <p>Os seletores são a forma de apontar para os elementos HTML que você deseja estilizar. Alguns dos seletores mais comuns incluem:</p>
+            <ul>
+                <li><strong>Seletores de Elemento:</strong> Apontam para todos os elementos de um tipo específico. Exemplo: <code>p {}</code> aplica-se a todos os elementos <code>&lt;p&gt;</code>.</li>
+                <li><strong>Seletores de Classe:</strong> Apontam para elementos com uma classe específica. Exemplo: <code>.exemplo {}</code> aplica-se a todos os elementos com a classe "exemplo".</li>
+                <li><strong>Seletores de ID:</strong> Apontam para um elemento específico com um ID. Exemplo: <code>#titulo {}</code> aplica-se ao elemento com o ID "titulo".</li>
+                <li><strong>Seletores de Atributo:</strong> Apontam para elementos que possuem um atributo específico. Exemplo: <code>[type="text"] {}</code> aplica-se a elementos com o atributo <code>type="text"</code>.</li>
+                <li><strong>Seletores de Descendentes:</strong> Apontam para elementos que são descendentes de outro elemento. Exemplo: <code>div p {}</code> aplica-se a todos os elementos <code>&lt;p&gt;</code> dentro de <code>&lt;div&gt;</code>.</li>
+            </ul>
+        </section>
+
+        <!-- Propriedades -->
+        <section class="properties">
+            <h2>Propriedades</h2>
+            <p>As propriedades são usadas para definir o estilo de um elemento selecionado. Algumas das propriedades mais comuns incluem:</p>
+            <ul>
+                <li><strong>Cor:</strong> Define a cor do texto. Exemplo: <code>color: blue;</code></li>
+                <li><strong>Fonte:</strong> Define o tipo de fonte. Exemplo: <code>font-family: 'Arial', sans-serif;</code></li>
+                <li><strong>Tamanho da Fonte:</strong> Define o tamanho do texto. Exemplo: <code>font-size: 16px;</code></li>
+                <li><strong>Cor de Fundo:</strong> Define a cor de fundo de um elemento. Exemplo: <code>background-color: lightgray;</code></li>
+                <li><strong>Margem:</strong> Define o espaço fora do elemento. Exemplo: <code>margin: 10px;</code></li>
+                <li><strong>Preenchimento:</strong> Define o espaço dentro do elemento. Exemplo: <code>padding: 5px;</code></li>
+                <li><strong>Borda:</strong> Define a borda do elemento. Exemplo: <code>border: 1px solid black;</code></li>
+            </ul>
+        </section>
+
+        <!-- Exemplo de Uso -->
+        <section class="example">
+            <h2>Exemplo de Uso de Seletores e Propriedades</h2>
+            <p>Veja como aplicar seletores e propriedades em um exemplo prático:</p>
+            <pre><code>/* Seleciona todos os elementos <p> e aplica as propriedades */ 
+p {
+    color: blue;
+    font-size: 16px;
+    margin: 10px;
+    padding: 5px;
+    background-color: lightgray;
+}</code></pre>
+            <p>Este exemplo faz com que todos os elementos <code>&lt;p&gt;</code> tenham texto azul, tamanho de fonte de 16px, margem de 10px, preenchimento de 5px e um fundo cinza claro.</p>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar os conceitos de seletores e propriedades em CSS, tente resolver alguns exercícios práticos:</p>
+            <a href="../HTML/exerc-seletores-e-propiedades.html" class="btn">Ver Exercícios de Seletores e Propriedades</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>

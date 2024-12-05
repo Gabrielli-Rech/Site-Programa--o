@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixa em CSS</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Variaveis-e-tipos-de-dados-ex-js.css">
+</head>
+<body>
+    <header>
+        <h1>Modelo de Caixa em CSS</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/html-css-exercises.html">Voltar</a></li>
+                <!--<li><a href="css-projects.html">Projetos</a></li>-->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h2>O que é o Modelo de Caixa em CSS?</h2>
+            <p>O modelo de caixa em CSS é a forma como os elementos HTML são exibidos e organizados na página. Ele inclui propriedades como largura, altura, padding, border e margin para definir o tamanho e o espaçamento dos elementos.</p>
+        </section>
+
+        <!-- Estrutura do modelo de caixa -->
+        <section class="box-model">
+            <h2>Componentes do Modelo de Caixa</h2>
+            <p>Cada elemento na página é representado como uma caixa retangular, composta pelos seguintes componentes:</p>
+            <ul>
+                <li><strong>Content:</strong> O conteúdo real do elemento, como texto, imagens, etc.</li>
+                <li><strong>Padding:</strong> O espaçamento entre o conteúdo e a borda do elemento.</li>
+                <li><strong>Border:</strong> A linha ao redor do elemento, que pode ter diferentes estilos, larguras e cores.</li>
+                <li><strong>Margin:</strong> O espaço fora da borda do elemento, que cria espaçamento entre o elemento e os outros elementos.</li>
+            </ul>
+        </section>
+
+        <!-- Exemplo de modelo de caixa -->
+        <section class="box-example">
+            <h2>Exemplo de Modelo de Caixa</h2>
+            <p>Veja como a propriedade <code>box-sizing</code> pode influenciar o modelo de caixa:</p>
+            <pre><code>/* Exemplo de modelo de caixa padrão (content-box) */
+.box {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 10px;
+    box-sizing: content-box; /* Padrão */
+}
+
+/* Exemplo de modelo de caixa alterado para border-box */
+.box-border-box {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 10px;
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}</code></pre>
+            <div class="box-example-container">
+                <div class="box">Content Box</div>
+                <div class="box-border-box">Border Box</div>
+            </div>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar o uso do modelo de caixa em CSS, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-modelo-de-caixa.html" class="btn">Ver Exercícios de Modelo de Caixa</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>

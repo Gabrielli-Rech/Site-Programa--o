@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos Básicos do Git</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/desafios-projetos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Comandos Básicos do Git</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/git-exercises.html">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Introdução -->
+        <section class="intro">
+            <h2>O que é Git?</h2>
+            <p>Git é um sistema de controle de versão distribuído amplamente utilizado para gerenciar projetos de código. Ele permite rastrear alterações, colaborar com outros desenvolvedores e gerenciar diferentes versões do código de forma eficiente.</p>
+        </section>
+
+        <!-- Inicialização do Repositório -->
+        <section class="init-repo">
+            <h2>Inicializando um Repositório</h2>
+            <p>Para começar a usar o Git em um projeto, você precisa inicializar um repositório. Use o seguinte comando:</p>
+            <pre><code>git init</code></pre>
+            <p>Esse comando cria um repositório Git no diretório atual.</p>
+        </section>
+
+        <!-- Adicionando Arquivos -->
+        <section class="add-files">
+            <h2>Adicionando Arquivos ao Controle de Versão</h2>
+            <p>Para adicionar arquivos ao controle de versão, use o comando:</p>
+            <pre><code>git add [nome_do_arquivo]</code></pre>
+            <p>Para adicionar todos os arquivos do diretório atual:</p>
+            <pre><code>git add .</code></pre>
+        </section>
+
+        <!-- Criando Commits -->
+        <section class="commits">
+            <h2>Criando Commits</h2>
+            <p>Um commit salva as alterações no histórico do repositório. Use o seguinte comando:</p>
+            <pre><code>git commit -m "Mensagem descritiva do commit"</code></pre>
+        </section>
+
+        <!-- Verificando o Status -->
+        <section class="status">
+            <h2>Verificando o Status do Repositório</h2>
+            <p>Para verificar o status do repositório e ver quais arquivos foram modificados, use:</p>
+            <pre><code>git status</code></pre>
+        </section>
+
+        <!-- Visualizando o Histórico -->
+        <section class="log">
+            <h2>Visualizando o Histórico de Commits</h2>
+            <p>Para ver o histórico de commits do repositório, use:</p>
+            <pre><code>git log</code></pre>
+        </section>
+
+        <!-- Trabalhando com Branches -->
+        <section class="branches">
+            <h2>Trabalhando com Branches</h2>
+            <p>Branches são usadas para desenvolver funcionalidades de forma isolada. Comandos úteis:</p>
+            <ul>
+                <li>Criar uma nova branch:</li>
+                <pre><code>git branch [nome_da_branch]</code></pre>
+                <li>Mudar para uma branch existente:</li>
+                <pre><code>git checkout [nome_da_branch]</code></pre>
+                <li>Criar e trocar para uma nova branch:</li>
+                <pre><code>git checkout -b [nome_da_branch]</code></pre>
+            </ul>
+        </section>
+
+        <!-- Enviando para o Repositório Remoto -->
+        <section class="push-pull">
+            <h2>Trabalhando com Repositórios Remotos</h2>
+            <p>Para enviar alterações para o repositório remoto, use:</p>
+            <pre><code>git push origin [nome_da_branch]</code></pre>
+            <p>Para obter alterações do repositório remoto, use:</p>
+            <pre><code>git pull</code></pre>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar os comandos básicos do Git, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-comandos-basicos-git.html" class="btn">Ver Exercícios de Comandos Básicos do Git</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+
+</html>

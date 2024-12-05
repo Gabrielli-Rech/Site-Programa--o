@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Threads e Programação Concorrente em Java</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/exerc-funcoes-assincronas.css">
+</head>
+
+<body>
+    <header>
+        <h1>Exercícios de Threads e Programação Concorrente em Java</h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML/java-exercises.html">Voltar</a></li>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <h2>Exercícios de Threads e Programação Concorrente em Java</h2>
+
+        <!-- Exercícios sobre Threads -->
+        <div>
+            <h3>Exercícios sobre Threads</h3>
+            <ul>
+                <li>1. Crie um programa que inicie uma thread para imprimir números de 1 a 10 com um intervalo de 1 segundo entre eles.</li>
+                <li>2. Desenvolva um programa que crie duas threads que alternem a impressão de "Hello" e "World".</li>
+                <li>3. Implemente uma thread que calcule a soma dos números de 1 a 100 e imprima o resultado.</li>
+                <li>4. Escreva um programa que utilize múltiplas threads para imprimir a tabela de multiplicação de 1 a 10.</li>
+                <li>5. Crie um exemplo de uma thread que pause sua execução por 2 segundos antes de continuar.</li>
+                <li>6. Implemente um programa que crie uma thread para contar de 1 a 100 em intervalos de 0.5 segundos e outra para contar de 100 a 1.</li>
+                <li>7. Desenvolva uma aplicação que utilize uma thread para baixar um arquivo de internet em segundo plano.</li>
+                <li>8. Crie um exemplo de um programa com uma thread que calcule a média de uma lista de números e imprima o resultado.</li>
+                <li>9. Escreva um programa que utilize `Thread.sleep()` para simular uma pausa de execução e depois continuar.</li>
+                <li>10. Implemente um exemplo em que uma thread é interrompida e um tratamento de exceção é realizado.</li>
+                <li>11. Desenvolva um programa que use `Runnable` para criar e iniciar threads.</li>
+                <li>12. Crie uma thread que, ao ser executada, imprime uma mensagem em intervalos de 1 segundo até que a execução seja interrompida.</li>
+                <li>13. Implemente um programa que crie uma thread que imprime uma mensagem e depois se torna "daemon" para terminar automaticamente.</li>
+                <li>14. Desenvolva um exemplo de thread que leia dados de um arquivo e os imprima na tela.</li>
+                <li>15. Crie um exemplo de um programa que utilize um contador em uma thread compartilhada e evite condições de corrida com `synchronized`.</li>
+                <li>16. Escreva um programa que crie uma thread para simular um processo de renderização em uma aplicação gráfica.</li>
+                <li>17. Implemente um exemplo que use `ExecutorService` para gerenciar múltiplas threads simultâneas.</li>
+                <li>18. Crie uma thread que execute uma tarefa em um loop infinito até que um sinal de parada seja recebido.</li>
+                <li>19. Desenvolva um programa que use `CountDownLatch` para aguardar que várias threads terminem suas tarefas antes de continuar.</li>
+                <li>20. Escreva um exemplo que use `Semaphore` para limitar o acesso de threads a um recurso compartilhado.</li>
+                <li>21. Implemente um programa que utilize `Future` e `Callable` para retornar um resultado de execução de thread.</li>
+                <li>22. Crie uma aplicação que simule a execução de um sistema de vendas com threads para diferentes tipos de transações.</li>
+                <li>23. Desenvolva um exemplo de um programa que use `ThreadLocal` para armazenar dados específicos de uma thread.</li>
+                <li>24. Escreva um exemplo de uma thread que utilize um `ExecutorService` para agendar tarefas repetitivas com `ScheduledExecutorService`.</li>
+                <li>25. Implemente um programa com threads que simule a execução de uma contagem regressiva de um temporizador.</li>
+                <li>26. Crie um exemplo em que várias threads escrevem e leem de uma lista compartilhada com `ReentrantLock`.</li>
+                <li>27. Desenvolva um programa que utilize `Thread.join()` para garantir que uma thread principal aguarde a conclusão de outras threads.</li>
+                <li>28. Escreva um programa em que uma thread envie dados para uma fila e outra receba e processe esses dados.</li>
+                <li>29. Implemente um exemplo de um programa com `ExecutorService` para gerenciar tarefas de execução assíncrona.</li>
+                <li>30. Crie um exemplo em que uma thread de leitura e uma thread de escrita competem pelo mesmo recurso e utilize `ReadWriteLock`.</li>
+                <li>31. Desenvolva um programa que utilize `Thread.sleep()` e um loop de verificação para processar tarefas em intervalos regulares.</li>
+                <li>32. Escreva um exemplo de um programa que tenha uma thread para fazer download de imagens enquanto outra exibe uma barra de progresso.</li>
+                <li>33. Implemente um programa que utilize `ForkJoinPool` para dividir e conquistar uma tarefa de processamento paralelo.</li>
+                <li>34. Crie um exemplo de um produtor-consumidor usando `BlockingQueue`.</li>
+                <li>35. Desenvolva um programa em que uma thread realize operações matemáticas intensivas e outra verifique a integridade do resultado.</li>
+                <li>36. Escreva um exemplo de uma aplicação de simulação de um sistema de impressão com várias threads gerenciando filas de impressão.</li>
+                <li>37. Implemente uma thread que monitore o uso de memória e envie alertas quando determinado limite for atingido.</li>
+                <li>38. Crie um exemplo em que uma thread execute uma tarefa demorada enquanto outras realizam tarefas menores em paralelo.</li>
+                <li>39. Desenvolva um programa que use `CompletableFuture` para encadear tarefas assíncronas e processar resultados.</li>
+                <li>40. Implemente um sistema de logging em um programa multithreaded com uso de `synchronized` para evitar conflitos de escrita.</li>
+                <li>41. Crie um exemplo de um sistema de votação em que uma thread representa um usuário que vota e outra computa os resultados.</li>
+                <li>42. Escreva um programa com threads que gerenciem diferentes tipos de tarefas em uma fila de prioridade usando `PriorityQueue`.</li>
+                <li>43. Desenvolva uma aplicação que use `ExecutorService` para processar tarefas de forma assíncrona com um pool de threads.</li>
+                <li>44. Implemente um exemplo de um jogo multiplayer em que cada jogador é representado por uma thread.</li>
+                <li>45. Crie uma aplicação que utilize `Thread.sleep()` e `Thread.interrupt()` para gerenciar a interrupção de uma tarefa de longa execução.</li>
+                <li>46. Escreva um exemplo que implemente um serviço de envio de notificações em tempo real com várias threads de background.</li>
+                <li>47. Implemente um programa que utilize `Callable` e `ExecutorService` para processar tarefas paralelas e coletar resultados.</li>
+                <li>48. Crie uma aplicação de backup em que uma thread faça a cópia de arquivos enquanto outra monitore a integridade do processo.</li>
+                <li>49. Desenvolva um exemplo que use `Thread.sleep()` e `ThreadLocal` para gerenciar variáveis específicas de uma thread.</li>
+                <li>50. Implemente um sistema de atendimento automatizado em uma central de chamadas com threads para cada cliente.</li>
+            </ul>
+        </div>
+
+        <!-- Exercícios sobre Programação Concorrente -->
+        <div>
+            <h3>Exercícios sobre Programação Concorrente</h3>
+            <ul>
+                <li>1. Implemente um sistema de contador concorrente que permita múltiplas threads incrementarem e decrementarem um valor.</li>
+                <li>2. Crie um exemplo que utilize `ConcurrentHashMap` para gerenciar um mapa de dados em um ambiente multithreaded.</li>
+                <li>3. Desenvolva um sistema de semáforo para controlar o acesso a um recurso compartilhado.</li>
+                <li>4. Escreva um programa que utilize `CopyOnWriteArrayList` para garantir segurança em uma lista compartilhada.</li>
+                <li>5. Implemente um exemplo que utilize `AtomicInteger` para realizar operações atômicas em um contador.</li>
+                <li>6. Crie um sistema de banco de dados em memória usando `ConcurrentLinkedQueue` para gerenciar transações simultâneas.</li>
+                <li>7. Desenvolva um exemplo de um sistema de produtor-consumidor usando `BlockingQueue`.</li>
+                <li>8. Escreva um programa que use `ReadWriteLock` para gerenciar a leitura e escrita concorrente em um banco de dados.</li>
+                <li>9. Implemente um exemplo que utilize `ExecutorService` para gerenciar múltiplas tarefas de forma concorrente.</li>
+                <li>10. Crie um programa que use `ThreadLocal` para gerenciar variáveis específicas de uma thread em um ambiente multithreaded.</li>
+                <li>11. Desenvolva um exemplo de uso de `ForkJoinPool` para resolver problemas paralelos de divisão e conquista.</li>
+                <li>12. Escreva um programa que utilize `ConcurrentSkipListMap` para manter uma coleção de elementos ordenada em um ambiente concorrente.</li>
+                <li>13. Implemente um exemplo de um sistema de compartilhamento de recursos com `Semaphore` para limitar a concorrência.</li>
+                <li>14. Crie um sistema de rastreamento de tarefas com `ConcurrentHashMap` para armazenar o progresso das tarefas.</li>
+                <li>15. Desenvolva um exemplo de um sistema de chat que use `ConcurrentHashMap` para gerenciar usuários e mensagens.</li>
+                <li>16. Escreva um programa que utilize `CountDownLatch` para esperar a conclusão de um conjunto de tarefas.</li>
+                <li>17. Implemente um exemplo que utilize `CyclicBarrier` para coordenar a execução de múltiplas threads.</li>
+                <li>18. Crie um sistema de transações bancárias com `synchronized` para garantir a consistência dos dados.</li>
+                <li>19. Desenvolva uma aplicação que use `ExecutorService` e `Future` para processar tarefas assíncronas e retornar resultados.</li>
+                <li>20. Implemente um exemplo que use `LinkedBlockingQueue` para gerenciar a comunicação entre produtor e consumidor.</li>
+                <li>21. Crie um programa que use `AtomicReference` para garantir a atualização atômica de uma variável de referência.</li>
+                <li>22. Escreva um sistema de log com múltiplas threads que use `synchronized` para evitar condições de corrida.</li>
+                <li>23. Desenvolva um exemplo de uma aplicação de monitoramento de recursos do sistema com `ThreadPoolExecutor`.</li>
+                <li>24. Implemente um programa que use `Executors.newFixedThreadPool()` para executar tarefas em um pool de threads fixo.</li>
+                <li>25. Crie um exemplo que utilize `ThreadPoolExecutor` para criar uma aplicação de execução de tarefas em paralelo.</li>
+                <li>26. Escreva um programa que utilize `ConcurrentHashMap` para gerenciar o acesso a uma lista de objetos.</li>
+                <li>27. Desenvolva um exemplo de um sistema de cache com `ConcurrentHashMap` e estratégias de expiração de itens.</li>
+                <li>28. Implemente um exemplo que use `ScheduledExecutorService` para agendar a execução de tarefas periódicas.</li>
+                <li>29. Crie uma aplicação que utilize `ConcurrentLinkedQueue` para implementar uma fila de mensagens.</li>
+                <li>30. Desenvolva um sistema de filas de atendimento com `PriorityBlockingQueue` para garantir prioridade no atendimento.</li>
+                <li>31. Escreva um programa que use `ReentrantLock` para implementar um mecanismo de bloqueio customizado.</li>
+                <li>32. Implemente um exemplo de um sistema de processamento em paralelo com `ForkJoinTask`.</li>
+                <li>33. Crie um sistema de sincronização de recursos usando `synchronized` e `volatile` para garantir visibilidade entre threads.</li>
+                <li>34. Desenvolva um exemplo que use `Thread.join()` para assegurar a execução sequencial de threads.</li>
+                <li>35. Escreva um programa que use `ExecutorService` para agendar tarefas em um ambiente de alta concorrência.</li>
+                <li>36. Implemente um exemplo de um sistema de monitoramento de atividades de threads com `Thread.getState()`.</li>
+                <li>37. Crie um exemplo que utilize `Thread.interrupt()` para interromper threads em execução.</li>
+                <li>38. Desenvolva uma aplicação que utilize `synchronized` e `ReentrantLock` para evitar deadlocks em um sistema de conta bancária.</li>
+                <li>39. Escreva um programa que use `Semaphore` para gerenciar a quantidade máxima de threads acessando um recurso.</li>
+                <li>40. Implemente um exemplo de um sistema de produção e consumo de tarefas com `BlockingQueue` e `ThreadPoolExecutor`.</li>
+                <li>41. Crie um sistema de coleta de métricas de desempenho em um ambiente multithreaded usando `AtomicLong`.</li>
+                <li>42. Desenvolva um exemplo que use `synchronized` para garantir exclusividade de acesso a métodos críticos.</li>
+                <li>43. Escreva um programa que implemente um serviço de processamento de dados em paralelo com `ForkJoinPool`.</li>
+                <li>44. Implemente um sistema de processamento de imagens em paralelo usando threads e `ExecutorService`.</li>
+                <li>45. Crie um exemplo de um sistema de monitoramento de status de threads com uso de `Thread.isAlive()`.</li>
+                <li>46. Desenvolva um programa que use `ExecutorService` para processar um conjunto de tarefas com um timeout definido.</li>
+                <li>47. Escreva um exemplo que use `ReadWriteLock` para permitir múltiplas leituras ou uma escrita em uma estrutura de dados.</li>
+                <li>48. Implemente um exemplo de um sistema que use `CyclicBarrier` para sincronizar threads em uma fase de processamento.</li>
+                <li>49. Crie um sistema de processamento de logs com múltiplas threads que use `ConcurrentLinkedDeque` para armazenamento seguro.</li>
+                <li>50. Desenvolva um exemplo de uma aplicação com controle de acesso usando `Semaphore` e `Thread.interrupt()` para gerenciar bloqueios.</li>
+            </ul>
+        </div>
+
+        
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+
+</html>

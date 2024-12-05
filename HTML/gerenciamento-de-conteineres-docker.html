@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/desafios-projetos.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios de Gerenciamento de Conteineres</h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML/docker-exercises.html">Voltar</a></li>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Exercícios Fáceis</h2>
+            <ul>
+                <li>Liste todos os contêineres em execução com o comando `docker ps`.</li>
+                <li>Liste todos os contêineres, incluindo os que estão parados, com `docker ps -a`.</li>
+                <li>Verifique a versão do Docker instalada com o comando `docker --version`.</li>
+                <li>Crie um contêiner simples do Nginx com o comando `docker run`.</li>
+                <li>Visualize os logs de um contêiner com o comando `docker logs <nome-do-contêiner>`.</li>
+                <li>Verifique a utilização de recursos (CPU, memória) de um contêiner com `docker stats`.</li>
+                <li>Execute um comando dentro de um contêiner em execução com `docker exec`.</li>
+                <li>Nomeie um contêiner durante sua criação com `docker run --name <nome>`.</li>
+                <li>Exiba as informações detalhadas de um contêiner com `docker inspect <nome-do-contêiner>`.</li>
+                <li>Remova um contêiner com o comando `docker rm <nome-do-contêiner>`.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Exercícios Médios</h2>
+            <ul>
+                <li>Crie e execute um contêiner com um volume persistente montado.</li>
+                <li>Crie um contêiner em modo interativo e execute comandos no shell do contêiner.</li>
+                <li>Parar e iniciar um contêiner existente com `docker stop` e `docker start`.</li>
+                <li>Reinicie um contêiner com o comando `docker restart`.</li>
+                <li>Copie arquivos de e para um contêiner com `docker cp`.</li>
+                <li>Use `docker commit` para criar uma nova imagem a partir de um contêiner existente.</li>
+                <li>Defina variáveis de ambiente ao criar um contêiner com `docker run -e`.</li>
+                <li>Conecte-se a um contêiner em execução com `docker attach`.</li>
+                <li>Crie um contêiner que expose uma porta específica para a máquina host.</li>
+                <li>Crie e execute um contêiner com uma imagem específica e faça alterações na configuração do contêiner.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Exercícios Difíceis</h2>
+            <ul>
+                <li>Configure uma rede personalizada para contêineres com `docker network create` e conecte contêineres a ela.</li>
+                <li>Crie e gerencie contêineres usando Docker Compose.</li>
+                <li>Use `docker inspect` para verificar as configurações de rede de um contêiner.</li>
+                <li>Limpe todos os contêineres parados e imagens não utilizadas com `docker system prune`.</li>
+                <li>Construa uma imagem Docker com um `Dockerfile` e um comando `docker build`.</li>
+                <li>Configure a escalabilidade de contêineres usando o comando `docker service create`.</li>
+                <li>Automatize a criação de contêineres e deploys com scripts de shell usando `docker run`.</li>
+                <li>Use o comando `docker exec` para realizar operações em múltiplos contêineres simultaneamente.</li>
+                <li>Monitore logs em tempo real com o comando `docker logs -f <nome-do-contêiner>`.</li>
+                <li>Use `docker update` para alterar as configurações de um contêiner em execução.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Desafios</h2>
+            <ul>
+                <li>Crie um contêiner Docker que execute uma aplicação web com suporte a SSL/TLS.</li>
+                <li>Monte um sistema de backup e restauração de contêineres usando `docker export` e `docker import`.</li>
+                <li>Implemente uma política de reinício de contêineres para garantir que eles sejam automaticamente reiniciados após falhas.</li>
+                <li>Crie e execute um contêiner Docker que faça a sincronização de arquivos com um serviço de armazenamento em nuvem.</li>
+                <li>Implemente um script que crie um contêiner de banco de dados e conecte outro contêiner a ele como cliente.</li>
+                <li>Configure um contêiner com uma ferramenta de monitoramento (como Prometheus) e visualize métricas de desempenho.</li>
+                <li>Desenvolva um contêiner com suporte a CI/CD integrando com GitHub Actions ou GitLab CI/CD.</li>
+                <li>Crie uma imagem Docker personalizada que contenha uma aplicação em Node.js com dependências específicas.</li>
+                <li>Configure contêineres de serviços em um cluster de Docker Swarm para implementar alta disponibilidade.</li>
+                <li>Use volumes para compartilhar arquivos entre o host e contêineres e permita a edição em tempo real.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>
+

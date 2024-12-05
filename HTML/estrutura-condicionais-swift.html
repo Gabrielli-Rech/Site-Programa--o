@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas Condicionais em Swift</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Variaveis-e-tipos-de-dados-ex-js.css">
+</head>
+
+<body>
+    <header>
+        <h1>Estruturas Condicionais em Swift</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/swift-exercises.html">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h2>O que são Estruturas Condicionais?</h2>
+            <p>Estruturas condicionais são usadas para executar diferentes blocos de código dependendo de uma condição. Em Swift, isso é feito principalmente com as instruções <code>if</code>, <code>else</code> e <code>switch</code>.</p>
+        </section>
+
+        <!-- Estrutura if-else -->
+        <section class="if-else">
+            <h2>Estrutura if-else</h2>
+            <p>A estrutura <code>if-else</code> é usada para executar um bloco de código se a condição for verdadeira e outro bloco se for falsa.</p>
+            <pre><code>let numero = 10
+if numero > 0 {
+    print("O número é positivo")
+} else if numero < 0 {
+    print("O número é negativo")
+} else {
+    print("O número é zero")
+}</code></pre>
+        </section>
+
+        <!-- Estrutura switch -->
+        <section class="switch">
+            <h2>Estrutura switch</h2>
+            <p>A estrutura <code>switch</code> é usada para comparar um valor com múltiplas possibilidades de forma mais legível e eficiente. Ela é mais poderosa que a estrutura <code>if-else</code> quando há muitas condições a serem verificadas.</p>
+            <pre><code>let diaDaSemana = "Terça-feira"
+switch diaDaSemana {
+case "Segunda-feira":
+    print("Hoje é segunda-feira")
+case "Terça-feira":
+    print("Hoje é terça-feira")
+case "Quarta-feira":
+    print("Hoje é quarta-feira")
+default:
+    print("Outro dia da semana")
+}</code></pre>
+            <p>Observação: O <code>switch</code> em Swift deve ser completo, ou seja, deve cobrir todos os casos possíveis. Se não for possível, você deve usar o <code>default</code>.</p>
+        </section>
+
+        <!-- Operadores Ternários -->
+        <section class="ternary-operator">
+            <h2>Operador Ternário</h2>
+            <p>O operador ternário é uma forma concisa de escrever uma estrutura <code>if-else</code>. Ele é utilizado quando a lógica for simples.</p>
+            <pre><code>let numero = 5
+let resultado = numero > 0 ? "Positivo" : "Negativo"
+print(resultado)</code></pre>
+            <p>O operador ternário <code>?</code> verifica a condição e, se for verdadeira, retorna o valor antes do <code>:</code>. Se for falsa, retorna o valor após o <code>:</code>.</p>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar os conceitos de estruturas condicionais em Swift, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-estruturas-condicionais-swift.html" class="btn">Ver Exercícios de Swift</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+
+</html>

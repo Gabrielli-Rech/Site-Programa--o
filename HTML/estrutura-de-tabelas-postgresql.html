@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas de Tabela no PostgreSQL</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Variaveis-e-tipos-de-dados-ex-js.css">
+</head>
+
+<body>
+    <header>
+        <h1>Estruturas de Tabela no PostgreSQL</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/postgresql-exercises.html">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Introdução -->
+        <section class="intro">
+            <h2>O que são Tabelas no PostgreSQL?</h2>
+            <p>As tabelas no PostgreSQL são estruturas fundamentais usadas para armazenar dados em um banco de dados relacional. Cada tabela é composta por linhas (registros) e colunas (campos), onde cada coluna possui um tipo de dado específico.</p>
+            <p>Você pode definir tabelas com diferentes tipos de dados, restrições e relacionamentos.</p>
+        </section>
+
+        <!-- Criando Tabelas -->
+        <section class="creating-tables">
+            <h2>Criando Tabelas</h2>
+            <p>Para criar uma tabela no PostgreSQL, usamos o comando <code>CREATE TABLE</code>. Veja o exemplo básico:</p>
+            <pre><code>CREATE TABLE usuarios (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    idade INT,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);</code></pre>
+            <p>No exemplo acima:</p>
+            <ul>
+                <li><code>id</code>: É a chave primária, definida automaticamente com o tipo <code>SERIAL</code>.</li>
+                <li><code>nome</code>: Coluna que não permite valores nulos (<code>NOT NULL</code>).</li>
+                <li><code>email</code>: Deve ser único (<code>UNIQUE</code>).</li>
+                <li><code>criado_em</code>: Armazena a data e hora de criação com um valor padrão.</li>
+            </ul>
+        </section>
+
+        <!-- Alterando Tabelas -->
+        <section class="altering-tables">
+            <h2>Alterando Tabelas</h2>
+            <p>Você pode modificar a estrutura de uma tabela existente usando o comando <code>ALTER TABLE</code>. Alguns exemplos:</p>
+            <ul>
+                <li><strong>Adicionar uma coluna:</strong>
+                    <pre><code>ALTER TABLE usuarios
+ADD COLUMN telefone VARCHAR(15);</code></pre>
+                </li>
+                <li><strong>Alterar o tipo de uma coluna:</strong>
+                    <pre><code>ALTER TABLE usuarios
+ALTER COLUMN idade TYPE SMALLINT;</code></pre>
+                </li>
+                <li><strong>Renomear uma coluna:</strong>
+                    <pre><code>ALTER TABLE usuarios
+RENAME COLUMN telefone TO celular;</code></pre>
+                </li>
+                <li><strong>Excluir uma coluna:</strong>
+                    <pre><code>ALTER TABLE usuarios
+DROP COLUMN celular;</code></pre>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Restrições -->
+        <section class="constraints">
+            <h2>Restrições em Tabelas</h2>
+            <p>As restrições definem regras para os dados armazenados nas tabelas. Algumas das restrições mais comuns são:</p>
+            <ul>
+                <li><code>PRIMARY KEY</code>: Define uma coluna ou conjunto de colunas como identificadores únicos.</li>
+                <li><code>UNIQUE</code>: Garante que os valores em uma coluna sejam únicos.</li>
+                <li><code>NOT NULL</code>: Impede que a coluna tenha valores nulos.</li>
+                <li><code>CHECK</code>: Garante que os dados atendam a uma condição específica.</li>
+                <li><code>FOREIGN KEY</code>: Define um relacionamento com outra tabela.</li>
+            </ul>
+            <p>Exemplo com restrição <code>CHECK</code>:</p>
+            <pre><code>CREATE TABLE produtos (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    preco NUMERIC CHECK (preco > 0)
+);</code></pre>
+        </section>
+
+        <!-- Relacionamentos -->
+        <section class="relationships">
+            <h2>Relacionamentos entre Tabelas</h2>
+            <p>Os relacionamentos permitem conectar tabelas no banco de dados. Para criar um relacionamento, usamos a restrição <code>FOREIGN KEY</code>. Exemplo:</p>
+            <pre><code>CREATE TABLE pedidos (
+    id SERIAL PRIMARY KEY,
+    id_usuario INT REFERENCES usuarios(id),
+    data_pedido TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);</code></pre>
+            <p>No exemplo acima:</p>
+            <ul>
+                <li><code>id_usuario</code>: Estabelece um relacionamento com a tabela <code>usuarios</code>.</li>
+                <li><code>REFERENCES usuarios(id)</code>: Define que a coluna <code>id_usuario</code> deve conter valores válidos na coluna <code>id</code> da tabela <code>usuarios</code>.</li>
+            </ul>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar a criação e manipulação de tabelas no PostgreSQL, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-estrutura-de-tabelas-postgresql.html" class="btn">Ver Exercícios de Estruturas de Tabelas</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/desafios-projetos.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios de Reversão e Reset de Alterações </h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML/git-exercises.html">Voltar</a></li>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <ul>
+                <li>Crie um repositório Git e adicione um arquivo de teste. Faça uma alteração e use `git status` para verificar as mudanças.</li>
+                <li>Use `git checkout -- <arquivo>` para reverter uma alteração em um arquivo específico antes de comitar.</li>
+                <li>Faça um commit e depois use `git reset --hard HEAD~1` para desfazer o último commit. Verifique o histórico com `git log`.</li>
+                <li>Use `git reset --soft HEAD~1` para desfazer o último commit, mas manter as alterações na área de stage.</li>
+                <li>Utilize `git revert <hash_do_commit>` para criar um novo commit que desfaz as alterações de um commit específico. Verifique o histórico com `git log`.</li>
+                <li>Faça uma alteração em um arquivo e use `git stash` para salvar as alterações temporariamente. Use `git stash apply` para reaplicar as mudanças.</li>
+                <li>Faça um commit e, em seguida, use `git reset --mixed HEAD~1` para remover o último commit, mantendo as alterações no diretório de trabalho.</li>
+                <li>Teste a reversão de um arquivo específico com `git checkout <hash_do_commit> -- <arquivo>` para restaurar a versão do arquivo de um commit anterior.</li>
+                <li>Use `git reflog` para encontrar o hash de um commit perdido e use `git reset --hard <hash_do_commit>` para restaurar esse commit.</li>
+                <li>Desfaça um commit e suas alterações com `git reset --hard <hash_do_commit>` e certifique-se de que o commit e as alterações desapareceram do histórico.</li>
+                <li>Faça uma alteração, comite e, em seguida, use `git cherry-pick <hash_do_commit>` para aplicar as alterações de um commit específico em sua branch atual.</li>
+                <li>Utilize `git diff` para visualizar as alterações que não foram comitadas antes de reverter ou resetar.</li>
+                <li>Crie uma branch de teste e use `git reset --hard` para entender o impacto de um reset em uma branch específica.</li>
+                <li>Reverta um merge com `git reflog` e `git reset --hard <hash_do_commit>` para desfazer um merge indesejado.</li>
+                <li>Use `git log --oneline` para visualizar a lista de commits e identificar qual commit reverter.</li>
+                <li>Utilize `git rebase` para fazer uma reescrita do histórico de commits e depois use `git reset` para ajustes finos.</li>
+                <li>Teste como `git reset --hard` interage com arquivos não rastreados no repositório.</li>
+                <li>Desfaça alterações em um arquivo específico, mas mantenha o restante com `git checkout <hash_do_commit> -- <arquivo>`.</li>
+                <li>Pratique a reversão de múltiplos commits usando `git revert <hash_do_commit_inicial>..<hash_do_commit_final>`.</li>
+                <li>Use `git clean -f` para remover arquivos não rastreados no diretório de trabalho e entenda como ele se comporta com `git reset`.</li>
+                <li>Compreenda a diferença entre `git reset --hard`, `git reset --soft`, e `git checkout -- <arquivo>` para reverter alterações.</li>
+                <li>Teste a restauração de um commit específico com `git checkout` e depois como ele afeta sua branch com `git reset`.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Estude Programação. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+

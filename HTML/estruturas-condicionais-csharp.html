@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas Condicionais em C#</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Variaveis-e-tipos-de-dados-ex-js.css">
+</head>
+
+<body>
+    <header>
+        <h1>Estruturas Condicionais em C#</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/csharp-exercises.html">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h2>O que são Estruturas Condicionais?</h2>
+            <p>Estruturas condicionais são usadas para executar blocos de código diferentes dependendo de uma condição. Elas permitem que o programa tome decisões baseadas em testes lógicos e variáveis.</p>
+        </section>
+
+        <!-- Estrutura Condicional if -->
+        <section class="if-structure">
+            <h2>Estrutura Condicional <code>if</code></h2>
+            <p>A estrutura <code>if</code> permite executar um bloco de código se uma condição for verdadeira:</p>
+            <pre><code>if (condicao)
+{
+    // código a ser executado se a condição for verdadeira
+}</code></pre>
+            <p>Exemplo:</p>
+            <pre><code>int idade = 18;
+if (idade >= 18)
+{
+    Console.WriteLine("Você é maior de idade.");
+}</code></pre>
+        </section>
+
+        <!-- Estrutura Condicional if-else -->
+        <section class="if-else-structure">
+            <h2>Estrutura Condicional <code>if-else</code></h2>
+            <p>A estrutura <code>if-else</code> permite que você defina um bloco de código a ser executado quando a condição é falsa:</p>
+            <pre><code>if (condicao)
+{
+    // código se a condição for verdadeira
+}
+else
+{
+    // código se a condição for falsa
+}</code></pre>
+            <p>Exemplo:</p>
+            <pre><code>int idade = 16;
+if (idade >= 18)
+{
+    Console.WriteLine("Você é maior de idade.");
+}
+else
+{
+    Console.WriteLine("Você é menor de idade.");
+}</code></pre>
+        </section>
+
+        <!-- Estrutura Condicional if-else if-else -->
+        <section class="if-else-if-structure">
+            <h2>Estrutura Condicional <code>if-else if-else</code></h2>
+            <p>A estrutura <code>if-else if-else</code> permite testar múltiplas condições em sequência:</p>
+            <pre><code>if (condicao1)
+{
+    // código se a condição1 for verdadeira
+}
+else if (condicao2)
+{
+    // código se a condição2 for verdadeira
+}
+else
+{
+    // código se nenhuma das condições for verdadeira
+}</code></pre>
+            <p>Exemplo:</p>
+            <pre><code>int nota = 85;
+if (nota >= 90)
+{
+    Console.WriteLine("Nota A");
+}
+else if (nota >= 80)
+{
+    Console.WriteLine("Nota B");
+}
+else if (nota >= 70)
+{
+    Console.WriteLine("Nota C");
+}
+else
+{
+    Console.WriteLine("Nota D");
+}</code></pre>
+        </section>
+
+        <!-- Estrutura Condicional switch -->
+        <section class="switch-structure">
+            <h2>Estrutura Condicional <code>switch</code></h2>
+            <p>A estrutura <code>switch</code> permite avaliar uma variável em diferentes casos e executar o código correspondente:</p>
+            <pre><code>switch (variavel)
+{
+    case valor1:
+        // código a ser executado se a variável for igual a valor1
+        break;
+    case valor2:
+        // código a ser executado se a variável for igual a valor2
+        break;
+    default:
+        // código a ser executado se nenhum dos casos for verdadeiro
+        break;
+}</code></pre>
+            <p>Exemplo:</p>
+            <pre><code>int dia = 3;
+switch (dia)
+{
+    case 1:
+        Console.WriteLine("Segunda-feira");
+        break;
+    case 2:
+        Console.WriteLine("Terça-feira");
+        break;
+    case 3:
+        Console.WriteLine("Quarta-feira");
+        break;
+    default:
+        Console.WriteLine("Dia inválido");
+        break;
+}</code></pre>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar os conceitos de estruturas condicionais, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-estruturas-condicionais-csharp.html" class="btn">Ver Exercícios de Estruturas Condicionais</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+
+</html>

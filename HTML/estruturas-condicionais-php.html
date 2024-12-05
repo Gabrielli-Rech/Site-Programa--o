@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas Condicionais em PHP</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Variaveis-e-tipos-de-dados-ex-js.css">
+</head>
+
+<body>
+    <header>
+        <h1>Estruturas Condicionais em PHP</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/php-exercises.html">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Introdução -->
+        <section class="intro">
+            <h2>O que são Estruturas Condicionais?</h2>
+            <p>As estruturas condicionais permitem executar diferentes blocos de código com base em uma condição específica. Em PHP, você pode usar estruturas como <code>if</code>, <code>else</code>, <code>elseif</code> e <code>switch</code> para controlar o fluxo do programa.</p>
+        </section>
+
+        <!-- Estrutura if -->
+        <section class="if-structure">
+            <h2>Estrutura <code>if</code></h2>
+            <p>A estrutura <code>if</code> é usada para executar um bloco de código se uma condição for verdadeira.</p>
+            <pre><code>$idade = 20;
+if ($idade >= 18) {
+    echo "Você é maior de idade.";
+}</code></pre>
+            <p>Se a condição for falsa, o bloco de código não é executado.</p>
+        </section>
+
+        <!-- Estrutura if-else -->
+        <section class="if-else-structure">
+            <h2>Estrutura <code>if-else</code></h2>
+            <p>Com a estrutura <code>if-else</code>, você pode executar um bloco de código se a condição for verdadeira e outro se for falsa.</p>
+            <pre><code>$idade = 16;
+if ($idade >= 18) {
+    echo "Você é maior de idade.";
+} else {
+    echo "Você é menor de idade.";
+}</code></pre>
+            <p>Essa estrutura garante a execução de um dos dois blocos de código, dependendo da condição.</p>
+        </section>
+
+        <!-- Estrutura if-elseif-else -->
+        <section class="if-elseif-else-structure">
+            <h2>Estrutura <code>if-elseif-else</code></h2>
+            <p>Para testar múltiplas condições, você pode usar a estrutura <code>if-elseif-else</code>.</p>
+            <pre><code>$nota = 85;
+if ($nota >= 90) {
+    echo "Nota A";
+} elseif ($nota >= 80) {
+    echo "Nota B";
+} elseif ($nota >= 70) {
+    echo "Nota C";
+} else {
+    echo "Nota abaixo de C";
+}</code></pre>
+            <p>Essa estrutura permite a verificação de múltiplas condições em sequência.</p>
+        </section>
+
+        <!-- Estrutura switch -->
+        <section class="switch-structure">
+            <h2>Estrutura <code>switch</code></h2>
+            <p>A estrutura <code>switch</code> é usada para comparar uma variável com múltiplos casos possíveis e executar o bloco de código correspondente ao caso verdadeiro.</p>
+            <pre><code>$dia = "terça";
+switch ($dia) {
+    case "segunda":
+        echo "Hoje é segunda-feira.";
+        break;
+    case "terça":
+        echo "Hoje é terça-feira.";
+        break;
+    case "quarta":
+        echo "Hoje é quarta-feira.";
+        break;
+    default:
+        echo "Dia não reconhecido.";
+}</code></pre>
+            <p>O comando <code>break</code> é usado para sair do <code>switch</code> após a execução de um caso. Se omitido, a execução continua para os próximos casos.</p>
+        </section>
+
+        <!-- Operadores lógicos -->
+        <section class="logical-operators">
+            <h2>Operadores Lógicos</h2>
+            <p>Os operadores lógicos permitem combinar condições em uma estrutura condicional:</p>
+            <ul>
+                <li><strong><code>&&</code> (E):</strong> Retorna verdadeiro se ambas as condições forem verdadeiras.</li>
+                <li><strong><code>||</code> (OU):</strong> Retorna verdadeiro se pelo menos uma condição for verdadeira.</li>
+                <li><strong><code>!</code> (NÃO):</strong> Inverte o valor lógico da condição.</li>
+            </ul>
+            <p>Exemplo:</p>
+            <pre><code>$idade = 20;
+$temCarro = true;
+if ($idade >= 18 && $temCarro) {
+    echo "Você pode dirigir.";
+} else {
+    echo "Você não pode dirigir.";
+}</code></pre>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar os conceitos de estruturas condicionais em PHP, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-estruturas-condicionais-php.html" class="btn">Ver Exercícios de Estruturas Condicionais</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/desafios-projetos.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios de Índices e Otimização</h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML/postgresql-exercises.html">Voltar</a></li>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Exercícios Fáceis</h2>
+            <ul>
+                <li>Crie um índice simples em uma coluna de uma tabela e verifique com `\d` se o índice foi criado.</li>
+                <li>Adicione um índice composto em duas colunas de uma tabela e observe a diferença de desempenho em uma consulta de busca.</li>
+                <li>Verifique o uso de índices em consultas com `EXPLAIN` e observe como ele afeta o plano de execução.</li>
+                <li>Remova um índice com `DROP INDEX` e compare a consulta antes e depois da remoção.</li>
+                <li>Crie um índice único e verifique se ele impede a inserção de valores duplicados.</li>
+                <li>Crie um índice parcial em uma tabela e teste a consulta para ver a eficácia do índice.</li>
+                <li>Crie um índice `GIN` em uma coluna de texto e realize uma busca de texto completo com `@@`.</li>
+                <li>Crie um índice em uma coluna que tenha valores nulos e observe como ele afeta a consulta.</li>
+                <li>Verifique a existência de índices redundantes em uma tabela usando `pg_indexes` e remova-os se necessário.</li>
+                <li>Use `EXPLAIN ANALYZE` para comparar a performance de uma consulta com e sem índice.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Exercícios Médios</h2>
+            <ul>
+                <li>Crie um índice `BRIN` em uma tabela grande e observe a diferença de desempenho em uma consulta de leitura sequencial.</li>
+                <li>Teste o uso de índices `B-tree`, `Hash`, e `GIN` em diferentes tipos de consultas e observe os resultados.</li>
+                <li>Otimize uma consulta que utiliza `JOIN` em duas tabelas usando índices em ambas as tabelas.</li>
+                <li>Crie um índice de prefixo em uma coluna de string e teste sua utilização em uma consulta com `LIKE`.</li>
+                <li>Implemente um índice em uma coluna de tipo `JSONB` e teste a performance de consultas JSON.</li>
+                <li>Use `pg_stat_user_indexes` para verificar o uso de índices e identifique quais índices não são usados.</li>
+                <li>Crie um índice `expression` para otimizar consultas que filtram por uma expressão específica em uma coluna.</li>
+                <li>Teste a performance de uma consulta em uma tabela com um índice `GIST` e compare com o uso de `GIN`.</li>
+                <li>Adicione um índice `CONCURRENTLY` para não bloquear a tabela e teste a performance da consulta.</li>
+                <li>Use `pg_stat_activity` para monitorar consultas em execução e identifique a consulta que está levando mais tempo.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Exercícios Difíceis</h2>
+            <ul>
+                <li>Crie uma tabela particionada com índices em cada partição e analise o desempenho de consultas em uma partição específica.</li>
+                <li>Utilize `EXPLAIN (ANALYZE, BUFFERS)` para verificar o uso de buffers em uma consulta complexa e otimize com índices.</li>
+                <li>Implemente uma consulta de leitura intensiva com `ORDER BY` e use índices para otimizar a execução.</li>
+                <li>Testes comparativos entre índices `BRIN` e `B-tree` em uma tabela com dados altamente sequenciais.</li>
+                <li>Analise e remova índices que causam lentidão em uma tabela com uso de `pg_stat_user_indexes` e `pg_stat_user_tables`.</li>
+                <li>Teste a criação de um índice `GIST` em uma coluna de tipo `geometric` e realize consultas de proximidade.</li>
+                <li>Crie e teste uma estratégia de indexação para uma tabela com alta taxa de atualização de dados.</li>
+                <li>Use `pg_repack` para reorganizar uma tabela e analise a melhoria de desempenho após o processo.</li>
+                <li>Crie um índice em uma coluna que é usada em filtros `WHERE` com `DISTINCT` e observe a melhoria na consulta.</li>
+                <li>Implemente e teste um índice em uma coluna de uma tabela que armazena timestamps e otimize uma consulta de intervalo de tempo.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Desafios</h2>
+            <ul>
+                <li>Desenvolva uma estratégia de indexação para uma tabela de análise de logs com milhões de entradas diárias.</li>
+                <li>Crie uma consulta otimizada com `EXPLAIN ANALYZE` em uma tabela que usa partições e índices complexos.</li>
+                <li>Teste a performance de consultas com `JOIN` em uma tabela particionada e sem partições, comparando o uso de índices.</li>
+                <li>Desenvolva um processo de monitoramento de índices para garantir que os índices criados estão sendo usados de forma eficiente.</li>
+                <li>Implemente uma consulta que utilize `GROUP BY` e índices para agilizar a agregação de grandes volumes de dados.</li>
+                <li>Otimize uma consulta em uma tabela com dados históricos de clientes usando `GIN` e `BRIN` para indexação eficiente.</li>
+                <li>Realize uma auditoria de índices em uma base de dados de produção e sugira mudanças para melhorar o desempenho.</li>
+                <li>Teste e compare a performance de uma consulta em uma tabela com `EXPLAIN ANALYZE` e implemente melhorias usando índices.</li>
+                <li>Crie um índice em uma coluna de tipo `UUID` e teste sua performance em uma tabela de dados distribuídos.</li>
+                <li>Desenvolva uma abordagem para manter índices atualizados em tempo real em uma tabela de alta rotatividade de dados.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>
+

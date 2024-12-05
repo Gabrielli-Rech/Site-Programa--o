@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores e Fontes em CSS</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Variaveis-e-tipos-de-dados-ex-js.css">
+</head>
+
+<body>
+    <header>
+        <h1>Cores e Fontes em CSS</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/html-css-exercises.html">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h2>O que são Cores e Fontes em CSS?</h2>
+            <p>CSS permite a personalização de cores e fontes para deixar as páginas web mais atraentes e legíveis. As cores podem ser definidas de várias formas, e as fontes podem ser aplicadas para criar diferentes estilos de texto.</p>
+        </section>
+
+        <!-- Cores -->
+        <section class="colors">
+            <h2>Cores em CSS</h2>
+            <p>Em CSS, você pode definir cores de diferentes formas:</p>
+            <ul>
+                <li><strong>Nome da cor:</strong> Exemplos como <code>red</code>, <code>blue</code>, <code>green</code>.</li>
+                <li><strong>Código hexadecimal:</strong> Representado por um código de 6 dígitos, como <code>#FF5733</code>.</li>
+                <li><strong>RGB:</strong> Valores de cor em formato RGB, como <code>rgb(255, 87, 51)</code>.</li>
+                <li><strong>RGBA:</strong> RGB com opacidade, como <code>rgba(255, 87, 51, 0.5)</code>.</li>
+                <li><strong>HSL:</strong> Representação em formato de matiz, saturação e luminosidade, como <code>hsl(12, 100%, 60%)</code>.</li>
+                <li><strong>HSLA:</strong> HSL com opacidade, como <code>hsla(12, 100%, 60%, 0.5)</code>.</li>
+            </ul>
+            <p>Exemplo de aplicação de cores:</p>
+            <pre><code>p {
+    color: #FF5733; /* Cor hexadecimal */
+    background-color: rgb(255, 87, 51); /* Cor RGB */
+}</code></pre>
+        </section>
+
+        <!-- Fontes -->
+        <section class="fonts">
+            <h2>Fontes em CSS</h2>
+            <p>CSS permite a personalização de fontes para definir o estilo e a aparência do texto:</p>
+            <ul>
+                <li><strong>Propriedade <code>font-family</code>:</strong> Define a fonte do texto. Exemplos: <code>font-family: 'Arial', sans-serif;</code>.</li>
+                <li><strong>Propriedade <code>font-size</code>:</strong> Define o tamanho da fonte. Exemplo: <code>font-size: 16px;</code>.</li>
+                <li><strong>Propriedade <code>font-weight</code>:</strong> Define a espessura da fonte. Exemplos: <code>font-weight: bold;</code>, <code>font-weight: 400;</code>.</li>
+                <li><strong>Propriedade <code>font-style</code>:</strong> Define se a fonte é normal, em itálico ou oblíqua. Exemplo: <code>font-style: italic;</code>.</li>
+                <li><strong>Propriedade <code>line-height</code>:</strong> Define a altura da linha, ajustando o espaçamento entre linhas. Exemplo: <code>line-height: 1.5;</code>.</li>
+            </ul>
+            <p>Exemplo de aplicação de fontes:</p>
+            <pre><code>h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 36px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.4;
+}</code></pre>
+        </section>
+
+        <!-- Fontes externas -->
+        <section class="external-fonts">
+            <h2>Usando Fontes Externas</h2>
+            <p>Você pode usar serviços como Google Fonts para incluir fontes externas em seu projeto:</p>
+            <p>Exemplo de importação de fonte do Google Fonts:</p>
+            <pre><code>@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}</code></pre>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar o uso de cores e fontes, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-cores-e-fontes-html-e-css.html" class="btn">Ver Exercícios de Cores e Fontes</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Bases e Tabelas no MySQL</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Variaveis-e-tipos-de-dados-ex-js.css">
+</head>
+
+<body>
+    <header>
+        <h1>Criação de Bases e Tabelas no MySQL</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/mysql-exercises.html">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h2>O que são Bases e Tabelas no MySQL?</h2>
+            <p>No MySQL, uma base de dados (ou banco de dados) é um contêiner que armazena tabelas e outros objetos relacionados. Tabelas são a estrutura onde os dados são armazenados em linhas e colunas, semelhantes a uma planilha.</p>
+        </section>
+
+        <!-- Criação de Bases -->
+        <section class="create-database">
+            <h2>Criação de Bases</h2>
+            <p>Para criar uma base de dados no MySQL, você utiliza o comando <code>CREATE DATABASE</code> seguido do nome da base.</p>
+            <pre><code>CREATE DATABASE nome_da_base;</code></pre>
+            <p>Exemplo:</p>
+            <pre><code>CREATE DATABASE escola;</code></pre>
+            <p>Para selecionar a base de dados que você deseja usar, use o comando <code>USE</code>:</p>
+            <pre><code>USE escola;</code></pre>
+        </section>
+
+        <!-- Criação de Tabelas -->
+        <section class="create-table">
+            <h2>Criação de Tabelas</h2>
+            <p>Para criar uma tabela em uma base de dados, você utiliza o comando <code>CREATE TABLE</code> seguido do nome da tabela e a definição das colunas com seus tipos de dados e restrições.</p>
+            <pre><code>CREATE TABLE nome_da_tabela (
+    coluna1 tipo_de_dado restricoes,
+    coluna2 tipo_de_dado restricoes,
+    ...
+);</code></pre>
+            <p>Exemplo de criação de uma tabela chamada "alunos":</p>
+            <pre><code>CREATE TABLE alunos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    idade INT,
+    curso VARCHAR(50)
+);</code></pre>
+        </section>
+
+        <!-- Tipos de Dados -->
+        <section class="data-types">
+            <h2>Tipos de Dados em Tabelas</h2>
+            <p>Os tipos de dados mais comuns para colunas de tabelas incluem:</p>
+            <ul>
+                <li><code>INT</code>: Números inteiros.</li>
+                <li><code>VARCHAR(n)</code>: Strings de comprimento variável (máximo de <code>n</code> caracteres).</li>
+                <li><code>TEXT</code>: Texto de comprimento variável.</li>
+                <li><code>DATE</code>: Datas.</li>
+                <li><code>DECIMAL(p, s)</code>: Números decimais com precisão <code>p</code> e escala <code>s</code>.</li>
+                <li><code>BOOLEAN</code>: Valores verdadeiro ou falso.</li>
+            </ul>
+            <p>Exemplo de tabela com diferentes tipos de dados:</p>
+            <pre><code>CREATE TABLE funcionarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    salario DECIMAL(10, 2),
+    data_admissao DATE,
+    ativo BOOLEAN
+);</code></pre>
+        </section>
+
+        <!-- Alteração de Tabelas -->
+        <section class="alter-table">
+            <h2>Alteração de Tabelas</h2>
+            <p>Para modificar uma tabela existente, use o comando <code>ALTER TABLE</code>.</p>
+            <pre><code>ALTER TABLE nome_da_tabela ADD coluna tipo_de_dado;</code></pre>
+            <p>Exemplo de adição de uma coluna:</p>
+            <pre><code>ALTER TABLE alunos ADD email VARCHAR(150);</code></pre>
+            <p>Para remover uma coluna:</p>
+            <pre><code>ALTER TABLE alunos DROP COLUMN email;</code></pre>
+        </section>
+
+        <!-- Exclusão de Tabelas e Bases -->
+        <section class="drop">
+            <h2>Exclusão de Tabelas e Bases</h2>
+            <p>Para excluir uma tabela, use o comando <code>DROP TABLE</code>.</p>
+            <pre><code>DROP TABLE nome_da_tabela;</code></pre>
+            <p>Para excluir uma base de dados, use o comando <code>DROP DATABASE</code>.</p>
+            <pre><code>DROP DATABASE nome_da_base;</code></pre>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar a criação e manipulação de bases e tabelas, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-criacao-de-bases-e-tabelas-mysql.html" class="btn">Ver Exercícios de MySQL</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+
+</html>

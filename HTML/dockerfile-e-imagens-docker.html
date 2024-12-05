@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dockerfile e Imagens Docker</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Variaveis-e-tipos-de-dados-ex-js.css">
+</head>
+
+<body>
+    <header>
+        <h1>Dockerfile e Imagens Docker</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/docker-exercises.html">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h2>O que é um Dockerfile?</h2>
+            <p>Um Dockerfile é um arquivo de texto que contém todas as instruções necessárias para criar uma imagem Docker. Ele especifica o sistema base, as dependências, as configurações e os comandos que devem ser executados na imagem.</p>
+        </section>
+
+        <!-- Estrutura de um Dockerfile -->
+        <section class="dockerfile-structure">
+            <h2>Estrutura de um Dockerfile</h2>
+            <p>Um Dockerfile é composto por uma série de instruções que definem o processo de construção da imagem. As instruções mais comuns incluem:</p>
+            <ul>
+                <li><strong>FROM:</strong> Define a imagem base para a construção. Exemplo: <code>FROM ubuntu:20.04</code>.</li>
+                <li><strong>RUN:</strong> Executa comandos dentro da imagem. Exemplo: <code>RUN apt-get update && apt-get install -y nodejs</code>.</li>
+                <li><strong>WORKDIR:</strong> Define o diretório de trabalho dentro da imagem. Exemplo: <code>WORKDIR /app</code>.</li>
+                <li><strong>COPY:</strong> Copia arquivos da máquina host para a imagem. Exemplo: <code>COPY . .</code>.</li>
+                <li><strong>CMD:</strong> Define o comando a ser executado quando o container for iniciado. Exemplo: <code>CMD ["node", "app.js"]</code>.</li>
+            </ul>
+            <p>Exemplo de um Dockerfile básico:</p>
+            <pre><code>FROM node:14
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 8080
+CMD ["node", "app.js"]</code></pre>
+        </section>
+
+        <!-- Imagens Docker -->
+        <section class="docker-images">
+            <h2>Imagens Docker</h2>
+            <p>As imagens Docker são arquivos binários que contêm tudo o que é necessário para executar um aplicativo, incluindo código, bibliotecas, dependências, variáveis de ambiente e configurações de sistema.</p>
+            <p>As imagens são criadas a partir de um Dockerfile e podem ser armazenadas em registries, como o Docker Hub, para serem compartilhadas e reutilizadas.</p>
+            <h3>Comandos básicos para trabalhar com imagens Docker:</h3>
+            <ul>
+                <li><strong>docker build:</strong> Cria uma imagem Docker a partir de um Dockerfile. Exemplo: <code>docker build -t minha-imagem .</code>.</li>
+                <li><strong>docker images:</strong> Lista as imagens Docker disponíveis no sistema. Exemplo: <code>docker images</code>.</li>
+                <li><strong>docker rmi:</strong> Remove uma imagem Docker. Exemplo: <code>docker rmi minha-imagem</code>.</li>
+            </ul>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar o uso de Dockerfile e imagens Docker, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-dockerfile-e-imagens-docker.html" class="btn">Ver Exercícios de Docker</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+
+</html>

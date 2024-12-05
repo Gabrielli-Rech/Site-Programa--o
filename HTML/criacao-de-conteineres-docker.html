@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Contêineres Docker</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Variaveis-e-tipos-de-dados-ex-js.css">
+</head>
+
+<body>
+    <header>
+        <h1>Criação de Contêineres Docker</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/docker-exercises.html">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h2>O que são Contêineres Docker?</h2>
+            <p>Contêineres Docker são unidades leves de software que empacotam código e suas dependências para garantir que a aplicação seja executada de forma consistente em qualquer ambiente. Eles compartilham o mesmo sistema operacional, mas são isolados uns dos outros.</p>
+        </section>
+
+        <!-- Criando Contêineres -->
+        <section class="create-container">
+            <h2>Criação de Contêineres</h2>
+            <p>Para criar e executar um contêiner Docker, você pode usar o comando <code>docker run</code>. Este comando baixa a imagem especificada (caso não esteja local) e executa um contêiner com base nessa imagem.</p>
+            <p><strong>Comando básico:</strong></p>
+            <pre><code>docker run nome_da_imagem</code></pre>
+            <p>Exemplo de criação de um contêiner a partir da imagem oficial do Ubuntu:</p>
+            <pre><code>docker run -it ubuntu</code></pre>
+            <p>A opção <code>-it</code> permite que você interaja com o contêiner em modo de terminal.</p>
+        </section>
+
+        <!-- Comandos úteis para Contêineres -->
+        <section class="container-commands">
+            <h2>Comandos Úteis para Contêineres</h2>
+            <p>Alguns comandos úteis para gerenciar contêineres:</p>
+            <ul>
+                <li><strong>Listar contêineres em execução:</strong> <code>docker ps</code></li>
+                <li><strong>Listar todos os contêineres (ativos e inativos):</strong> <code>docker ps -a</code></li>
+                <li><strong>Parar um contêiner:</strong> <code>docker stop <container_id></code></li>
+                <li><strong>Iniciar um contêiner parado:</strong> <code>docker start <container_id></code></li>
+                <li><strong>Remover um contêiner:</strong> <code>docker rm <container_id></code></li>
+            </ul>
+        </section>
+
+        <!-- Exemplo de Contêiner em Segundo Plano -->
+        <section class="background-container">
+            <h2>Executando Contêineres em Segundo Plano</h2>
+            <p>Para executar um contêiner em segundo plano, use a opção <code>-d</code> (detached mode):</p>
+            <pre><code>docker run -d nome_da_imagem</code></pre>
+            <p>Isso permite que o contêiner seja executado em background, liberando o terminal para outros comandos.</p>
+        </section>
+
+        <!-- Montando Volumes e Portas -->
+        <section class="volumes-ports">
+            <h2>Montando Volumes e Expondo Portas</h2>
+            <p>Você pode montar volumes e expor portas para interagir com o contêiner:</p>
+            <pre><code>docker run -d -p 8080:80 -v /caminho/no/host:/caminho/no/container nome_da_imagem</code></pre>
+            <p>Exemplo de uso:</p>
+            <pre><code>docker run -d -p 3000:3000 -v /meu/app:/app node:14</code></pre>
+            <p>Isso mapeia a porta 3000 do contêiner para a porta 3000 do host e monta o diretório local <code>/meu/app</code> dentro do contêiner em <code>/app</code>.</p>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar a criação e manipulação de contêineres Docker, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-criacao-de-conteineres-docker.html" class="btn">Ver Exercícios de Docker</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+
+</html>

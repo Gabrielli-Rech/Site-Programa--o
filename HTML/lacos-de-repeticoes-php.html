@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laços de Repetição em PHP</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/lacos-de-repeticao-php.css">
+</head>
+
+<body>
+    <header>
+        <h1>Laços de Repetição</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/php-exercises.html">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Introdução -->
+        <section class="intro">
+            <h2>O que são Laços de Repetição?</h2>
+            <p>Laços de repetição são estruturas de controle que permitem a execução de um bloco de código múltiplas vezes, enquanto uma condição for verdadeira. Em PHP, você pode usar diferentes tipos de laços para controlar a repetição de blocos de código.</p>
+        </section>
+
+        <!-- Laço while -->
+        <section class="while-loop">
+            <h2>Laço <code>while</code></h2>
+            <p>O laço <code>while</code> executa um bloco de código enquanto a condição especificada for verdadeira.</p>
+            <pre><code>$contador = 0;
+while ($contador < 5) {
+    echo "Contador é $contador<br>";
+    $contador++;
+}</code></pre>
+            <p>Se a condição for falsa na primeira verificação, o bloco de código não será executado.</p>
+        </section>
+
+        <!-- Laço do-while -->
+        <section class="do-while-loop">
+            <h2>Laço <code>do-while</code></h2>
+            <p>O laço <code>do-while</code> é semelhante ao <code>while</code>, mas garante que o bloco de código seja executado pelo menos uma vez antes de verificar a condição.</p>
+            <pre><code>$contador = 0;
+do {
+    echo "Contador é $contador<br>";
+    $contador++;
+} while ($contador < 5);</code></pre>
+            <p>Mesmo que a condição seja falsa, o bloco de código é executado pelo menos uma vez.</p>
+        </section>
+
+        <!-- Laço for -->
+        <section class="for-loop">
+            <h2>Laço <code>for</code></h2>
+            <p>O laço <code>for</code> é usado para iterar um número específico de vezes, facilitando a contagem e a repetição do bloco de código.</p>
+            <pre><code>for ($i = 0; $i < 5; $i++) {
+    echo "Valor de i: $i<br>";
+}</code></pre>
+            <p>Esse loop percorre todos os valores de 0 a 4, inclusive.</p>
+        </section>
+
+        <!-- Laço foreach -->
+        <section class="foreach-loop">
+            <h2>Laço <code>foreach</code></h2>
+            <p>O laço <code>foreach</code> é usado para iterar sobre arrays e objetos de forma simples e direta.</p>
+            <pre><code>$frutas = array("Maçã", "Banana", "Cereja");
+foreach ($frutas as $fruta) {
+    echo "Fruta: $fruta<br>";
+}</code></pre>
+            <p>O loop percorre cada elemento do array e o armazena na variável temporária especificada.</p>
+        </section>
+
+        <!-- Comandos break e continue -->
+        <section class="break-continue">
+            <h2>Comandos <code>break</code> e <code>continue</code></h2>
+            <p>Os comandos <code>break</code> e <code>continue</code> podem ser usados para controlar a execução dos laços.</p>
+            <pre><code>for ($i = 0; $i < 10; $i++) {
+    if ($i == 5) {
+        break; // Interrompe o loop quando $i for igual a 5
+    }
+    if ($i % 2 == 0) {
+        continue; // Pula a iteração se $i for par
+    }
+    echo "Valor ímpar: $i<br>";
+}</code></pre>
+            <p><code>break</code> interrompe o loop quando a condição é atendida, e <code>continue</code> pula a iteração atual quando a condição é verdadeira.</p>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar os conceitos de laços de repetição em PHP, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-lacos-de-repeticao-php.html" class="btn">Ver Exercícios de Laços de Repetição</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+
+</html>

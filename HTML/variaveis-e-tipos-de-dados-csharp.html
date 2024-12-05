@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis e Tipos de Dados em C#</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Variaveis-e-tipos-de-dados-ex-js.css">
+</head>
+
+<body>
+    <header>
+        <h1>Variáveis e Tipos de Dados</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/csharp-exercises.html">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h2>O que são Variáveis e Tipos de Dados?</h2>
+            <p>Em C#, variáveis são usadas para armazenar valores que podem ser manipulados em um programa. C# é uma linguagem de tipagem estática e forte, o que significa que o tipo de dado de uma variável deve ser declarado de forma explícita e não pode ser alterado.</p>
+        </section>
+
+        <!-- Declaração de Variáveis -->
+        <section class="variables">
+            <h2>Declaração de Variáveis</h2>
+            <p>Para declarar uma variável em C#, você especifica o tipo de dado seguido pelo nome da variável. A variável pode ser inicializada ao mesmo tempo da declaração ou em uma etapa separada:</p>
+            <pre><code>string nome = "Ana";  // string
+int idade = 28;  // inteiro
+double altura = 1.65;  // double
+bool ativo = true;  // booleano</code></pre>
+            <p>O tipo da variável deve ser conhecido em tempo de compilação e não pode ser alterado.</p>
+        </section>
+
+        <!-- Tipos de Dados -->
+        <section class="data-types">
+            <h2>Tipos de Dados em C#</h2>
+            <p>Os tipos de dados em C# podem ser classificados como primitivos e complexos:</p>
+            <ul>
+                <li><strong>Primitivos:</strong>
+                    <ul>
+                        <li><code>int</code>: Números inteiros de 32 bits. Exemplo: <code>42</code>, <code>-10</code></li>
+                        <li><code>long</code>: Números inteiros de 64 bits. Exemplo: <code>1234567890</code></li>
+                        <li><code>short</code>: Números inteiros de 16 bits. Exemplo: <code>100</code></li>
+                        <li><code>byte</code>: Números inteiros de 8 bits, variando de 0 a 255. Exemplo: <code>255</code></li>
+                        <li><code>double</code>: Números de ponto flutuante de precisão dupla de 64 bits. Exemplo: <code>3.14</code></li>
+                        <li><code>float</code>: Números de ponto flutuante de precisão simples de 32 bits. Exemplo: <code>1.5</code></li>
+                        <li><code>decimal</code>: Números de ponto flutuante de 128 bits, usados para cálculos financeiros. Exemplo: <code>10.5m</code></li>
+                        <li><code>char</code>: Um único caractere Unicode de 16 bits. Exemplo: <code>'A'</code></li>
+                        <li><code>bool</code>: Valores booleanos. Exemplo: <code>true</code>, <code>false</code></li>
+                        <li><code>string</code>: Sequência de caracteres (texto). Exemplo: <code>"Olá, mundo!"</code></li>
+                        <li><code>object</code>: Tipo base de todos os tipos em C#. Pode armazenar qualquer tipo de dado. Exemplo: <code>object obj = "texto";</code></li>
+                    </ul>
+                </li>
+                <li><strong>Tipos Complexos:</strong> Tipos que podem conter múltiplos valores e oferecer mais funcionalidades, como classes, arrays, structs e enums.</li>
+            </ul>
+            <p>Exemplo de diferentes tipos de dados:</p>
+            <pre><code>string nome = "Carlos";  // string
+int idade = 30;  // int
+double altura = 1.78;  // double
+bool ativo = false;  // booleano
+object endereco = null;  // object</code></pre>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar os conceitos de variáveis e tipos de dados, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-variaveis-e-tipos-de-dados-csharp.html" class="btn">Ver Exercícios de Variáveis e Tipos de Dados</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+
+</html>

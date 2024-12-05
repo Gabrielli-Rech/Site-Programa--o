@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Funções Assíncronas em Python</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/exerc-funcoes-assincronas.css">
+</head>
+
+<body>
+    <header>
+        <h1>Exercícios de Funções Assíncronas</h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML/python-exercises.html">Voltar</a></li>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h2>Exercícios Fáceis</h2>
+            <ul>
+                <li>1. Escreva uma função assíncrona que imprima uma mensagem após um delay de 2 segundos.</li>
+                <li>2. Crie uma função assíncrona que retorne a soma de dois números após um delay de 1 segundo.</li>
+                <li>3. Implemente uma função assíncrona que retorne "Olá, mundo!" depois de 3 segundos.</li>
+                <li>4. Crie uma função assíncrona que imprima uma contagem de 1 a 5 com um delay de 1 segundo entre cada número.</li>
+                <li>5. Escreva uma função assíncrona que use `await` para esperar a execução de uma outra função que retorne um valor numérico.</li>
+                <li>6. Implemente uma função que use `asyncio.sleep()` para pausar a execução por 1 segundo antes de retornar um valor.</li>
+                <li>7. Escreva uma função assíncrona que imprima a mensagem "Execução iniciada" e depois "Execução concluída" após um delay de 2 segundos.</li>
+                <li>8. Crie uma função assíncrona que aceite um parâmetro e imprima esse parâmetro após um delay de 3 segundos.</li>
+                <li>9. Escreva uma função assíncrona que retorne uma lista de números de 1 a 5 com um delay de 1 segundo entre cada número.</li>
+                <li>10. Implemente uma função assíncrona que retorne a string "Função assíncrona concluída" depois de 4 segundos.</li>
+            </ul>
+        </div>
+    
+        <!-- Exercícios Médios -->
+        <div>
+            <h2>Exercícios Médios</h2>
+            <ul>
+                <li>1. Crie uma função assíncrona que receba duas funções como parâmetros e execute ambas em paralelo, retornando suas respostas em uma lista.</li>
+                <li>2. Escreva uma função assíncrona que retorne o maior número de uma lista, usando `await` para esperar a execução de outra função que calcula a soma dos elementos.</li>
+                <li>3. Implemente uma função assíncrona que leia um arquivo de texto linha por linha com um delay de 1 segundo entre cada linha.</li>
+                <li>4. Escreva uma função assíncrona que retorne a multiplicação de dois números, onde cada multiplicação é realizada com um delay de 1 segundo.</li>
+                <li>5. Crie uma função assíncrona que use `asyncio.gather()` para executar três funções simultaneamente e retorne seus resultados em uma tupla.</li>
+                <li>6. Implemente uma função assíncrona que aguarde a execução de outra função que simule um processo demorado (como uma simulação de download de arquivo).</li>
+                <li>7. Escreva uma função assíncrona que utilize `await` para fazer uma chamada a uma função que simula um atraso de 2 segundos antes de retornar um valor.</li>
+                <li>8. Crie uma função assíncrona que simule um processo de cálculo complexo com `await` e retorne o resultado.</li>
+                <li>9. Implemente uma função assíncrona que gere uma lista de números aleatórios em um intervalo definido, com um delay de 1 segundo entre cada número gerado.</li>
+                <li>10. Escreva uma função assíncrona que use `asyncio.to_thread()` para executar uma função de CPU-bound em um thread separado.</li>
+            </ul>
+        </div>
+    
+        <!-- Exercícios Difíceis -->
+        <div>
+            <h2>Exercícios Difíceis</h2>
+            <ul>
+                <li>1. Implemente uma função assíncrona que leia e processe arquivos de um diretório em paralelo, retornando uma lista com os nomes dos arquivos que contêm a palavra "Python".</li>
+                <li>2. Escreva uma função assíncrona que use `asyncio.Queue` para gerenciar a execução de várias tarefas em paralelo e imprime os resultados à medida que são completados.</li>
+                <li>3. Crie uma função assíncrona que execute uma tarefa de busca em um banco de dados fictício simulando a latência da rede.</li>
+                <li>4. Implemente uma função assíncrona que faça requisições HTTP simultâneas a múltiplas URLs e retorne o conteúdo de todas as respostas.</li>
+                <li>5. Escreva uma função assíncrona que utilize `asyncio.Event()` para coordenar a execução de várias tarefas dependentes entre si.</li>
+                <li>6. Crie uma função assíncrona que crie e execute um pipeline de tarefas assíncronas com diferentes níveis de prioridade.</li>
+                <li>7. Implemente uma função assíncrona que use `asyncio.Semaphore` para limitar o número de tarefas simultâneas em execução.</li>
+                <li>8. Escreva uma função assíncrona que implemente um loop de produção e consumo de mensagens usando `asyncio.Queue`.</li>
+                <li>9. Crie uma função assíncrona que simule a execução de um processo que pode ser cancelado, usando `asyncio.CancelledError` para interromper a execução.</li>
+                <li>10. Implemente uma função assíncrona que crie uma série de tarefas em paralelo e retorne o tempo total de execução.</li>
+            </ul>
+        </div>
+    
+        <!-- Desafios -->
+        <div>
+            <h2>Desafios</h2>
+            <ul>
+                <li>1. Crie uma função assíncrona que receba uma lista de URLs e retorne a URL que levou mais tempo para responder.</li>
+                <li>2. Escreva uma função assíncrona que use `asyncio.TimeoutError` para definir um tempo máximo de execução para uma tarefa assíncrona.</li>
+                <li>3. Implemente uma função assíncrona que faça uma busca em um conjunto de dados em paralelo, retornando os resultados ordenados por tempo de resposta.</li>
+                <li>4. Crie uma função assíncrona que execute tarefas de processamento de dados em paralelo e trate exceções individualmente para cada tarefa.</li>
+                <li>5. Escreva uma função assíncrona que faça a simulação de um chat em tempo real, usando `asyncio` para gerenciar múltiplos usuários.</li>
+                <li>6. Implemente uma função assíncrona que use `asyncio.Condition()` para coordenar a execução de várias tarefas com base em condições específicas.</li>
+                <li>7. Crie uma função assíncrona que retorne o tempo de execução de uma tarefa assíncrona usando `time` e `asyncio`.</li>
+                <li>8. Escreva uma função assíncrona que use `asyncio.streams` para ler e gravar em um arquivo de forma assíncrona.</li>
+                <li>9. Implemente uma função assíncrona que receba dados de um sensor em tempo real e os processe em intervalos regulares.</li>
+                <li>10. Crie uma função assíncrona que receba uma série de funções e as execute em paralelo, aguardando a execução de todas elas com `await asyncio.gather()`.</li>
+            </ul>
+        </div>
+            
+        
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+
+</html>

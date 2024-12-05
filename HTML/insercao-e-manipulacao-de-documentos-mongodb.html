@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserção e Manipulação de Documentos MongoDB</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Insercao-Manipulacao-MongoDB.css">
+</head>
+<body>
+    <header>
+        <h1>Inserção e Manipulação de Documentos </h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/mongodb-exercises.html">Voltar</a></li>
+                <!--<li><a href="mongodb-projects.html">Projetos</a></li>-->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h2>O que é o MongoDB?</h2>
+            <p>O MongoDB é um banco de dados NoSQL orientado a documentos. Ele armazena dados em formato JSON-like, usando documentos BSON (Binary JSON), o que permite maior flexibilidade e escalabilidade em comparação aos bancos de dados relacionais tradicionais.</p>
+        </section>
+
+        <!-- Inserção de Documentos -->
+        <section class="inserting-documents">
+            <h2>Inserindo Documentos em uma Coleção</h2>
+            <p>Para inserir documentos em uma coleção do MongoDB, você pode usar os métodos <code>insertOne()</code> ou <code>insertMany()</code>.</p>
+            <p>Exemplo de inserção de um único documento:</p>
+            <pre><code>db.colecao.insertOne({
+    nome: "João",
+    idade: 30,
+    cidade: "São Paulo"
+});</code></pre>
+
+            <p>Exemplo de inserção de múltiplos documentos:</p>
+            <pre><code>db.colecao.insertMany([
+    { nome: "Maria", idade: 25, cidade: "Rio de Janeiro" },
+    { nome: "Carlos", idade: 28, cidade: "Belo Horizonte" }
+]);</code></pre>
+        </section>
+
+        <!-- Manipulação de Documentos -->
+        <section class="manipulating-documents">
+            <h2>Manipulando Documentos</h2>
+            <p>Após inserir documentos, você pode realizar operações como <strong>atualizar</strong>, <strong>deletar</strong> e <strong>consultar</strong> os documentos.</p>
+
+            <!-- Atualizando Documentos -->
+            <h3>Atualizando Documentos</h3>
+            <p>Para atualizar um documento, use o método <code>updateOne()</code> ou <code>updateMany()</code>.</p>
+            <pre><code>db.colecao.updateOne(
+    { nome: "João" },
+    { $set: { idade: 31 } }
+);</code></pre>
+            <p><strong>Explicação:</strong> O operador <code>$set</code> é usado para definir novos valores para os campos existentes.</p>
+
+            <!-- Deletando Documentos -->
+            <h3>Deletando Documentos</h3>
+            <p>Para deletar documentos, use o método <code>deleteOne()</code> ou <code>deleteMany()</code>.</p>
+            <pre><code>db.colecao.deleteOne({ nome: "Carlos" });</code></pre>
+
+            <p><strong>Explicação:</strong> O método <code>deleteOne()</code> remove o primeiro documento que corresponde ao filtro, enquanto <code>deleteMany()</code> remove todos os documentos que atendem ao filtro.</p>
+
+            <!-- Consultando Documentos -->
+            <h3>Consultando Documentos</h3>
+            <p>Para consultar documentos, use o método <code>find()</code>.</p>
+            <pre><code>db.colecao.find({ idade: { $gte: 25 } });</code></pre>
+            <p><strong>Explicação:</strong> O operador <code>$gte</code> significa "maior ou igual a".</p>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar a inserção e manipulação de documentos no MongoDB, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-insercao-e-manipulacao-de-documentos-mongodb.html" class="btn">Ver Exercícios de MongoDB</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>

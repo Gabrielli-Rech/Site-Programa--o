@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commits e Histórico do Git</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Variaveis-e-tipos-de-dados-ex-js.css">
+</head>
+
+<body>
+    <header>
+        <h1>Commits e Histórico do Git</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/git-exercises.html">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h2>O que são Commits e Histórico no Git?</h2>
+            <p>Commits são como "marcadores" que registram mudanças em um repositório Git. Cada commit é um ponto no histórico do projeto e permite reverter ou examinar mudanças feitas ao longo do tempo. O histórico do Git ajuda a rastrear a evolução do código e colaborar com outras pessoas de forma eficiente.</p>
+        </section>
+
+        <!-- Comando git commit -->
+        <section class="git-commit">
+            <h2>Comando <code>git commit</code></h2>
+            <p>O comando <code>git commit</code> é usado para salvar as mudanças feitas no repositório. Cada commit é uma nova versão que inclui as alterações realizadas desde o último commit.</p>
+            <pre><code>git add .  // Adiciona todas as mudanças para serem commitadas
+git commit -m "Mensagem descritiva do commit"</code></pre>
+            <p>O <code>-m</code> permite incluir uma mensagem descritiva, explicando as alterações feitas.</p>
+        </section>
+
+        <!-- Verificando histórico de commits -->
+        <section class="git-log">
+            <h2>Comando <code>git log</code></h2>
+            <p>O comando <code>git log</code> exibe o histórico de commits em um repositório, mostrando informações como o hash do commit, autor, data e a mensagem de commit.</p>
+            <pre><code>git log</code></pre>
+            <p>Para visualizar um histórico mais compacto, você pode usar:</p>
+            <pre><code>git log --oneline</code></pre>
+            <p>Isso exibe cada commit em uma única linha, mostrando apenas o hash abreviado e a mensagem.</p>
+        </section>
+
+        <!-- Visualizando diferenças entre commits -->
+        <section class="git-diff">
+            <h2>Comando <code>git diff</code></h2>
+            <p>O comando <code>git diff</code> permite comparar mudanças entre commits, branches ou a área de staging com a branch atual.</p>
+            <pre><code>git diff  // Mostra as mudanças que ainda não foram commitadas
+git diff HEAD  // Mostra as diferenças entre o último commit e a área de staging</code></pre>
+        </section>
+
+        <!-- Comando git show -->
+        <section class="git-show">
+            <h2>Comando <code>git show</code></h2>
+            <p>O comando <code>git show</code> exibe detalhes sobre um commit específico, incluindo alterações feitas e a mensagem do commit.</p>
+            <pre><code>git show <hash-do-commit></code></pre>
+            <p>Substitua <code>&lt;hash-do-commit&gt;</code> pelo identificador do commit desejado para ver suas alterações detalhadas.</p>
+        </section>
+
+        <!-- Revertendo commits -->
+        <section class="git-revert">
+            <h2>Comando <code>git revert</code></h2>
+            <p>O comando <code>git revert</code> é usado para criar um novo commit que desfaz as alterações feitas por um commit anterior.</p>
+            <pre><code>git revert <hash-do-commit></code></pre>
+            <p>Isso não exclui o commit original, mas cria um novo commit que reverte suas mudanças.</p>
+        </section>
+
+        <!-- Comando git reset -->
+        <section class="git-reset">
+            <h2>Comando <code>git reset</code></h2>
+            <p>O comando <code>git reset</code> é usado para desfazer commits. Ele pode ser usado de diferentes maneiras:</p>
+            <ul>
+                <li><code>git reset --soft <hash-do-commit></code>: Desfaz commits, mas mantém as mudanças na área de staging.</li>
+                <li><code>git reset --mixed <hash-do-commit></code>: Desfaz commits e remove as mudanças da área de staging, mas as mantém no diretório de trabalho.</li>
+                <li><code>git reset --hard <hash-do-commit></code>: Desfaz commits e remove as mudanças do diretório de trabalho, restaurando o estado do commit especificado.</li>
+            </ul>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar os conceitos de commits e histórico do Git, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-commits-e-historico-git.html" class="btn">Ver Exercícios de Commits e Histórico de Git</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas Básicas do MongoDB</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/consultas-basicas-mongodb.css">
+</head>
+
+<body>
+    <header>
+        <h1>Consultas Básicas do MongoDB</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/mongodb-exercises.html">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h2>O que são Consultas no MongoDB?</h2>
+            <p>O MongoDB é um banco de dados NoSQL que utiliza documentos em formato BSON para armazenar dados. As consultas são usadas para buscar e manipular esses documentos. O MongoDB usa a linguagem de consulta do JavaScript para realizar operações de leitura, como encontrar, filtrar e classificar documentos.</p>
+        </section>
+
+        <!-- Consulta find -->
+        <section class="find">
+            <h2>Comando <code>db.collection.find()</code></h2>
+            <p>O comando <code>find()</code> é utilizado para consultar documentos em uma coleção. Ele retorna um cursor que pode ser iterado para acessar os resultados.</p>
+            <pre><code>db.users.find()  // Retorna todos os documentos da coleção "users"</code></pre>
+            <p>Para encontrar um documento específico, você pode usar um filtro:</p>
+            <pre><code>db.users.find({ idade: 25 })  // Retorna todos os usuários com idade igual a 25</code></pre>
+        </section>
+
+        <!-- Consulta com projeção -->
+        <section class="projection">
+            <h2>Projeção de Campos</h2>
+            <p>Você pode usar a projeção para selecionar apenas os campos desejados em uma consulta.</p>
+            <pre><code>db.users.find({ idade: 25 }, { nome: 1, idade: 1 })  // Retorna apenas os campos "nome" e "idade"</code></pre>
+            <p>O campo <code>1</code> indica que o campo deve ser incluído na saída, enquanto <code>0</code> indica que deve ser excluído.</p>
+        </section>
+
+        <!-- Consulta com operadores -->
+        <section class="operators">
+            <h2>Consultas com Operadores</h2>
+            <p>O MongoDB possui operadores para consultas mais complexas:</p>
+            <ul>
+                <li><code>$gt</code>: Maior que.</li>
+                <li><code>$lt</code>: Menor que.</li>
+                <li><code>$gte</code>: Maior ou igual a.</li>
+                <li><code>$lte</code>: Menor ou igual a.</li>
+                <li><code>$ne</code>: Diferente de.</li>
+                <li><code>$in</code>: Verifica se um campo contém um valor específico de um array.</li>
+            </ul>
+            <p>Exemplo de uso de operadores:</p>
+            <pre><code>db.users.find({ idade: { $gte: 18 } })  // Retorna usuários com idade maior ou igual a 18</code></pre>
+        </section>
+
+        <!-- Consulta com métodos adicionais -->
+        <section class="methods">
+            <h2>Métodos Adicionais</h2>
+            <p>O MongoDB oferece métodos para consultas mais avançadas:</p>
+            <ul>
+                <li><code>db.collection.findOne()</code>: Retorna o primeiro documento que corresponde ao filtro.</li>
+                <li><code>db.collection.countDocuments()</code>: Retorna o número de documentos que correspondem ao filtro.</li>
+                <li><code>db.collection.limit()</code>: Limita o número de resultados retornados.</li>
+                <li><code>db.collection.skip()</code>: Ignora um número específico de resultados.</li>
+            </ul>
+            <p>Exemplo de uso:</p>
+            <pre><code>db.users.find({ idade: { $lt: 30 } }).limit(5)  // Retorna até 5 usuários com idade menor que 30</code></pre>
+        </section>
+
+        <!-- Consulta de agregação -->
+        <section class="aggregation">
+            <h2>Comando <code>db.collection.aggregate()</code></h2>
+            <p>O <code>aggregate()</code> é usado para realizar consultas mais complexas, como agrupamento e processamento de dados.</p>
+            <pre><code>db.orders.aggregate([
+    { $match: { status: "completed" } },
+    { $group: { _id: "$produto", total: { $sum: "$quantidade" } } }
+])</code></pre>
+            <p>Esse exemplo retorna a quantidade total de cada produto em pedidos com status "completed".</p>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar as consultas no MongoDB, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-consultas-basicas-mongodb.html" class="btn">Ver Exercícios</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+
+</html>

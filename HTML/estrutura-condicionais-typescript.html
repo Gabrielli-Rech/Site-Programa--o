@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas Condicionais em TypeScript</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Variaveis-e-tipos-de-dados-ex-js.css">
+</head>
+
+<body>
+    <header>
+        <h1>Estruturas Condicionais em TypeScript</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/typescript-exercises.html">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h2>O que são Estruturas Condicionais?</h2>
+            <p>Estruturas condicionais são usadas para executar diferentes blocos de código dependendo de uma condição. Em TypeScript, você pode usar as instruções <code>if</code>, <code>else</code> e <code>switch</code> para criar lógica condicional.</p>
+        </section>
+
+        <!-- Estrutura if-else -->
+        <section class="if-else">
+            <h2>Estrutura if-else</h2>
+            <p>A estrutura <code>if-else</code> permite executar um bloco de código se uma condição for verdadeira e outro bloco se for falsa.</p>
+            <pre><code>let numero: number = 10;
+if (numero > 0) {
+    console.log("O número é positivo");
+} else if (numero < 0) {
+    console.log("O número é negativo");
+} else {
+    console.log("O número é zero");
+}</code></pre>
+        </section>
+
+        <!-- Estrutura switch -->
+        <section class="switch">
+            <h2>Estrutura switch</h2>
+            <p>A estrutura <code>switch</code> é usada para comparar um valor com múltiplas possibilidades, tornando o código mais legível e organizado.</p>
+            <pre><code>let diaDaSemana: string = "terça-feira";
+switch (diaDaSemana) {
+case "segunda-feira":
+    console.log("Hoje é segunda-feira");
+    break;
+case "terça-feira":
+    console.log("Hoje é terça-feira");
+    break;
+case "quarta-feira":
+    console.log("Hoje é quarta-feira");
+    break;
+default:
+    console.log("Outro dia da semana");
+}</code></pre>
+            <p>Nota: Em TypeScript, o uso de <code>break</code> em cada <code>case</code> é necessário para evitar a execução de blocos subsequentes.</p>
+        </section>
+
+        <!-- Operador Ternário -->
+        <section class="ternary-operator">
+            <h2>Operador Ternário</h2>
+            <p>O operador ternário é uma forma concisa de escrever uma estrutura <code>if-else</code>. Ele é ideal para condições simples.</p>
+            <pre><code>let numero: number = 5;
+let resultado: string = numero > 0 ? "Positivo" : "Negativo";
+console.log(resultado);</code></pre>
+            <p>O operador ternário <code>?</code> avalia a condição e, se for verdadeira, retorna o valor antes do <code>:</code>. Se for falsa, retorna o valor após o <code>:</code>.</p>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar os conceitos de estruturas condicionais em TypeScript, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-estrutura-condicionais-typescript.html" class="btn">Ver Exercícios de TypeScript</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+
+</html>

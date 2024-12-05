@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Boas Práticas e Acessibilidade em CSS</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/desafios-projetos.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios de Boas Práticas e Acessibilidade em CSS</h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML/html-css-exercises.html">Voltar</a></li>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Exercícios de Boas Práticas e Acessibilidade</h2>
+
+        <h3>Boas Práticas de CSS</h3>
+        <ul>
+            <li>Utilize variáveis CSS para cores e tamanhos em um projeto.</li>
+            <li>Adicione comentários explicativos no seu código CSS para maior compreensão.</li>
+            <li>Use unidades relativas (%, em, rem) em vez de fixas (px) para melhor responsividade.</li>
+            <li>Organize as regras CSS em um arquivo separado e mantenha uma estrutura lógica.</li>
+            <li>Minimize o uso de seletores muito específicos para facilitar a manutenção do código.</li>
+            <li>Utilize `flexbox` e `grid` para layouts em vez de `float` para melhor controle e flexibilidade.</li>
+            <li>Evite o uso excessivo de `!important`, pois isso dificulta a sobrescrição de regras.</li>
+            <li>Use `aria-label` e `aria-hidden` para tornar os elementos mais acessíveis.</li>
+            <li>Utilize o `box-sizing: border-box` para garantir que o padding e a borda não aumentem o tamanho dos elementos.</li>
+            <li>Utilize mixins e funções com pré-processadores CSS (Sass, Less) para evitar repetição de código.</li>
+        </ul>
+
+        <h3>Acessibilidade em CSS</h3>
+        <ul>
+            <li>Garanta contraste suficiente entre o texto e o fundo (pelo menos 4.5:1 para texto normal e 3:1 para texto grande).</li>
+            <li>Use `rem` para tamanhos de fonte para permitir a escalabilidade em leitores de tela.</li>
+            <li>Adicione `focus-visible` para fornecer um foco visível aos elementos interativos.</li>
+            <li>Evite usar apenas cores para transmitir informações (use texto ou ícones adicionais).</li>
+            <li>Certifique-se de que todos os elementos interativos tenham um `:hover` e `:focus` claramente visíveis.</li>
+            <li>Utilize `aria-hidden` para ocultar elementos que não devem ser lidos por leitores de tela.</li>
+            <li>Utilize `alt` nas imagens para fornecer uma descrição do conteúdo visual.</li>
+            <li>Teste seu site com ferramentas de acessibilidade como Lighthouse e WAVE.</li>
+            <li>Use um `label` com `for` em elementos de formulário para tornar os campos mais acessíveis.</li>
+            <li>Adicione `role="button"` e `tabindex` a elementos que não sejam botões mas que funcionam como botões.</li>
+        </ul>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>

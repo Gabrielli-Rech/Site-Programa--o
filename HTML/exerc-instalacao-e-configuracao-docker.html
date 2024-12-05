@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/desafios-projetos.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios de Instalação e Configuração</h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML/instalacao-e-configuracao-docker.html">Voltar</a></li>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Exercícios de Instalação e Configuração</h2>
+            <ul>
+                <li>Instale o Docker em sua máquina seguindo a documentação oficial do Docker para seu sistema operacional (Linux, Windows, macOS).</li>
+                <li>Verifique se o Docker foi instalado corretamente executando o comando `docker --version` no terminal.</li>
+                <li>Inicie o serviço Docker e verifique seu status com `systemctl status docker` (Linux) ou pelo painel de controle do Docker Desktop (Windows/macOS).</li>
+                <li>Crie um usuário local e adicione-o ao grupo `docker` para executar comandos Docker sem sudo no Linux.</li>
+                <li>Configure o Docker para iniciar automaticamente após o boot do sistema usando `systemctl enable docker` (Linux).</li>
+                <li>Configure a interface do Docker Desktop em um ambiente Windows ou macOS para utilizar a virtualização de containers com recursos específicos.</li>
+                <li>Instale o Docker Compose e verifique a versão com `docker-compose --version`.</li>
+                <li>Crie um arquivo `docker-compose.yml` simples que defina um serviço de webserver (exemplo: Nginx).</li>
+                <li>Execute um container Nginx em modo interativo e acesse a página de boas-vindas do Nginx pelo navegador.</li>
+                <li>Configure variáveis de ambiente no Docker Compose e passe parâmetros de configuração para um container.</li>
+                <li>Utilize volumes no Docker Compose para persistir dados de um container (exemplo: um banco de dados).</li>
+                <li>Configura o Docker para usar um proxy HTTP/HTTPS em caso de uma rede corporativa ou firewall.</li>
+                <li>Configure o Docker para usar um registro de imagens privado, configurando o `~/.docker/config.json` com credenciais.</li>
+                <li>Desinstale o Docker em um sistema Linux e remova todos os containers e imagens associadas.</li>
+                <li>Utilize o Docker CLI para criar e rodar containers em diferentes ambientes (produção, desenvolvimento, etc.).</li>
+                <li>Crie um Dockerfile básico para um app de "Hello World" em Node.js e construa uma imagem a partir dele.</li>
+                <li>Explore o comando `docker stats` para monitorar o uso de recursos de containers em tempo real.</li>
+                <li>Configure o `docker-compose.yml` para iniciar múltiplos serviços interdependentes (exemplo: frontend e backend).</li>
+                <li>Habilite logs detalhados de um container para depuração usando `docker logs <container_id>`.</li>
+                <li>Experimente a configuração de limites de CPU e memória para containers em um `docker-compose.yml` usando as opções `mem_limit` e `cpus`.</li>
+                <li>Configure um container Docker para rodar em modo de reinício automático com a política `restart: always`.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>
+

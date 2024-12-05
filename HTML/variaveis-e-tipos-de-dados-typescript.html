@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis e Tipos de Dados em TypeScript</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Variaveis-e-tipos-de-dados-ex-ts.css">
+</head>
+
+<body>
+    <header>
+        <h1>Variáveis e Tipos de Dados</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/typescript-exercises.html">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h2>O que são Variáveis e Tipos de Dados?</h2>
+            <p>Em TypeScript, variáveis são usadas para armazenar dados que podem ser manipulados em um programa. TypeScript é uma linguagem com tipagem estática, o que significa que você pode (e deve) declarar o tipo das variáveis para evitar erros no código.</p>
+        </section>
+
+        <!-- Declaração de Variáveis -->
+        <section class="variables">
+            <h2>Declaração de Variáveis</h2>
+            <p>Em TypeScript, você pode declarar variáveis usando as palavras-chave <code>let</code>, <code>const</code> e <code>var</code>. Recomenda-se usar <code>let</code> para variáveis mutáveis e <code>const</code> para constantes. Os tipos podem ser declarados explicitamente:</p>
+            <pre><code>let nome: string = "João"; // variável (mutável)
+const idade: number = 25;    // constante (imutável)</code></pre>
+            <p>Você também pode omitir o tipo e deixar que TypeScript o infira com base no valor atribuído:</p>
+            <pre><code>let ativo = true; // TypeScript infere como boolean</code></pre>
+        </section>
+
+        <!-- Tipos de Dados -->
+        <section class="data-types">
+            <h2>Tipos de Dados em TypeScript</h2>
+            <p>TypeScript suporta uma ampla gama de tipos de dados para melhor controle e segurança do código. Os principais tipos incluem:</p>
+            <ul>
+                <li><code>string</code>: Cadeias de caracteres. Exemplo: <code>"Olá, mundo!"</code></li>
+                <li><code>number</code>: Números inteiros e de ponto flutuante. Exemplo: <code>42</code>, <code>3.14</code></li>
+                <li><code>boolean</code>: Valores booleanos. Exemplo: <code>true</code>, <code>false</code></li>
+                <li><code>any</code>: Permite armazenar qualquer tipo de dado. Exemplo: <code>let variavel: any = "texto";</code></li>
+                <li><code>null</code> e <code>undefined</code>: Representam a ausência de valor.</li>
+                <li><code>array</code>: Conjunto ordenado de elementos. Exemplo: <code>let numeros: number[] = [1, 2, 3];</code></li>
+                <li><code>tuple</code>: Lista de elementos de tipos fixos. Exemplo: <code>let tupla: [string, number] = ["texto", 42];</code></li>
+                <li><code>enum</code>: Conjunto de valores nomeados. Exemplo: <code>enum Cores { Vermelho, Verde, Azul }</code></li>
+                <li><code>void</code>: Usado para funções que não retornam valor.</li>
+            </ul>
+            <p>Exemplo de diferentes tipos de dados em TypeScript:</p>
+            <pre><code>let nome: string = "Maria";
+let idade: number = 30;
+let ativo: boolean = false;
+let opcional: string | null = null; // tipo opcional</code></pre>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar os conceitos de variáveis e tipos de dados, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-variaveis-e-tipos-de-dados-typescript.html" class="btn">Ver Exercícios de Variáveis e Tipos de Dados</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+
+</html>

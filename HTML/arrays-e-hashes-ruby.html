@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays e Hashes Ruby</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Variaveis-e-tipos-de-dados-ex-js.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios de Arrays e Hashes em Ruby</h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML/ruby-exercises.html">Voltar</a></li>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Exercícios de Arrays em Ruby</h2>
+
+        <h3>Fáceis</h3>
+        <ul>
+            <li>Crie um array de números de 1 a 10 e imprima todos os elementos.</li>
+            <li>Adicione um elemento ao final de um array.</li>
+            <li>Remova o último elemento de um array e imprima-o.</li>
+            <li>Verifique se um determinado elemento está presente em um array.</li>
+            <li>Imprima todos os elementos de um array usando um loop `each`.</li>
+            <li>Crie um array de strings e imprima o tamanho de cada string.</li>
+            <li>Filtre os números pares de um array de números inteiros.</li>
+            <li>Crie um array de palavras e imprima cada palavra em maiúsculas.</li>
+            <li>Imprima todos os elementos de um array na ordem inversa.</li>
+            <li>Concatene dois arrays e imprima o resultado.</li>
+            <li>Crie um array de números e calcule a soma de todos os elementos.</li>
+            <li>Crie um array e imprima o primeiro e o último elemento.</li>
+            <li>Verifique o comprimento de um array.</li>
+            <li>Crie um array de cores e imprima a terceira cor.</li>
+            <li>Remova um elemento específico de um array.</li>
+            <li>Crie um array de objetos e imprima suas propriedades.</li>
+        </ul>
+
+        <h3>Médios</h3>
+        <ul>
+            <li>Crie um array de strings e use `map` para adicionar um sufixo a cada string.</li>
+            <li>Use `select` para filtrar elementos que contenham uma letra específica.</li>
+            <li>Crie um array e use `sort` para ordenar os elementos em ordem crescente.</li>
+            <li>Crie um array de números e calcule a média de todos os elementos.</li>
+            <li>Use `reject` para remover todos os elementos que são menores que 10 de um array.</li>
+            <li>Crie um array de números e use `reduce` para multiplicar todos os elementos.</li>
+            <li>Crie um array e use `uniq` para remover elementos duplicados.</li>
+            <li>Crie um array de palavras e use `each_with_index` para imprimir o índice e a palavra.</li>
+            <li>Crie um array de objetos e use `each` para imprimir a propriedade de cada objeto.</li>
+            <li>Crie um array de números e use `map` para elevar cada número ao quadrado.</li>
+            <li>Implemente uma função que retorna a soma de todos os elementos de um array passado como parâmetro.</li>
+            <li>Crie um array de strings e use `find` para encontrar a primeira string com mais de 5 caracteres.</li>
+            <li>Use `slice` para extrair um subarray de um array original.</li>
+            <li>Crie um array de números e use `min` e `max` para encontrar os elementos mínimo e máximo.</li>
+            <li>Implemente uma função que inverte um array sem usar `reverse`.</li>
+            <li>Crie um array de strings e use `join` para concatenar todas as strings em uma única string.</li>
+        </ul>
+
+        <h3>Difíceis</h3>
+        <ul>
+            <li>Crie um método que encontre todos os números primos em um array.</li>
+            <li>Implemente uma função que verifique se um array é um palíndromo.</li>
+            <li>Crie um método que receba dois arrays e retorne a interseção entre eles.</li>
+            <li>Crie um array de strings e use `group_by` para agrupar as palavras pelo comprimento.</li>
+            <li>Crie um array de objetos e use `sort_by` para ordená-los por uma de suas propriedades.</li>
+            <li>Implemente uma função que divida um array em subarrays de tamanho específico.</li>
+            <li>Crie um método que receba um array de strings e retorne a string mais longa.</li>
+            <li>Crie um método que encontre a soma dos elementos únicos em um array.</li>
+            <li>Crie um método que remova elementos duplicados em um array mantendo a ordem original.</li>
+            <li>Crie uma função que encontre os números que aparecem mais de uma vez em um array.</li>
+            <li>Implemente uma função que receba dois arrays e retorne um array com os elementos que estão em um e não no outro.</li>
+            <li>Crie um método que encontre o elemento que ocorre mais vezes em um array.</li>
+            <li>Crie um método que inverta os elementos de um array e imprima cada elemento em uma linha.</li>
+            <li>Crie uma função que retorne a soma dos elementos que estão em posições pares de um array.</li>
+            <li>Implemente uma função que encontre os elementos comuns entre três arrays.</li>
+            <li>Crie um método que receba um array e retorne um array com apenas os elementos que são múltiplos de 3.</li>
+        </ul>
+
+        <h3>Desafios</h3>
+        <ul>
+            <li>Crie um método que encontre todos os anagramas de uma palavra em um array de palavras.</li>
+            <li>Crie uma função que gere todas as combinações possíveis de elementos de um array.</li>
+            <li>Implemente uma função que receba um array e retorne um novo array em que os elementos estejam ordenados pelo número de vezes que aparecem.</li>
+            <li>Crie um método que use `inject` para calcular o produto de todos os elementos de um array.</li>
+            <li>Crie um método que encontre o menor número ímpar em um array de números.</li>
+            <li>Implemente uma função que transforme um array de objetos em um hash.</li>
+            <li>Crie um método que gere a sequência de Fibonacci em um array de tamanho especificado.</li>
+            <li>Crie um método que remova os elementos do meio de um array e retorne-os em um novo array.</li>
+            <li>Implemente uma função que encontre o maior produto de dois elementos em um array de números.</li>
+            <li>Crie um método que verifique se um array contém um número específico de formas diferentes.</li>
+            <li>Crie uma função que use `map` para criar um array de strings formatadas de acordo com uma condição.</li>
+            <li>Implemente um método que divida um array em dois subarrays de tamanhos iguais, se possível.</li>
+            <li>Crie uma função que encontre o elemento do array que aparece na maior quantidade de subarrays.</li>
+            <li>Crie uma função que encontre todos os pares de elementos cujas somas são iguais a um valor especificado.</li>
+            <li>Implemente uma função que use `each_with_index` para imprimir os elementos de um array e seus índices em ordem reversa.</li>
+            <li>Crie uma função que remova elementos duplicados de um array sem usar `uniq`.</li>
+        </ul>
+
+        <h2>Exercícios de Hashes em Ruby</h2>
+
+        <h3>Fáceis</h3>
+        <ul>
+            <li>Crie um hash de nomes e idades e imprima todos os valores.</li>
+            <li>Adicione um novo par chave-valor a um hash existente.</li>
+            <li>Remova um par chave-valor de um hash.</li>
+            <li>Verifique se uma chave existe em um hash.</li>
+            <li>Imprima todas as chaves de um hash.</li>
+            <li>Imprima todos os valores de um hash.</li>
+            <li>Acesse um valor específico em um hash.</li>
+            <li>Crie um hash de contatos e imprima os nomes de todos os contatos.</li>
+            <li>Crie um hash e use `each` para imprimir chave e valor juntos.</li>
+            <li>Crie um hash e imprima a soma dos valores numéricos.</li>
+            <li>Implemente uma função que inverta as chaves e valores de um hash.</li>
+            <li>Verifique se um valor específico existe em um hash.</li>
+            <li>Crie um hash e adicione um novo elemento com `merge`.</li>
+            <li>Imprima um hash formatado com `to_s`.</li>
+            <li>Implemente uma função que retorne o valor de uma chave específica ou uma mensagem padrão se a chave não existir.</li>
+            <li>Crie um hash e use `select` para filtrar pares chave-valor específicos.</li>
+        </ul>
+
+        <h3>Médios</h3>
+        <ul>
+            <li>Crie um hash e use `keys` para imprimir apenas as chaves.</li>
+            <li>Use `values` para imprimir apenas os valores de um hash.</li>
+            <li>Crie um método que receba um hash e retorne a chave com o maior valor.</li>
+            <li>Crie um método que receba um hash e retorne a chave com o menor valor.</li>
+            <li>Implemente uma função que receba um hash e retorne os pares chave-valor em ordem alfabética das chaves.</li>
+            <li>Crie um método que use `each_with_index` para imprimir chave, valor e índice em um hash.</li>
+            <li>Implemente uma função que calcule o número de elementos em um hash.</li>
+            <li>Crie um método que use `map` para transformar os valores de um hash em um novo hash.</li>
+            <li>Implemente uma função que retorne um novo hash com todas as chaves em maiúsculas.</li>
+            <li>Crie uma função que filtre um hash removendo pares com valores nulos.</li>
+            <li>Use `delete_if` para remover pares chave-valor de um hash que atendem a uma condição específica.</li>
+            <li>Implemente uma função que adicione um par chave-valor a um hash se a chave não existir.</li>
+            <li>Crie um hash de estudantes e use `each` para imprimir o nome e a nota de cada um.</li>
+            <li>Crie um método que retorne um novo hash com as chaves invertidas.</li>
+            <li>Implemente uma função que retorne um hash com apenas as chaves que têm valores numéricos.</li>
+            <li>Crie uma função que encontre todas as chaves que possuem valores que são arrays.</li>
+        </ul>
+
+        <h3>Difíceis</h3>
+        <ul>
+            <li>Crie uma função que agrupe um hash por um valor específico.</li>
+            <li>Crie um método que conte quantas vezes cada valor aparece em um hash.</li>
+            <li>Implemente uma função que calcule a média de todos os valores numéricos em um hash.</li>
+            <li>Crie um método que combine dois hashes, somando os valores de chaves iguais.</li>
+            <li>Crie uma função que modifique um hash de forma que os valores sejam transformados em arrays.</li>
+            <li>Implemente uma função que filtre um hash e retorne apenas as chaves com valores de tipo string.</li>
+            <li>Crie um método que encontre a chave de um hash que possui um valor específico.</li>
+            <li>Implemente uma função que divida um hash em dois, baseado em um critério específico.</li>
+            <li>Crie uma função que retorne um hash com chaves e valores trocados e ordenados pela chave.</li>
+            <li>Implemente uma função que verifique se todos os valores em um hash são únicos.</li>
+            <li>Crie um método que imprima todas as combinações possíveis de chaves e valores em um hash.</li>
+            <li>Implemente uma função que agrupe um hash por um determinado critério de valor.</li>
+            <li>Crie uma função que retorne o hash interseção entre dois hashes.</li>
+            <li>Crie um método que calcule a soma dos valores em um hash e retorne o valor da chave com a maior soma.</li>
+            <li>Implemente uma função que modifique um hash para que todas as chaves sejam numéricas.</li>
+            <li>Crie uma função que ordene um hash por valores de forma decrescente.</li>
+        </ul>
+
+        <h3>Desafios</h3>
+        <ul>
+            <li>Crie uma função que agrupe um array de hashes por um campo específico.</li>
+            <li>Implemente uma função que retorne o hash de um array de pares chave-valor.</li>
+            <li>Crie um método que encontre a chave com o maior valor num hash aninhado.</li>
+            <li>Implemente uma função que retorne um novo hash onde cada chave seja uma palavra de uma frase.</li>
+            <li>Crie uma função que percorra um hash aninhado e imprima todas as chaves e valores.</li>
+            <li>Crie um método que receba um hash e retorne apenas as chaves que estão em um array de interesse.</li>
+            <li>Implemente uma função que mescle dois hashes e preserve as chaves únicas.</li>
+            <li>Crie um método que percorra um hash e modifique os valores para seus quadrados.</li>
+            <li>Implemente uma função que calcule a diferença entre dois hashes em termos de chaves e valores.</li>
+            <li>Crie uma função que retorne um hash filtrado por um valor mínimo.</li>
+            <li>Crie um método que crie um hash de contagem de elementos de um array de strings.</li>
+            <li>Implemente uma função que transforme um hash em um array de arrays de pares chave-valor.</li>
+            <li>Crie uma função que verifique se um hash possui chaves duplicadas.</li>
+            <li>Implemente uma função que atualize um hash de acordo com uma condição específica.</li>
+            <li>Crie uma função que inverta um hash mantendo a chave como valor e o valor como chave.</li>
+            <li>Crie uma função que receba um hash de hashes e retorne o hash que possui o maior valor em uma chave específica.</li>
+        </ul>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>

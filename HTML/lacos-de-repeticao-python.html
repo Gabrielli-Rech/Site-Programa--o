@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laços de Repetição em Python</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/exerc-lacos-de-repeticao.css">
+</head>
+<body>
+    <header>
+        <h1>Laços de Repetição</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/python-exercises.html">Voltar</a></li>
+                <!--<li><a href="python-projects.html">Projetos</a></li>-->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h2>O que são Laços de Repetição?</h2>
+            <p>Os laços de repetição em Python são usados para executar um bloco de código várias vezes de forma iterativa. Eles são fundamentais para automatizar tarefas repetitivas e são essenciais em muitas aplicações de programação.</p>
+        </section>
+
+        <!-- Laços de repetição -->
+        <section class="loops">
+            <h2>Principais Laços de Repetição em Python</h2>
+            <p>Em Python, os laços de repetição mais comuns são:</p>
+            <ul>
+                <li><strong>for</strong>: Usado para iterar sobre uma sequência (ex.: listas, tuplas, strings) ou um intervalo de números.</li>
+                <li><strong>while</strong>: Executa um bloco de código enquanto a condição for verdadeira.</li>
+            </ul>
+
+            <!-- Exemplo de 'for' -->
+            <p>Exemplo de um laço <code>for</code>:</p>
+            <pre><code>for i in range(5):
+    print(i)  # Imprime os números de 0 a 4</code></pre>
+
+            <!-- Exemplo de 'while' -->
+            <p>Exemplo de um laço <code>while</code>:</p>
+            <pre><code>count = 0
+while count < 5:
+    print(count)
+    count += 1  # Incrementa count de 1 em 1</code></pre>
+
+            <!-- Exemplo de uso do 'break' e 'continue' -->
+            <p>Exemplo de uso de <code>break</code> e <code>continue</code>:</p>
+            <pre><code>for i in range(10):
+    if i == 5:
+        break  # Interrompe o laço quando i é 5
+    if i % 2 == 0:
+        continue  # Pula a iteração se i for par
+    print(i)  # Imprime apenas números ímpares menores que 5</code></pre>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar os conceitos de laços de repetição, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-lacos-de-repeticao-python.html" class="btn">Ver Exercícios de Laços de Repetição</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>

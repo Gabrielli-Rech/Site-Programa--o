@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/desafios-projetos.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios de Dockerfile e Imagens</h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML/docker-exercises.html">Voltar</a></li>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Exercícios Fáceis</h2>
+            <ul>
+                <li>Crie um Dockerfile simples que use uma imagem base do Ubuntu e instale o `curl`.</li>
+                <li>Crie um Dockerfile que use a imagem base `node:14` e copie um arquivo `app.js` para o contêiner.</li>
+                <li>Crie uma imagem Docker que execute um servidor HTTP usando o `python3 -m http.server`.</li>
+                <li>Escreva um Dockerfile para uma aplicação Node.js com um script `start` que inicie o servidor.</li>
+                <li>Use a imagem base `nginx` e adicione um arquivo `index.html` customizado.</li>
+                <li>Crie um Dockerfile para uma aplicação Python que use `flask` para exibir "Hello, World!".</li>
+                <li>Crie uma imagem Docker com uma versão específica do Python, como `python:3.8`.</li>
+                <li>Use a imagem `alpine` e instale o `vim` no contêiner.</li>
+                <li>Crie um Dockerfile que faça a instalação de um pacote com `apt-get`.</li>
+                <li>Escreva um Dockerfile que copie um arquivo de configuração `nginx.conf` para um contêiner.</li>
+                <li>Utilize `docker build` para construir uma imagem a partir de um Dockerfile.</li>
+                <li>Crie uma imagem e execute um comando `echo` simples dentro dela.</li>
+                <li>Escreva um Dockerfile que defina uma variável de ambiente e imprima-a.</li>
+                <li>Crie uma imagem com um contêiner que utilize a versão mais recente do `ubuntu`.</li>
+                <li>Crie uma imagem Docker que execute um script bash (`setup.sh`) no momento da inicialização.</li>
+                <li>Escreva um Dockerfile que instale o `git` e clone um repositório no contêiner.</li>
+                <li>Crie uma imagem Docker com `openjdk:11` e execute um programa Java simples.</li>
+                <li>Escreva um Dockerfile que exponha uma porta específica do contêiner.</li>
+                <li>Crie uma imagem Docker com o `node:16` e instale uma dependência (`express`).</li>
+                <li>Use `docker run` para iniciar um contêiner de uma imagem customizada.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Exercícios Médios</h2>
+            <ul>
+                <li>Crie um Dockerfile multi-stage para compilar uma aplicação Go e copiar o binário para uma imagem menor.</li>
+                <li>Escreva um Dockerfile que use o `COPY` e `VOLUME` para adicionar volumes persistentes.</li>
+                <li>Crie uma imagem que contenha um servidor Apache configurado para servir um site estático.</li>
+                <li>Escreva um Dockerfile que instale o `npm` e execute `npm install`.</li>
+                <li>Crie um Dockerfile que instale e execute o `redis-server`.</li>
+                <li>Escreva um Dockerfile que utilize uma imagem base do `python:3.9-slim` e execute um script `main.py`.</li>
+                <li>Crie um Dockerfile com `ENTRYPOINT` e `CMD` que executa um script bash.</li>
+                <li>Utilize a instrução `HEALTHCHECK` em um Dockerfile para monitorar a saúde do contêiner.</li>
+                <li>Crie um Dockerfile que faça uso de `COPY` e `RUN` para copiar arquivos e executar comandos de configuração.</li>
+                <li>Escreva um Dockerfile que adicione usuários e grupos específicos.</li>
+                <li>Crie uma imagem com um contêiner que execute um servidor de banco de dados como o `PostgreSQL`.</li>
+                <li>Escreva um Dockerfile que configure variáveis de ambiente para uma aplicação Flask.</li>
+                <li>Crie um Dockerfile para uma aplicação React que copie os arquivos de origem e execute o `npm start`.</li>
+                <li>Crie uma imagem com um servidor `nginx` que sirva uma página de erro personalizada.</li>
+                <li>Adicione uma instrução `LABEL` a um Dockerfile para incluir metadados da imagem.</li>
+                <li>Crie um Dockerfile que use um script de inicialização (`init.sh`) que seja executado com `ENTRYPOINT`.</li>
+                <li>Escreva um Dockerfile para uma aplicação que execute um servidor de desenvolvimento com `live-reload`.</li>
+                <li>Crie um Dockerfile que use um cache de dependências (`npm ci`) para uma build eficiente.</li>
+                <li>Escreva um Dockerfile que instale uma versão específica do Python e um pacote adicional (`pandas`).</li>
+                <li>Crie uma imagem Docker que execute um comando de backup automático (`cron`).</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Exercícios Difíceis</h2>
+            <ul>
+                <li>Escreva um Dockerfile multi-stage para uma aplicação `Node.js` que compila código TypeScript e empacota os arquivos finais.</li>
+                <li>Crie uma imagem Docker com múltiplos serviços e use o `docker-compose` para orquestrar.</li>
+                <li>Escreva um Dockerfile que configure um servidor `nginx` com autenticação básica.</li>
+                <li>Crie uma imagem que use um `Dockerfile` e um arquivo `docker-entrypoint.sh` para iniciar uma aplicação de microserviço.</li>
+                <li>Configure um Dockerfile com um script de inicialização que faça o monitoramento de logs em tempo real.</li>
+                <li>Escreva um Dockerfile que use `ONBUILD` para adicionar instruções de construção futuras em outra imagem.</li>
+                <li>Crie uma imagem que use um proxy reverso para rotear tráfego para diferentes serviços.</li>
+                <li>Configure um Dockerfile para ter um ambiente de desenvolvimento que inclua `node`, `yarn` e `jest` para testes.</li>
+                <li>Escreva um Dockerfile que implemente a execução de comandos de build e deploy em um pipeline CI/CD.</li>
+                <li>Crie uma imagem que contenha um servidor `MySQL` e um script que inicialize o banco de dados automaticamente.</li>
+                <li>Configure um Dockerfile que use uma imagem `scratch` e compile um binário Go para a execução mínima.</li>
+                <li>Escreva um Dockerfile que permita um contêiner ter múltiplos usuários com permissões distintas.</li>
+                <li>Crie uma imagem Docker que monte volumes para permitir a persistência de dados em containers.</li>
+                <li>Configure um Dockerfile para usar um ambiente de desenvolvimento baseado em containers `VSCode`.</li>
+                <li>Crie uma imagem Docker com configurações de segurança específicas, como `USER` e `NOEXEC`.</li>
+                <li>Escreva um Dockerfile que inclua uma configuração para diferentes variáveis de ambiente de produção.</li>
+                <li>Crie uma imagem Docker que implemente uma configuração de CI/CD com GitLab Runner.</li>
+                <li>Configure um Dockerfile que use `buildx` para criar imagens multi-plataforma.</li>
+                <li>Crie uma Dockerfile que use o `COPY` com `--chown` para garantir permissões corretas.</li>
+                <li>Configure um Dockerfile que use o `RUN` para executar testes unitários durante a construção da imagem.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Desafios</h2>
+            <ul>
+                <li>Crie uma imagem Docker que utilize `docker-compose` para executar uma aplicação complexa com banco de dados e cache.</li>
+                <li>Configure um Dockerfile para uma aplicação Python que use um servidor de produção com `gunicorn`.</li>
+                <li>Crie uma imagem que seja capaz de compilar aplicações em C e executar scripts de automação.</li>
+                <li>Configure um Dockerfile que implemente uma imagem mínima e use um `init` customizado.</li>
+                <li>Escreva um Dockerfile para uma aplicação que utilize `Apache`, `PHP` e `MySQL`.</li>
+                <li>Crie uma imagem que implemente um sistema de autenticação de usuários e API RESTful.</li>
+                <li>Configure um Dockerfile que permita deploy de uma aplicação em uma infraestrutura de nuvem.</li>
+                <li>Escreva um Dockerfile com suporte a múltiplas linguagens de programação (Python, JavaScript, Go).</li>
+                <li>Crie uma imagem Docker que configure um ambiente com `Jupyter Notebook` e bibliotecas de ciência de dados.</li>
+                <li>Escreva um Dockerfile que configure uma imagem para rodar um `container de proxy reverso`.</li>
+                <li>Configure um Dockerfile para uma aplicação com `Apache Kafka` e `Zookeeper`.</li>
+                <li>Crie uma imagem que use `Docker secrets` para configuração de variáveis de ambiente sensíveis.</li>
+                <li>Escreva um Dockerfile que use a instrução `HEALTHCHECK` para garantir que o contêiner esteja operacional.</li>
+                <li>Crie uma imagem Docker que suporte um cluster `Kubernetes`.</li>
+                <li>Configure um Dockerfile que tenha scripts de configuração pré-execução e pós-execução.</li>
+                <li>Escreva um Dockerfile para uma aplicação que utilize o `Redis` como um serviço auxiliar.</li>
+                <li>Crie uma imagem que tenha uma build incremental e utilize cache para otimizar a construção.</li>
+                <li>Configure um Dockerfile que tenha uma função de monitoramento em tempo real de recursos do contêiner.</li>
+                <li>Escreva um Dockerfile para uma aplicação com `elasticsearch` e suporte a análise de logs.</li>
+                <li>Crie uma imagem Docker que execute uma aplicação `microservice` em uma arquitetura de serviços independentes.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>
+

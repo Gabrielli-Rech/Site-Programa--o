@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários em HTML</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Variaveis-e-tipos-de-dados-ex-js.css">
+</head>
+<body>
+    <header>
+        <h1>Formulários</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/html-css-exercises.html">Voltar</a></li>
+                <!--<li><a href="html-projects.html">Projetos</a></li>-->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h2>O que são Formulários?</h2>
+            <p>Formulários HTML são usados para coletar informações do usuário e enviá-las para o servidor ou processá-las de alguma forma. Eles são fundamentais para criar interfaces interativas em sites, como registros, login, pesquisas, entre outros.</p>
+        </section>
+
+        <!-- Estrutura de Formulário -->
+        <section class="form-structure">
+            <h2>Estrutura de um Formulário HTML</h2>
+            <p>A estrutura básica de um formulário em HTML é a seguinte:</p>
+            <pre><code>&lt;form action="processar-dados.php" method="post"&gt;
+    &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+    &lt;input type="text" id="nome" name="nome"&gt;
+    
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+    
+    &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;</code></pre>
+            <p>Explicação dos principais atributos:</p>
+            <ul>
+                <li><strong><code>action</code></strong>: Define o arquivo para onde os dados serão enviados.</li>
+                <li><strong><code>method</code></strong>: Define o método de envio, como <code>post</code> ou <code>get</code>.</li>
+                <li><strong><code>label</code></strong>: Usado para descrever um campo de entrada. O atributo <code>for</code> deve corresponder ao <code>id</code> do input.</li>
+                <li><strong><code>input</code></strong>: Usado para criar campos de entrada de diferentes tipos (texto, email, senha, etc.).</li>
+            </ul>
+        </section>
+
+        <!-- Exemplos de Campos de Formulário -->
+        <section class="form-examples">
+            <h2>Exemplos de Campos de Formulário</h2>
+            <p>Veja alguns exemplos de campos comuns em formulários:</p>
+            <ul>
+                <li><strong>Campo de Texto:</strong> <code>&lt;input type="text"&gt;</code></li>
+                <li><strong>Campo de Senha:</strong> <code>&lt;input type="password"&gt;</code></li>
+                <li><strong>Campo de Email:</strong> <code>&lt;input type="email"&gt;</code></li>
+                <li><strong>Área de Texto:</strong> <code>&lt;textarea&gt;&lt;/textarea&gt;</code></li>
+                <li><strong>Botão de Rádio:</strong> <code>&lt;input type="radio"&gt;</code></li>
+                <li><strong>Checkbox:</strong> <code>&lt;input type="checkbox"&gt;</code></li>
+            </ul>
+            <p>Exemplo de formulário com diferentes tipos de campos:</p>
+            <pre><code>&lt;form action="enviar-dados.php" method="post"&gt;
+    &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+    &lt;input type="text" id="nome" name="nome"&gt;
+    
+    &lt;label for="senha"&gt;Senha:&lt;/label&gt;
+    &lt;input type="password" id="senha" name="senha"&gt;
+    
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+    
+    &lt;input type="radio" id="masculino" name="genero" value="masculino"&gt;
+    &lt;label for="masculino"&gt;Masculino&lt;/label&gt;
+    
+    &lt;input type="checkbox" id="aceito" name="aceito"&gt;
+    &lt;label for="aceito"&gt;Aceito os termos&lt;/label&gt;
+    
+    &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;</code></pre>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar a criação de formulários HTML, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-formularios-html-e-css.html" class="btn">Ver Exercícios de Formulários</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>

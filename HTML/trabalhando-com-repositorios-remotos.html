@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/desafios-projetos.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios sobre Repositórios Remotos</h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML/git-exercises.html">Voltar</a></li>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <ul>
+                <li>Crie um repositório remoto no GitHub e clone-o para sua máquina local usando `git clone`.</li>
+                <li>Faça alterações em um arquivo local, faça um `commit` e use `git push origin main` para enviar as alterações para o repositório remoto.</li>
+                <li>Use `git pull origin main` para atualizar sua branch local com as últimas mudanças do repositório remoto.</li>
+                <li>Adicione um repositório remoto adicional com `git remote add` e envie suas mudanças com `git push` para esse novo repositório.</li>
+                <li>Verifique a URL do repositório remoto com `git remote -v` e altere-a com `git remote set-url` se necessário.</li>
+                <li>Use `git fetch` para baixar atualizações do repositório remoto sem fazer merge automático.</li>
+                <li>Crie uma branch `feature/remote-work` e envie-a para o repositório remoto com `git push origin feature/remote-work`.</li>
+                <li>Faça `git pull --rebase` para atualizar sua branch local com alterações do repositório remoto e evitar um merge automático.</li>
+                <li>Use `git cherry-pick` para aplicar um commit específico do repositório remoto na sua branch local.</li>
+                <li>Resolva conflitos ao fazer `git pull` com um repositório remoto e faça um `commit` para concluir a mesclagem.</li>
+                <li>Verifique se há branches remotas com `git branch -r` e faça um `checkout` para uma branch remota com `git checkout -b`.</li>
+                <li>Sincronize seu repositório local com o remoto usando `git pull` e, em seguida, `git push` para garantir que as mudanças estejam atualizadas.</li>
+                <li>Utilize `git push --force` para forçar a atualização de uma branch remota, mas tome cuidado com esse comando para não sobrescrever alterações de outros colaboradores.</li>
+                <li>Use `git remote show origin` para ver detalhes sobre o repositório remoto, como branches rastreadas e URLs.</li>
+                <li>Configure um repositório remoto como `upstream` em um fork com `git remote add upstream <url>`, e use `git fetch upstream` para sincronizar.</li>
+                <li>Faça um `git push --set-upstream origin feature/new-feature` para associar uma branch local a uma branch remota de mesmo nome.</li>
+                <li>Verifique se existem mudanças locais não enviadas para o repositório remoto com `git status` e use `git diff` para comparar.</li>
+                <li>Use `git log origin/main..HEAD` para visualizar os commits que você ainda não enviou para o repositório remoto.</li>
+                <li>Faça um `git rebase` em uma branch local para aplicar suas alterações sobre a branch remota principal.</li>
+                <li>Use `git tag` para marcar um ponto específico na história de um repositório e faça `git push origin <tag>` para enviar a tag para o repositório remoto.</li>
+                <li>Configure um repositório remoto para ser somente leitura com `git remote set-url --push origin <url>`, se necessário.</li>
+                <li>Use `git pull --no-ff` para fazer um merge com um commit de merge explícito ao integrar uma branch remota na sua branch local.</li>
+                <li>Verifique e compare a diferença entre sua branch local e a branch remota com `git diff origin/main`.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>
+

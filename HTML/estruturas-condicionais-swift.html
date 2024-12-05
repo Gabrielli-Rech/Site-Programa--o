@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas Condicionais em Swift</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Variaveis-e-tipos-de-dados-ex-js.css">
+</head>
+<body>
+    <header>
+        <h1>Estruturas Condicionais em Swift</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/swift-exercises.html">Voltar</a></li>
+                <!--<li><a href="swift-projects.html">Projetos</a></li>-->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h2>O que são Estruturas Condicionais?</h2>
+            <p>Estruturas condicionais são usadas para tomar decisões em Swift com base em condições. Elas permitem que o código seja executado dependendo de valores ou condições específicas.</p>
+        </section>
+
+        <!-- Estrutura if -->
+        <section class="if-structure">
+            <h2>Estrutura <code>if</code></h2>
+            <p>A estrutura <code>if</code> executa um bloco de código se a condição especificada for verdadeira.</p>
+            <pre><code>let idade = 18
+if idade >= 18 {
+    print("Você é maior de idade.")
+}</code></pre>
+            <p>Neste exemplo, a mensagem será exibida se a idade for maior ou igual a 18.</p>
+        </section>
+
+        <!-- Estrutura if-else -->
+        <section class="if-else-structure">
+            <h2>Estrutura <code>if-else</code></h2>
+            <p>Use a estrutura <code>if-else</code> para executar um bloco de código se a condição for verdadeira e outro bloco se ela for falsa.</p>
+            <pre><code>let temperatura = 30
+if temperatura > 25 {
+    print("Está quente lá fora!")
+} else {
+    print("O tempo está agradável.")
+}</code></pre>
+        </section>
+
+        <!-- Estrutura if-else if -->
+        <section class="if-else-if-structure">
+            <h2>Estrutura <code>if-else if</code></h2>
+            <p>Quando há múltiplas condições, use a estrutura <code>if-else if</code> para verificar cada uma delas em sequência.</p>
+            <pre><code>let nota = 85
+if nota >= 90 {
+    print("Excelente!")
+} else if nota >= 70 {
+    print("Bom trabalho.")
+} else {
+    print("Você precisa melhorar.")
+}</code></pre>
+        </section>
+
+        <!-- Estrutura switch -->
+        <section class="switch-structure">
+            <h2>Estrutura <code>switch</code></h2>
+            <p>O <code>switch</code> é uma alternativa ao <code>if</code> para verificar múltiplos casos. Ele é mais limpo e eficiente quando há muitas condições.</p>
+            <pre><code>let diaDaSemana = 3
+switch diaDaSemana {
+case 1:
+    print("Domingo")
+case 2:
+    print("Segunda-feira")
+case 3:
+    print("Terça-feira")
+default:
+    print("Outro dia")
+}</code></pre>
+            <p>Neste exemplo, o código imprime o dia correspondente ao número fornecido.</p>
+        </section>
+
+        <!-- Comparando if e switch -->
+        <section class="comparison">
+            <h2>Quando usar <code>if</code> ou <code>switch</code>?</h2>
+            <p>Use <code>if</code> para condições simples ou verificações booleanas. Use <code>switch</code> para comparar um valor com múltiplos casos.</p>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar os conceitos de estruturas condicionais em Swift, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-estruturas-condicionais-swift.html" class="btn">Ver Exercícios de Estruturas Condicionais</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>

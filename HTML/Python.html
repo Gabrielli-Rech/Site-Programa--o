@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/python.css">
+</head>
+<body>
+    <header>
+        <h1>Python</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="Linguagens.html">Linguagens</a></li>
+                <li><a href="Exercicios.html">Exercícios</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Introdução -->
+        <section class="intro">
+            <h2>O que é Python?</h2>
+            <p>Python é uma linguagem de programação de alto nível, de fácil leitura e escrita. É uma das linguagens mais populares do mundo, amplamente usada para desenvolvimento web, automação, análise de dados, inteligência artificial, aprendizado de máquina e muito mais. Python é conhecida por sua sintaxe limpa e concisa, o que a torna ideal para iniciantes e desenvolvedores experientes.</p>
+        </section>
+
+        <!-- Principais Características -->
+        <section class="features">
+            <h2>Principais Características do Python</h2>
+            <ul>
+                <li><strong>Sintaxe Simples:</strong> Fácil de ler e escrever, tornando o código mais legível.</li>
+                <li><strong>Multiplataforma:</strong> Funciona em diversos sistemas operacionais, como Windows, macOS e Linux.</li>
+                <li><strong>Versatilidade:</strong> Usado em diversas áreas, como desenvolvimento web (Django, Flask), ciência de dados (Pandas, NumPy), e IA (TensorFlow, scikit-learn).</li>
+                <li><strong>Grande Comunidade:</strong> Uma comunidade ativa que contribui com bibliotecas e frameworks para facilitar o desenvolvimento.</li>
+                <li><strong>Interpretação:</strong> Python é uma linguagem interpretada, o que significa que você pode testar e executar o código rapidamente.</li>
+            </ul>
+        </section>
+
+        <!-- Sintaxe Básica -->
+        <section class="syntax">
+            <h2>Sintaxe Básica</h2>
+            <h3>Exemplo de Declaração de Variáveis</h3>
+            <pre><code># Declaração de variáveis
+nome = "João"  # String
+idade = 30  # Inteiro
+altura = 1.75  # Float</code></pre>
+
+            <h3>Exemplo de Estruturas de Controle</h3>
+            <pre><code># Estrutura de controle condicional
+if idade >= 18:
+    print("Você é maior de idade.")
+else:
+    print("Você é menor de idade.")
+
+# Estrutura de repetição
+for i in range(5):
+    print(f"Número: {i}")</code></pre>
+        </section>
+
+        <!-- Funções Avançadas -->
+        <section class="functions">
+            <h2>Funções Avançadas</h2>
+            <h3>Funções Anônimas (Lambda)</h3>
+            <pre><code># Função lambda para somar dois números
+soma = lambda a, b: a + b
+print(soma(5, 10))  # Saída: 15</code></pre>
+
+            <h3>Funções de Ordem Superior</h3>
+            <pre><code># Função de ordem superior que recebe outra função como argumento
+def aplicar_operacao(a, b, operacao):
+    return operacao(a, b)
+
+def multiplicar(x, y):
+    return x * y
+
+print(aplicar_operacao(5, 3, multiplicar))  # Saída: 15</code></pre>
+        </section>
+
+        <!-- Manipulação de Dados e Listas -->
+        <section class="data">
+            <h2>Manipulação de Dados e Listas</h2>
+            <p>Python é poderoso para manipulação de dados, graças a suas listas, dicionários e outras estruturas de dados integradas.</p>
+            <h3>Exemplo de Listas e Compreensão de Listas</h3>
+            <pre><code># Lista e iteração
+frutas = ["maçã", "banana", "cereja"]
+for fruta in frutas:
+    print(fruta)
+
+# Compreensão de listas
+numeros = [x for x in range(10) if x % 2 == 0]
+print(numeros)  # Saída: [0, 2, 4, 6, 8]</code></pre>
+        </section>
+
+        <!-- Programação Orientada a Objetos (POO) -->
+        <section class="oop">
+            <h2>Programação Orientada a Objetos (POO)</h2>
+            <p>Python suporta programação orientada a objetos, permitindo a criação de classes e objetos para modelar e organizar seu código de maneira eficiente.</p>
+            <h3>Exemplo de Classe e Objeto</h3>
+            <pre><code># Definição de classe e criação de objeto
+class Pessoa:
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
+    
+    def saudacao(self):
+        return f"Olá, meu nome é {self.nome} e tenho {self.idade} anos."
+
+pessoa1 = Pessoa("Carlos", 25)
+print(pessoa1.saudacao())  # Saída: Olá, meu nome é Carlos e tenho 25 anos.</code></pre>
+        </section>
+
+        <!-- Tutoriais -->
+        <section class="tutorials">
+            <h2>Tutoriais de Python</h2>
+            <p>Confira alguns tutoriais úteis para aprender Python de forma prática:</p>
+            <ul>
+                <li><a href="https://www.w3schools.com/python/" target="_blank">Tutorial de Python no W3Schools</a></li>
+                <li><a href="https://realpython.com/learn/python-first-steps/" target="_blank">Primeiros Passos com Python - Real Python</a></li>
+                <li><a href="https://docs.python.org/3/tutorial/index.html" target="_blank">Tutorial Oficial do Python</a></li>
+                <li><a href="https://www.learnpython.org/" target="_blank">Curso Interativo de Python</a></li>
+                <li><a href="https://www.codecademy.com/learn/learn-python-3" target="_blank">Codecademy - Curso de Python</a></li>
+            </ul>
+        </section>
+
+        <!-- Recursos de Aprendizado -->
+        <section class="resources">
+            <h2>Recursos de Aprendizado</h2>
+            <p>Confira alguns recursos recomendados para aprender Python:</p>
+            <ul>
+                <li><a href="https://www.python.org/doc/" target="_blank">Documentação Oficial do Python</a></li>
+                <li><a href="https://www.w3schools.com/python/" target="_blank">W3Schools - Python Tutorial</a></li>
+                <li><a href="https://www.learnpython.org/" target="_blank">LearnPython.org - Curso Interativo</a></li>
+                <li><a href="https://realpython.com/" target="_blank">Real Python - Tutoriais e Guias</a></li>
+                <li><a href="https://www.codecademy.com/learn/learn-python-3" target="_blank">Codecademy - Curso de Python</a></li>
+            </ul>
+        </section>
+
+        <!-- Projetos Práticos -->
+        <section class="projects">
+            <h2>Projetos Práticos para Python</h2>
+            <p>Praticar com projetos é uma das melhores formas de aprender. Confira alguns projetos práticos:</p>
+            <ul>
+                <li><a href="https://www.hackerrank.com/domains/tutorials/10-days-of-python" target="_blank">HackerRank - 10 Days of Python</a></li>
+                <li><a href="https://www.kaggle.com/datasets" target="_blank">Kaggle - Datasets e Desafios de Análise</a></li>
+                <li><a href="https://projecteuler.net/" target="_blank">Project Euler - Desafios de Matemática e Programação</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>

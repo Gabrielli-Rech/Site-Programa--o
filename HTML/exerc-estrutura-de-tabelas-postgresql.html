@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/desafios-projetos.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios de Estrutura de Tabelas</h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML/estrutura-de-tabelas-postgresql.html">Voltar</a></li>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Exercícios Fáceis</h2>
+            <ul>
+                <li>Crie uma tabela chamada `usuarios` com as colunas `id` (chave primária, serial), `nome` (texto) e `email` (texto).</li>
+                <li>Adicione uma coluna `idade` (inteiro) à tabela `usuarios`.</li>
+                <li>Renomeie a coluna `nome` para `nome_completo` na tabela `usuarios`.</li>
+                <li>Remova a coluna `idade` da tabela `usuarios`.</li>
+                <li>Crie uma tabela chamada `produtos` com as colunas `id`, `nome` e `preco`.</li>
+                <li>Adicione uma restrição para que a coluna `email` da tabela `usuarios` seja única.</li>
+                <li>Insira 3 registros fictícios na tabela `usuarios`.</li>
+                <li>Exclua todos os registros da tabela `usuarios` sem apagar a tabela.</li>
+                <li>Crie uma tabela chamada `pedidos` com as colunas `id`, `usuario_id` e `total`.</li>
+                <li>Exclua a tabela `pedidos`.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Exercícios Médios</h2>
+            <ul>
+                <li>Crie uma tabela chamada `enderecos` com as colunas `id`, `usuario_id`, `rua`, `cidade` e `estado`. Configure `usuario_id` como chave estrangeira para a tabela `usuarios`.</li>
+                <li>Adicione uma restrição para que a coluna `preco` da tabela `produtos` seja maior que 0.</li>
+                <li>Altere o tipo da coluna `total` da tabela `pedidos` para `numeric` com 2 casas decimais.</li>
+                <li>Crie um índice na coluna `email` da tabela `usuarios` para melhorar a performance das consultas.</li>
+                <li>Escreva um comando para listar todas as tabelas do banco de dados atual.</li>
+                <li>Crie uma tabela chamada `categorias` com as colunas `id` e `nome`. Adicione uma chave estrangeira na tabela `produtos` referenciando `categorias`.</li>
+                <li>Crie uma tabela com uma coluna `data_criacao` que armazene a data e hora do registro automaticamente.</li>
+                <li>Adicione uma restrição para que a coluna `nome` da tabela `produtos` não aceite valores nulos.</li>
+                <li>Crie uma tabela chamada `avaliacoes` com as colunas `id`, `produto_id`, `usuario_id` e `nota`. Configure `produto_id` e `usuario_id` como chaves estrangeiras.</li>
+                <li>Exclua todas as chaves estrangeiras da tabela `enderecos`.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Exercícios Difíceis</h2>
+            <ul>
+                <li>Crie uma tabela chamada `estoques` com as colunas `id`, `produto_id` e `quantidade`. Configure `produto_id` como chave estrangeira.</li>
+                <li>Adicione uma restrição que limite a `quantidade` da tabela `estoques` a valores entre 0 e 1000.</li>
+                <li>Crie uma tabela chamada `transacoes` com as colunas `id`, `tipo` e `valor`, onde `tipo` só pode ser "compra" ou "venda".</li>
+                <li>Adicione uma restrição de chave composta para as colunas `produto_id` e `usuario_id` na tabela `avaliacoes`.</li>
+                <li>Implemente um comando que exclua todos os registros de uma tabela, mas mantenha o próximo valor da chave primária intacto.</li>
+                <li>Escreva um comando para clonar a estrutura de uma tabela (sem copiar os dados).</li>
+                <li>Crie uma tabela com uma coluna que armazene JSON, representando os atributos de um produto.</li>
+                <li>Escreva um comando para listar todas as colunas de uma tabela e seus tipos de dados.</li>
+                <li>Implemente um comando para mover uma tabela para outro schema no mesmo banco de dados.</li>
+                <li>Crie uma tabela chamada `logs` que registre a data e hora de cada inserção de dados automaticamente.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Desafios</h2>
+            <ul>
+                <li>Crie um sistema de tabelas que represente um sistema de biblioteca com `livros`, `autores`, `emprestimos` e `usuarios`.</li>
+                <li>Crie um sistema de tabelas que represente um sistema de vendas, incluindo `clientes`, `pedidos`, `produtos` e `itens_pedido`.</li>
+                <li>Implemente uma tabela de histórico que registre alterações feitas em outra tabela, incluindo a data da alteração.</li>
+                <li>Crie uma tabela que utilize partições para organizar dados por ano.</li>
+                <li>Desenhe um modelo de tabelas que represente uma rede social com usuários, postagens, comentários e curtidas.</li>
+                <li>Implemente uma tabela de auditoria que registre todas as operações (inserções, atualizações, exclusões) feitas em uma tabela específica.</li>
+                <li>Escreva um comando que compare a estrutura de duas tabelas e liste as diferenças.</li>
+                <li>Crie uma tabela que utilize herança para armazenar informações genéricas e específicas de diferentes tipos de veículos.</li>
+                <li>Projete um sistema de tabelas para uma aplicação de gerenciamento escolar com `alunos`, `professores`, `cursos` e `notas`.</li>
+                <li>Implemente uma tabela com colunas que utilizem o tipo de dados `ARRAY` para armazenar listas de valores.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>
+

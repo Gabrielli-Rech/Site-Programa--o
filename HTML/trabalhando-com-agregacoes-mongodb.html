@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/desafios-projetos.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios de Agregações</h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML/mongodb-exercises.html">Voltar</a></li>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <ul>
+                <li>Crie uma consulta de agregação que utilize a etapa `$match` para filtrar documentos de uma coleção de produtos onde o preço é maior que 100.</li>
+                <li>Utilize a etapa `$group` para calcular a soma do preço de todos os produtos em uma coleção de produtos.</li>
+                <li>Crie uma consulta de agregação com a etapa `$project` para renomear um campo de `productName` para `name` em uma coleção de produtos.</li>
+                <li>Use a etapa `$sort` para ordenar uma coleção de produtos pelo preço em ordem decrescente.</li>
+                <li>Combine as etapas `$match` e `$group` para contar quantos produtos existem em cada categoria em uma coleção de produtos.</li>
+                <li>Crie uma consulta de agregação que utilize a etapa `$lookup` para fazer uma junção entre duas coleções e trazer detalhes de um fornecedor para cada produto.</li>
+                <li>Utilize a etapa `$unwind` para desmembrar um array de tags em um documento e criar um documento separado para cada tag.</li>
+                <li>Crie uma agregação com a etapa `$project` para mostrar apenas os campos `productName` e `price` de uma coleção de produtos.</li>
+                <li>Use a etapa `$match` para filtrar documentos que foram criados nos últimos 30 dias em uma coleção de pedidos.</li>
+                <li>Realize uma consulta de agregação que utilize `$group` para calcular a média de preço dos produtos por categoria.</li>
+                <li>Crie uma agregação que use `$addFields` para adicionar um campo calculado de desconto em um documento de produto com base em uma porcentagem.</li>
+                <li>Utilize a etapa `$bucket` para agrupar documentos em intervalos de preço, como `0-50`, `51-100`, etc., em uma coleção de produtos.</li>
+                <li>Crie uma consulta de agregação que use a etapa `$merge` para salvar o resultado da agregação em uma nova coleção.</li>
+                <li>Utilize a etapa `$count` para contar quantos produtos existem em uma coleção de produtos que possuem o campo `available` como `true`.</li>
+                <li>Crie uma agregação que utilize a etapa `$replaceRoot` para substituir a raiz de um documento com um campo específico.</li>
+                <li>Utilize a etapa `$sample` para selecionar aleatoriamente 5 documentos de uma coleção de produtos.</li>
+                <li>Use a etapa `$facet` para realizar múltiplas agregações em paralelo e combinar os resultados em um único documento.</li>
+                <li>Crie uma consulta de agregação que use a etapa `$sortByCount` para contar e ordenar a frequência de um campo específico em uma coleção de documentos.</li>
+                <li>Utilize a etapa `$graphLookup` para criar uma pesquisa recursiva em uma coleção de categorias de produtos.</li>
+                <li>Crie uma agregação com a etapa `$arrayElemAt` para acessar um elemento específico de um array em um documento.</li>
+                <li>Realize uma consulta de agregação com a etapa `$lookup` para fazer a junção de uma coleção de usuários com uma coleção de comentários, trazendo os detalhes do usuário para cada comentário.</li>
+                <li>Crie uma agregação que utilize a etapa `$sort` e depois `$limit` para mostrar os 10 produtos mais caros em uma coleção de produtos.</li>
+                <li>Utilize a etapa `$mergeObjects` para combinar dois documentos em um único documento de saída em uma agregação.</li>
+                <li>Use a etapa `$map` para aplicar uma transformação a cada elemento de um array em um documento.</li>
+                <li>Crie uma consulta de agregação que use a etapa `$set` para adicionar um novo campo em um documento sem remover os campos existentes.</li>
+                <li>Utilize a etapa `$cond` para adicionar lógica condicional em um campo calculado em uma coleção de produtos.</li>
+                <li>Crie uma consulta de agregação que utilize a etapa `$dateToString` para formatar datas em um formato específico em um documento.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>
+

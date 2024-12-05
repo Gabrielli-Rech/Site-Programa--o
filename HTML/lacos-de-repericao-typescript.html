@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laços de Repetição em TypeScript</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Lacos-de-Repeticao-TypeScript.css">
+</head>
+<body>
+    <header>
+        <h1>Laços de Repetição</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/typescript-exercises.html">Voltar</a></li>
+                <!--<li><a href="typescript-projects.html">Projetos</a></li>-->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h2>O que são Laços de Repetição?</h2>
+            <p>Laços de repetição, também conhecidos como loops, são estruturas de controle que permitem executar um bloco de código repetidamente enquanto uma condição for verdadeira. Eles são fundamentais em programação para automatizar tarefas e processar listas de dados.</p>
+        </section>
+
+        <!-- Laço for -->
+        <section class="for-loop">
+            <h2>O Laço <code>for</code></h2>
+            <p>O laço <code>for</code> é utilizado quando se sabe o número de vezes que o bloco de código deve ser repetido. A estrutura do <code>for</code> é a seguinte:</p>
+            <pre><code>for (let i = 0; i < 5; i++) {
+    console.log(i);
+}</code></pre>
+            <p>Este exemplo imprime os números de 0 a 4 no console.</p>
+        </section>
+
+        <!-- Laço while -->
+        <section class="while-loop">
+            <h2>O Laço <code>while</code></h2>
+            <p>O laço <code>while</code> é usado quando não se sabe o número de repetições antecipadamente. O bloco de código é executado enquanto a condição especificada for verdadeira.</p>
+            <pre><code>let i = 0;
+while (i < 5) {
+    console.log(i);
+    i++;
+}</code></pre>
+            <p>Este exemplo também imprime os números de 0 a 4 no console.</p>
+        </section>
+
+        <!-- Laço do-while -->
+        <section class="do-while-loop">
+            <h2>O Laço <code>do...while</code></h2>
+            <p>O laço <code>do...while</code> é semelhante ao <code>while</code>, mas garante que o bloco de código seja executado pelo menos uma vez, independentemente da condição.</p>
+            <pre><code>let i = 0;
+do {
+    console.log(i);
+    i++;
+} while (i < 5);</code></pre>
+            <p>Este exemplo também imprime os números de 0 a 4 no console.</p>
+        </section>
+
+        <!-- Laço for...of -->
+        <section class="for-of-loop">
+            <h2>O Laço <code>for...of</code></h2>
+            <p>O laço <code>for...of</code> é utilizado para iterar sobre elementos de coleções como arrays, strings e outros objetos iteráveis.</p>
+            <pre><code>const frutas = ['maçã', 'banana', 'laranja'];
+for (const fruta of frutas) {
+    console.log(fruta);
+}</code></pre>
+            <p>Este exemplo imprime cada fruta da lista no console.</p>
+        </section>
+
+        <!-- Laço for...in -->
+        <section class="for-in-loop">
+            <h2>O Laço <code>for...in</code></h2>
+            <p>O laço <code>for...in</code> é usado para iterar sobre as propriedades de um objeto. É importante ter cuidado ao usá-lo com arrays, pois ele pode não ter o comportamento esperado.</p>
+            <pre><code>const pessoa = { nome: 'João', idade: 30, cidade: 'São Paulo' };
+for (const chave in pessoa) {
+    console.log(chave + ': ' + pessoa[chave]);
+}</code></pre>
+            <p>Este exemplo imprime as propriedades e valores do objeto <code>pessoa</code>.</p>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar os conceitos de laços de repetição em TypeScript, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-lacos-de-repericao-typescript.html" class="btn">Ver Exercícios de Laços de Repetição</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>

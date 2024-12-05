@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação e Manipulação de Bases no PostgreSQL</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/Variaveis-e-tipos-de-dados-ex-js.css">
+</head>
+
+<body>
+    <header>
+        <h1>Criação e Manipulação de Bases no PostgreSQL</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../HTML/postgresql-exercises.html">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Introdução -->
+        <section class="intro">
+            <h2>O que são Bases de Dados?</h2>
+            <p>Uma base de dados é um conjunto de informações organizadas de forma a facilitar a manipulação e recuperação dos dados. No PostgreSQL, bases de dados são criadas para armazenar tabelas, índices, visões e outros objetos de banco de dados necessários para gerenciar as informações.</p>
+        </section>
+
+        <!-- Criando uma Base de Dados -->
+        <section class="creating-database">
+            <h2>Criando uma Base de Dados</h2>
+            <p>Para criar uma nova base de dados no PostgreSQL, você pode usar o comando <code>CREATE DATABASE</code>. Veja o exemplo:</p>
+            <pre><code>CREATE DATABASE minha_base_de_dados;</code></pre>
+            <p>Para criar uma base de dados com opções adicionais, como um proprietário específico:</p>
+            <pre><code>CREATE DATABASE minha_base_de_dados
+OWNER meu_usuario
+ENCODING 'UTF8'
+TABLESPACE pg_default;</code></pre>
+            <p>No exemplo acima:</p>
+            <ul>
+                <li><code>OWNER</code>: Define o proprietário da base de dados.</li>
+                <li><code>ENCODING</code>: Define a codificação de caracteres.</li>
+                <li><code>TABLESPACE</code>: Define o local de armazenamento dos dados.</li>
+            </ul>
+        </section>
+
+        <!-- Conectando a uma Base de Dados -->
+        <section class="connecting-database">
+            <h2>Conectando a uma Base de Dados</h2>
+            <p>Para trabalhar com uma base de dados, é necessário se conectar a ela. Para isso, você pode usar o comando:</p>
+            <pre><code>\c minha_base_de_dados</code></pre>
+            <p>Esse comando é usado no prompt de comando do PostgreSQL (psql) para mudar para a base de dados desejada.</p>
+        </section>
+
+        <!-- Manipulando uma Base de Dados -->
+        <section class="manipulating-database">
+            <h2>Manipulando uma Base de Dados</h2>
+            <p>Existem alguns comandos úteis para manipular bases de dados, como:</p>
+            <ul>
+                <li><strong>Renomear uma base de dados:</strong>
+                    <pre><code>ALTER DATABASE minha_base_de_dados RENAME TO nova_base_de_dados;</code></pre>
+                </li>
+                <li><strong>Excluir uma base de dados:</strong>
+                    <pre><code>DROP DATABASE minha_base_de_dados;</code></pre>
+                </li>
+            </ul>
+            <p>É importante lembrar que para executar esses comandos, você deve ter privilégios adequados.</p>
+        </section>
+
+        <!-- Gerenciando Usuários e Privilégios -->
+        <section class="managing-users">
+            <h2>Gerenciando Usuários e Privilégios</h2>
+            <p>Para permitir que um usuário acesse e manipule uma base de dados, você deve criar o usuário e conceder os privilégios apropriados. Veja como fazer isso:</p>
+            <ul>
+                <li><strong>Criar um novo usuário:</strong>
+                    <pre><code>CREATE USER meu_usuario WITH PASSWORD 'minha_senha';</code></pre>
+                </li>
+                <li><strong>Conceder privilégios de acesso a uma base de dados:</strong>
+                    <pre><code>GRANT ALL PRIVILEGES ON DATABASE minha_base_de_dados TO meu_usuario;</code></pre>
+                </li>
+            </ul>
+            <p>Os privilégios podem ser ajustados para conceder permissões de leitura, escrita e execução em diferentes objetos dentro da base de dados.</p>
+        </section>
+
+        <!-- Exercícios -->
+        <section class="exercises">
+            <h2>Pratique com Exercícios</h2>
+            <p>Para praticar a criação e manipulação de bases de dados no PostgreSQL, tente resolver alguns exercícios:</p>
+            <a href="../HTML/exerc-criacao-e-manipulacao-de-bases-postgresql.html" class="btn">Ver Exercícios de Criação e Manipulação de Bases</a>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+
+</html>

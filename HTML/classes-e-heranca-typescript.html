@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Classes e Heranças em TypeScript</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/desafios-projetos.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios de Classes e Heranças em TypeScript</h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML/typescript-exercises.html">Voltar</a></li>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Exercícios de Classes e Heranças</h2>
+
+        <h3>Fáceis</h3>
+        <ul>
+            <li> Crie uma classe `Pessoa` com propriedades `nome` e `idade`. Adicione um método para exibir as informações da pessoa.</li>
+            <li> Adicione um construtor à classe `Carro` para inicializar as propriedades `marca` e `modelo`.</li>
+            <li> Crie uma classe `Animal` com um método `emitirSom` que exibe um som genérico no console.</li>
+            <li> Faça uma classe `Produto` com propriedades `nome` e `preco` e crie um método para calcular um desconto.</li>
+            <li> Implemente uma classe `ContaBancaria` com métodos para depositar e sacar dinheiro.</li>
+            <li> Crie uma classe `Livro` com propriedades `titulo` e `autor` e um método que retorna as informações do livro.</li>
+            <li> Adicione uma propriedade `dataFabricacao` em uma classe `Veiculo` e exiba-a no console.</li>
+            <li> Crie uma classe `Curso` com propriedades `nome` e `duracao`. Adicione um método para exibir os detalhes do curso.</li>
+            <li> Crie uma classe `Relogio` com propriedades `hora` e `minuto`, e um método que exibe o horário no formato HH:MM.</li>
+            <li> Adicione um método `alterarPreco` à classe `Produto` que redefine o valor da propriedade `preco`.</li>
+            <li> Implemente uma classe `Usuario` com métodos para definir e exibir o nome do usuário.</li>
+            <li> Crie uma classe `Calculadora` com métodos básicos de soma, subtração, multiplicação e divisão.</li>
+            <li> Adicione validações simples em uma classe `Conta` para verificar se o saldo é suficiente antes de realizar saques.</li>
+            <li> Implemente uma classe `Jogador` com propriedades como `nome` e `pontuacao` e métodos para alterar a pontuação.</li>
+            <li> Crie uma classe `Loja` com uma propriedade `endereco` e um método para exibir o endereço.</li>
+            <li> Adicione propriedades como `altura` e `largura` em uma classe `Retangulo`, e crie um método para calcular a área.</li>
+            <li> Crie uma classe `Filme` com propriedades `titulo` e `genero`, e um método para exibir o título do filme.</li>
+            <li> Adicione um método estático `converterCelsiusParaFahrenheit` em uma classe `Temperatura`.</li>
+            <li> Crie uma classe `Aluno` com propriedades `nome` e `nota`, e adicione um método que verifica se o aluno foi aprovado.</li>
+            <li> Implemente uma classe `Telefone` com métodos para fazer e receber chamadas.</li>
+        </ul>
+
+        <h3>Médios</h3>
+        <ul>
+            <li> Crie uma classe `Funcionario` e uma classe derivada `Gerente`, com propriedades e métodos específicos para cada uma.</li>
+            <li> Adicione um método `apresentar` em uma classe `Aluno` que herda de uma classe `Pessoa`.</li>
+            <li> Implemente uma hierarquia com a classe `FormaGeometrica` e classes derivadas como `Quadrado` e `Circulo`, cada uma com seu próprio método para calcular a área.</li>
+            <li> Use `protected` em uma propriedade para permitir o acesso em classes derivadas.</li>
+            <li> Adicione métodos estáticos em uma classe `Util` para realizar operações como soma ou cálculo de porcentagem.</li>
+            <li> Crie uma classe `Pagamento` e herde dela classes específicas como `Pix` e `Boleto`, cada uma com seu método de processamento.</li>
+            <li> Implemente a funcionalidade de carrinho de compras com uma classe `Carrinho` que gerencia uma lista de itens.</li>
+            <li> Crie uma classe `Funcionario` com subclasses `Engenheiro` e `Gerente`, e implemente métodos específicos em cada uma.</li>
+            <li> Adicione validações em propriedades usando métodos `get` e `set` em uma classe `Produto`.</li>
+            <li> Crie uma classe `Veiculo` com subclasses `Carro` e `Moto`, e implemente um método que retorne o tipo de veículo.</li>
+            <li> Implemente um sistema simples de inventário com classes `Item` e `Inventario`.</li>
+            <li> Crie um método genérico em uma classe `Lista` para adicionar e buscar elementos.</li>
+            <li> Use interfaces para garantir que uma classe `Animal` e suas subclasses implementem métodos específicos.</li>
+            <li> Adicione lógica para verificar duplicatas ao adicionar itens em uma classe `Estoque`.</li>
+            <li> Implemente um sistema de controle de acesso com classes `Usuario` e `Admin`, com permissões diferentes.</li>
+            <li> Crie uma classe `Calendario` com métodos para verificar feriados e adicionar eventos.</li>
+            <li>. Desenvolva um sistema de gerenciamento de tarefas usando herança entre as classes `Tarefa` e `TarefaImportante`.</li>
+            <li> Implemente lógica de persistência de dados em memória usando uma classe `BancoDeDados`.</li>
+            <li> Use um método estático para calcular a média de várias notas em uma classe `Avaliacao`.</li>
+            <li>Adicione um método abstrato em uma classe `Documento`, implementado por subclasses como `PDF` e `Word`.</li>
+        </ul>
+
+        <h3>Difíceis</h3>
+        <ul>
+            <li> Desenvolva uma hierarquia de classes para um sistema de reservas com classes `Reserva`, `Hotel`, e `Voo`, garantindo que todas implementem métodos específicos como `calcularCusto`.</li>
+            <li> Implemente um sistema de transporte com classes base `Veiculo` e subclasses específicas como `Navio` e `Aviao`. Adicione lógica para calcular tempo de viagem com base na velocidade.</li>
+            <li> Crie uma classe abstrata `Conta` e herde dela classes como `ContaCorrente` e `ContaPoupanca`. Adicione regras para cada tipo de conta.</li>
+            <li> Implemente um sistema de pagamento com classes `Pagamento` e `PagamentoOnline`, usando interfaces para garantir métodos padrão.</li>
+            <li> Adicione lógica para verificar duplicatas em uma lista de objetos em uma classe `InventarioAvancado`.</li>
+            <li> Crie uma classe `Tabela` com métodos para adicionar, atualizar e excluir linhas. Implemente relações com uma classe `BancoDeDados`.</li>
+            <li> Desenvolva um jogo simples com classes `Personagem`, `Monstro`, e `Item`. Use herança para diferenciar características.</li>
+            <li> Crie um sistema de notificações com classes `Notificacao`, `Email`, e `SMS`, cada uma implementando o método `enviar` de forma diferente.</li>
+            <li> Desenvolva uma classe `Pedido` e uma classe `Produto`. Associe múltiplos produtos a um pedido e implemente métodos para calcular o total.</li>
+            <li> Implemente um sistema de cadastro de veículos com classes `Veiculo`, `Carro`, e `Caminhao`. Adicione validações específicas para cada tipo.</li>
+            <li> Use interfaces para definir um contrato entre classes de diferentes níveis de herança em um sistema de controle de estoque.</li>
+            <li> Crie uma hierarquia de classes para um sistema de saúde com `Paciente`, `Medico`, e `Hospital`, cada um com funcionalidades específicas.</li>
+            <li> Adicione métodos assíncronos em uma classe `API` para simular chamadas de rede e processamento de dados.</li>
+            <li> Implemente um sistema de aluguel de carros com classes `Carro`, `Aluguel`, e `Cliente`. Adicione lógica para verificar disponibilidade.</li>
+            <li> Desenvolva um sistema de classificação de filmes com classes `Filme` e `Critico`, e implemente um método para calcular a média de avaliações.</li>
+            <li> Crie uma classe `Estoque` com métodos para buscar produtos por nome e categoria.</li>
+            <li>. Desenvolva uma classe `Banco` com métodos para transferir valores entre objetos `Conta`.</li>
+            <li> Crie uma classe `Biblioteca` para gerenciar empréstimos de livros, com validações para disponibilidade.</li>
+            <li> Implemente um sistema de gerenciamento de projetos com classes `Projeto`, `Tarefa`, e `MembroEquipe`.</li>
+            <li>Adicione métodos para gerar relatórios em uma classe `SistemaFinanceiro`, com herança para categorias como `Despesa` e `Receita`.</li>
+        </ul>
+
+        <h3>Desafios</h3>
+        <ul>
+            <li> Desenvolva um sistema de autenticação com classes `Usuario`, `Permissao`, e `Token`. Adicione validações avançadas.</li>
+            <li> Implemente um gerenciador de arquivos com classes `Arquivo`, `Pasta`, e `Disco`. Adicione suporte para mover e copiar arquivos.</li>
+            <li> Crie um jogo de tabuleiro com classes `Tabuleiro`, `Jogador`, e `Peca`. Implemente lógica para alternar turnos.</li>
+            <li> Implemente um sistema de publicação de artigos com classes `Artigo`, `Autor`, e `Categoria`. Adicione métodos para buscar por palavras-chave.</li>
+            <li> Desenvolva uma classe `SistemaDePagamento` com integração de diferentes métodos de pagamento como `Pix`, `Cartao`, e `Boleto`.</li>
+            <li> Crie uma hierarquia de classes para um sistema de educação com `Curso`, `Aluno`, e `Professor`. Implemente lógica para matrícula e notas.</li>
+            <li> Adicione suporte para exportação de relatórios em diferentes formatos usando uma classe `Exportador`.</li>
+            <li> Implemente uma classe `ControleDeAcesso` para gerenciar permissões de usuários com diferentes níveis de hierarquia.</li>
+            <li> Crie um sistema de recomendação de produtos com classes `Usuario`, `Produto`, e `Recomendacao`.</li>
+            <li> Desenvolva um simulador de mercado financeiro com classes `Acao`, `Investidor`, e `Transacao`.</li>
+            <li> Implemente um sistema de agendamento com classes `Calendario`, `Evento`, e `Alerta`.</li>
+            <li> Crie uma classe `Motor` e implemente lógica de composição em uma classe `Carro` para diferentes tipos de motores.</li>
+            <li> Desenvolva uma hierarquia de classes para um sistema de transporte público com `Onibus`, `Metro`, e `Passagem`.</li>
+            <li> Adicione métodos para calcular impostos em uma classe `Produto`, com herança para diferentes categorias.</li>
+            <li> Crie um sistema de monitoramento de saúde com classes `Paciente`, `Medico`, e `Exame`.</li>
+            <li> Implemente um simulador de partidas esportivas com classes `Time`, `Jogador`, e `Partida`.</li>
+            <li> Desenvolva um gerenciador de lista de tarefas com funcionalidades avançadas como ordenação e prioridade.</li>
+            <li> Crie uma classe `BibliotecaVirtual` para gerenciar empréstimos e reservas de livros online.</li>
+            <li> Implemente um sistema de suporte técnico com classes `Chamado`, `Cliente`, e `Atendente`.</li>
+            <li>Desenvolva um simulador de loja virtual com classes `Produto`, `Carrinho`, e `Pagamento`.</li>
+        </ul>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>

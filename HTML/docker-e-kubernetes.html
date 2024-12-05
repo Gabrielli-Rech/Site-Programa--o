@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/desafios-projetos.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios Docker e Kubernetes</h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML/docker-exercises.html">Voltar</a></li>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Exercícios Fáceis</h2>
+            <ul>
+                <li>1. Crie um container Docker com a imagem do Nginx e execute-o em segundo plano.</li>
+                <li>2. Crie um Dockerfile simples para construir uma imagem com Node.js.</li>
+                <li>3. Inicie um container MySQL com uma senha de root configurada via variáveis de ambiente.</li>
+                <li>4. Liste todos os containers em execução usando `docker ps`.</li>
+                <li>5. Crie e remova uma imagem Docker usando o comando `docker rmi`.</li>
+                <li>6. Execute um container Python e rode um script básico dentro dele.</li>
+                <li>7. Mapeie a porta 80 do container para a porta 8080 do host.</li>
+                <li>8. Use o comando `docker logs` para ver os logs de um container em execução.</li>
+                <li>9. Crie um volume Docker e use-o para armazenar dados persistentes de um container.</li>
+                <li>10. Use o comando `docker exec` para acessar um terminal dentro de um container em execução.</li>
+                <li>11. Configure uma rede Docker personalizada e conecte dois containers a ela.</li>
+                <li>12. Inicie um container Redis e teste a conexão com `redis-cli`.</li>
+                <li>13. Crie um container Docker com um arquivo de configuração personalizado mapeado por um volume.</li>
+                <li>14. Faça o build de uma imagem Docker usando `docker build` e uma imagem Dockerfile local.</li>
+                <li>15. Suba um container com um servidor de aplicação web simples em PHP.</li>
+                <li>16. Adicione uma variável de ambiente em um container do Docker com o comando `-e`.</li>
+                <li>17. Crie um arquivo `.dockerignore` para ignorar arquivos durante o build.</li>
+                <li>18. Use o comando `docker stop` para parar um container em execução.</li>
+                <li>19. Inicie um container em modo interativo com `-it`.</li>
+                <li>20. Crie e use uma imagem Docker com múltiplas etapas para otimizar o build.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Exercícios Médios</h2>
+            <ul>
+                <li>1. Crie um arquivo `docker-compose.yml` para configurar um ambiente com Nginx e PHP-FPM.</li>
+                <li>2. Configure um serviço multi-container usando Docker Compose para rodar uma aplicação web com backend e banco de dados.</li>
+                <li>3. Crie um script de inicialização do Docker Compose para rodar containers em sequência.</li>
+                <li>4. Configure um container para rodar um script de backup automático diário.</li>
+                <li>5. Use o `docker swarm` para iniciar um cluster de containers em modo de replicação.</li>
+                <li>6. Crie um arquivo `docker-compose.override.yml` para usar durante o desenvolvimento local.</li>
+                <li>7. Configure múltiplas redes de containers em um arquivo Compose e defina a comunicação entre eles.</li>
+                <li>8. Utilize um serviço de monitoramento como Prometheus em um container Docker.</li>
+                <li>9. Configure um container para usar a imagem oficial do Elasticsearch com o volume persistente.</li>
+                <li>10. Crie um ambiente de desenvolvimento com `docker-compose` para uma aplicação com Node.js e Redis.</li>
+                <li>11. Configure um serviço Docker Compose para executar um cron job em um container.</li>
+                <li>12. Adicione uma política de reinicialização de container em um arquivo `docker-compose.yml`.</li>
+                <li>13. Configure o `docker-compose.yml` para mapear volumes para persistência de dados em MongoDB.</li>
+                <li>14. Use `docker exec` para rodar comandos de teste em um container em execução.</li>
+                <li>15. Configure um serviço de logs centralizados usando Fluentd e Docker.</li>
+                <li>16. Crie um container para execução de uma aplicação Python Flask e conecte-o a um banco PostgreSQL.</li>
+                <li>17. Configure variáveis de ambiente sensíveis de forma segura no Docker Compose.</li>
+                <li>18. Use `docker-compose scale` para escalar a aplicação e rodar múltiplas réplicas de um serviço.</li>
+                <li>19. Configure uma rede externa e faça o roteamento de tráfego para um container usando `docker-compose`.</li>
+                <li>20. Configure um container para rodar um servidor Jenkins em Docker para integração contínua.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Exercícios Difíceis</h2>
+            <ul>
+                <li>1. Configure um ambiente de cluster Kubernetes local com `minikube` e inicie um deployment.</li>
+                <li>2. Crie um script de CI/CD que use `docker-compose` e `docker swarm` para realizar a construção e a implantação de um serviço.</li>
+                <li>3. Configure um container para uma aplicação web com autenticação OAuth2 e banco de dados PostgreSQL.</li>
+                <li>4. Crie um ambiente Kubernetes com múltiplos serviços conectados por um `Ingress`.</li>
+                <li>5. Use Docker Compose para configurar um ambiente de desenvolvimento para uma aplicação de microservices.</li>
+                <li>6. Adicione um serviço de caching com Redis a um ambiente de aplicação complexa com frontend e backend.</li>
+                <li>7. Configure e use volumes dinâmicos para backup e restaurar dados em Docker.</li>
+                <li>8. Crie um cluster Kubernetes com suporte a escalabilidade automática (Horizontal Pod Autoscaler).</li>
+                <li>9. Configure um container Docker que rode múltiplas instâncias de um serviço de aplicação web.</li>
+                <li>10. Implemente uma solução de gerenciamento de secrets usando Kubernetes Secrets.</li>
+                <li>11. Configure um container Docker para rodar uma aplicação de processamento em paralelo com `celery`.</li>
+                <li>12. Adicione um sistema de logging avançado usando Elastic Stack (ELK) com Docker Compose.</li>
+                <li>13. Configure múltiplas regiões para distribuição de serviços com Docker Compose.</li>
+                <li>14. Crie um pipeline de integração contínua com Jenkins e Kubernetes.</li>
+                <li>15. Configure um Docker Compose para rodar uma aplicação multi-container em uma rede separada.</li>
+                <li>16. Configure um deployment de banco de dados com replicação e failover em Kubernetes.</li>
+                <li>17. Use `kubectl` para fazer a atualização sem tempo de inatividade em uma aplicação Kubernetes.</li>
+                <li>18. Configure uma aplicação com `Docker Compose` e orquestre a implantação com `Kubernetes`.</li>
+                <li>19. Implemente um sistema de monitoramento com Grafana e Prometheus em containers Docker.</li>
+                <li>20. Crie um script de backup automático usando volumes e serviços Docker para banco de dados.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Exercícios de Desafios</h2>
+            <ul>
+                <li>1. Configure um cluster Kubernetes multi-node e orquestre um deploy em alta disponibilidade.</li>
+                <li>2. Implemente um serviço de CI/CD utilizando GitLab CI com Docker e Kubernetes.</li>
+                <li>3. Crie um sistema de monitoração com Prometheus e uma interface customizada com Grafana.</li>
+                <li>4. Configure um cluster Kubernetes com suporte a `Helm` e deploy de charts.</li>
+                <li>5. Configure um ambiente multi-região usando Kubernetes Federation.</li>
+                <li>6. Use Docker Compose para implementar um pipeline de deployment de aplicação em múltiplos serviços.</li>
+                <li>7. Desenvolva um script de deploy automático usando `kubectl` e GitLab CI/CD.</li>
+                <li>8. Crie um sistema de failover automatizado entre containers em Docker Swarm.</li>
+                <li>9. Configure um cluster Kubernetes usando `Kubernetes Cluster Autoscaler` para escalabilidade.</li>
+                <li>10. Implemente um sistema de deploy azul/verde com Kubernetes para evitar tempo de inatividade.</li>
+                <li>11. Configure um ambiente de contêineres para uma aplicação de machine learning com TensorFlow e Kubeflow.</li>
+                <li>12. Implemente um serviço de cache distribuído com Redis em Kubernetes e escale com `Horizontal Pod Autoscaler`.</li>
+                <li>13. Implemente a prática de segurança com controle de acesso com `Role-Based Access Control (RBAC)` no Kubernetes.</li>
+                <li>14. Crie um script de integração contínua que use Docker e Kubernetes para testar e deployar aplicações web.</li>
+                <li>15. Configure um ambiente com Docker Compose para realizar testes automatizados de APIs.</li>
+                <li>16. Implemente um cluster Kubernetes com suporte a múltiplos clusters e `Kubeadm`.</li>
+                <li>17. Crie um ambiente de CI/CD que use `Docker Compose` e `Jenkins Pipeline` para automação de builds.</li>
+                <li>18. Configure containers para a execução de aplicativos em tempo real com Docker e Kubernetes.</li>
+                <li>19. Crie um pipeline de desenvolvimento com `Jenkins`, `Docker Compose` e `Kubernetes` para integração com GitHub.</li>
+                <li>20. Desenvolva um plano de monitoramento de serviços de backend com `Kubernetes` e `Prometheus` para relatórios e alertas.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/java.css">
+</head>
+<body>
+    <header>
+        <h1>Java </h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="Linguagens.html">Linguagens</a></li>
+                <li><a href="Exercicios.html">Exercícios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Introdução -->
+        <section class="intro">
+            <h2>O que é Java?</h2>
+            <p>Java é uma linguagem de programação de alto nível, orientada a objetos e amplamente usada em desenvolvimento de aplicações empresariais, aplicações móveis (Android), sistemas corporativos e aplicações de servidor. É conhecida por seu lema "escreva uma vez, execute em qualquer lugar", devido à plataforma Java Virtual Machine (JVM).</p>
+        </section>
+
+        <!-- Principais Características -->
+        <section class="features">
+            <h2>Principais Características do Java</h2>
+            <ul>
+                <li><strong>Portabilidade:</strong> O código Java pode ser executado em qualquer sistema que tenha a JVM.</li>
+                <li><strong>Orientação a Objetos:</strong> Java é baseada em POO, o que permite a organização de código em classes e objetos.</li>
+                <li><strong>Segurança:</strong> Oferece características robustas de segurança para desenvolver aplicações seguras.</li>
+                <li><strong>Multithreading:</strong> Java suporta execução de múltiplas threads simultaneamente, tornando-o ideal para aplicações que exigem processamento paralelo.</li>
+                <li><strong>Bibliotecas Amplas:</strong> A linguagem tem uma vasta coleção de bibliotecas e APIs para diversas funcionalidades.</li>
+            </ul>
+        </section>
+
+        <!-- Sintaxe e Exemplos de Código -->
+        <section class="syntax">
+            <h2>Sintaxe Básica</h2>
+            <h3>Exemplo de Declaração de Variáveis</h3>
+            <pre><code>// Declaração de variáveis
+String nome = "Maria";  // String
+int idade = 28;         // Inteiro
+double altura = 1.68;   // Double</code></pre>
+
+            <h3>Exemplo de Estruturas de Controle</h3>
+            <pre><code>// Estrutura de controle condicional
+if (idade >= 18) {
+    System.out.println("Você é maior de idade.");
+} else {
+    System.out.println("Você é menor de idade.");
+}
+
+// Estrutura de repetição
+for (int i = 0; i < 5; i++) {
+    System.out.println("Número: " + i);
+} </code></pre>
+        </section>
+
+        <!-- Programação Orientada a Objetos -->
+        <section class="oop">
+            <h2>Programação Orientada a Objetos (POO)</h2>
+            <p>Java é conhecida por sua forte abordagem orientada a objetos, permitindo o desenvolvimento de software modular e reutilizável.</p>
+            <h3>Exemplo de Classe e Objeto</h3>
+            <pre><code>// Definição de classe e criação de objeto
+public class Pessoa {
+    private String nome;
+    private int idade;
+
+    // Construtor
+    public Pessoa(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    // Método
+    public String saudacao() {
+        return "Olá, meu nome é " + nome + " e tenho " + idade + " anos.";
+    }
+
+    public static void main(String[] args) {
+        Pessoa pessoa1 = new Pessoa("Carlos", 25);
+        System.out.println(pessoa1.saudacao());  // Saída: Olá, meu nome é Carlos e tenho 25 anos.
+    }
+} </code></pre>
+        </section>
+
+        <!-- Tutoriais e Recursos de Aprendizado -->
+        <section class="tutorials">
+            <h2>Tutoriais e Recursos de Aprendizado</h2>
+            <p>Confira alguns tutoriais úteis e recursos para aprender Java:</p>
+            <ul>
+                <li><a href="https://www.w3schools.com/java/" target="_blank">Tutorial de Java no W3Schools</a></li>
+                <li><a href="https://docs.oracle.com/javase/tutorial/" target="_blank">Tutorial Oficial da Oracle</a></li>
+                <li><a href="https://www.codecademy.com/learn/learn-java" target="_blank">Codecademy - Curso de Java</a></li>
+                <li><a href="https://www.learnjavaonline.org/" target="_blank">Learn Java Online</a></li>
+                <li><a href="https://www.journaldev.com/1826/java-tutorial" target="_blank">Tutorial Completo de Java - JournalDev</a></li>
+            </ul>
+        </section>
+
+        <!-- Desafios de Programação -->
+        <section class="challenges">
+            <h2>Desafios de Programação em Java</h2>
+            <p>Desafie suas habilidades com esses sites de programação:</p>
+            <ul>
+                <li><a href="https://www.hackerrank.com/domains/tutorials/10-days-of-java" target="_blank">HackerRank - 10 Days of Java</a></li>
+                <li><a href="https://www.codechef.com/" target="_blank">CodeChef - Desafios de Programação em Java</a></li>
+                <li><a href="https://www.codeforces.com/" target="_blank">Codeforces - Competição de Programação</a></li>
+                <li><a href="https://projecteuler.net/" target="_blank">Project Euler - Desafios de Matemática e Programação</a></li>
+            </ul>
+        </section>
+
+        <!-- Frameworks Populares -->
+        <section class="frameworks">
+            <h2>Frameworks Populares em Java</h2>
+            <p>Aprenda sobre os principais frameworks utilizados no desenvolvimento Java:</p>
+            <ul>
+                <li><a href="https://spring.io/" target="_blank">Spring Framework</a></li>
+                <li><a href="https://hibernate.org/" target="_blank">Hibernate - Framework de Mapeamento Objeto-Relacional</a></li>
+                <li><a href="https://struts.apache.org/" target="_blank">Apache Struts</a></li>
+                <li><a href="https://quarkus.io/" target="_blank">Quarkus - Framework de Desenvolvimento para Java</a></li>
+            </ul>
+        </section>
+
+        <!-- Vídeos e Aulas Interativas -->
+        <section class="videos">
+            <h2>Vídeos e Aulas Interativas</h2>
+            <p>Assista a vídeos para aprender Java de forma visual:</p>
+            <ul>
+                <li><a href="https://www.youtube.com/playlist?list=PLqq-6Pq4lTTa2uyc7lD3StzTgkCnW3E71" target="_blank">Curso de Java Completo - YouTube</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PL4C2Q1tbpce5_3tMCZ2u6T_L3j03gRZT" target="_blank">Java para Iniciantes - Canal XYZ</a></li>
+            </ul>
+        </section>
+
+        <!-- Projetos Práticos -->
+        <section class="projects">
+            <h2>Projetos Práticos em Java</h2>
+            <p>Trabalhe em projetos práticos para consolidar seus conhecimentos:</p>
+            <ul>
+                <li><a href="https://github.com/topics/java-projects" target="_blank">Projetos em Java no GitHub</a></li>
+                <li><a href="https://www.javaprogrammingtutorial.com/" target="_blank">Java Programming Tutorial - Projetos Práticos</a></li>
+                <li><a href="https://www.codegym.cc/en/" target="_blank">CodeGym - Exercícios e Projetos de Programação em Java</a></li>
+            </ul>
+        </section>
+
+        <!-- Ferramentas e IDEs -->
+        <section class="tools">
+            <h2>Ferramentas e IDEs para Programar em Java</h2>
+            <p>As melhores ferramentas para ajudar no seu desenvolvimento em Java:</p>
+            <ul>
+                <li><a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ IDEA - IDE para Java</a></li>
+                <li><a href="https://www.eclipse.org/" target="_blank">Eclipse - IDE Popular para Java</a></li>
+                <li><a href="https://netbeans.apache.org/" target="_blank">NetBeans - IDE para Desenvolvimento Java</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>

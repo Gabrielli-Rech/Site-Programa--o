@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/desafios-projetos.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios de Consultas Básicas </h1>
+        <nav>
+            <ul>
+                <li><a href="../HTML/consultas-basicas-mongodb.html">Voltar</a></li>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Exercícios</h2>
+            <ul>
+                <li>1. Conectar ao banco de dados MongoDB e selecionar uma coleção existente.</li>
+                <li>2. Inserir um documento em uma coleção usando o método <strong>insertOne()</strong>.</li>
+                <li>3. Inserir múltiplos documentos em uma coleção usando o método <strong>insertMany()</strong>.</li>
+                <li>4. Buscar todos os documentos de uma coleção usando o método <strong>find()</strong>.</li>
+                <li>5. Buscar documentos com uma condição específica usando <strong>find({ campo: valor })</strong>.</li>
+                <li>6. Limitar o número de documentos retornados usando <strong>find().limit(n)</strong>.</li>
+                <li>7. Ordenar os resultados de uma consulta com <strong>find().sort({ campo: 1 })</strong> (crescente) e <strong>find().sort({ campo: -1 })</strong> (decrescente).</li>
+                <li>8. Buscar documentos usando a operação de comparação <strong>$eq</strong> (igual).</li>
+                <li>9. Buscar documentos usando a operação de comparação <strong>$gt</strong> e <strong>$lt</strong> (maior que e menor que).</li>
+                <li>10. Utilizar a operação <strong>$and</strong> para fazer consultas compostas com múltiplas condições.</li>
+                <li>11. Buscar documentos usando a operação <strong>$or</strong> para atender a pelo menos uma condição.</li>
+                <li>12. Buscar documentos em que um campo esteja ausente com <strong>find({ campo: { $exists: false }})</strong>.</li>
+                <li>13. Buscar documentos onde um campo contém um valor específico com <strong>find({ campo: { $in: [valor1, valor2] }})</strong>.</li>
+                <li>14. Buscar documentos em que um campo tenha um valor específico, mas não em uma lista específica com <strong>find({ campo: { $nin: [valor1, valor2] }})</strong>.</li>
+                <li>15. Buscar documentos com um campo que contenha um valor específico usando o operador <strong>$regex</strong>.</li>
+                <li>16. Atualizar um documento com <strong>updateOne()</strong> e uma condição específica.</li>
+                <li>17. Atualizar múltiplos documentos com <strong>updateMany()</strong>.</li>
+                <li>18. Substituir um documento inteiro com <strong>replaceOne()</strong>.</li>
+                <li>19. Deletar um documento específico com <strong>deleteOne()</strong>.</li>
+                <li>20. Deletar todos os documentos que atendem a uma condição com <strong>deleteMany()</strong>.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Bom Estudo.</p>
+    </footer>
+</body>
+</html>
+
